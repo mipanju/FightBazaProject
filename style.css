@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+.background_image{
+    background-image: url(Images/BackgroundFull.png);
+   
+}
+body{
+    background-image:linear-gradient( rgba(19, 20, 20, 0.7),rgba(23, 23, 24, 0.7)), url(Images/contact_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 70%;
+    overflow-x: hidden;
+}
+.Body_map {
+    color:#3f3f3f;
+    fill: currentColor;
+    transition:color 0.2s;
+}
+.Body_map:hover{
+    color: rgb(229, 229, 33);
+}
+.Female-Front,
+.Female-Back{
+    display: none;
+}
+.svg-male-container,
+.svg-female-container{
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+}
+.js-swap_btn{
+   padding: 10px 15px;
+   border-radius: 20px;
+   border: none;
+   cursor: pointer;
+   font-size: 25px;
+   transition: all 0.3s ease;
+}
+.js-swap_btn:hover{
+    background-color: #12171e;
+    color: #fff;
+}
+
+.user-img{
+    width: 50px;
+    border-radius: 100%;
+    border: 1px solid #eee;
+}
+.sidebar{
+    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 80px;
+    background-color: #12171e;
+    padding: .4rem .8rem;
+    transition: all 0.5s ease;
+}
+.sidebar.active ~ .main-content{
+    left: 250px;
+    width:calc(100% - 250px);
+}
+.sidebar.active{
+    width: 250px;
+    position: relative;
+    position: fixed;
+}
+.sidebar .logo img{
+    position: absolute;
+    bottom: 0;
+    right: -13px;
+    width: 55px;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ;
+}
+.sidebar.active .logo img{
+    position: absolute;
+    bottom: 0;
+    right: 85px;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ;
+}
+.sidebar #btn {
+    position: absolute;
+    color: #fcf006;
+    top: .4rem;
+    left: 50%;
+    font-size: 1.2rem;
+    line-height: 50px;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+/* ul li a i{
+    color: #fcf006;
+} */
+.sidebar.active #btn{
+    left: 90%;
+}
+.user{
+    display: flex;
+    align-items: center;
+    margin: 2.9rem .1rem;
+}
+.user p {
+    color: #fff;
+    opacity: 1;
+    margin-left: 1rem;
+}
+
+.bold{
+    font-weight: 600px;
+}
+.sidebar p {
+    opacity: 0;
+}
+.sidebar.active p{
+    opacity: 1;
+}
+.sidebar ul li{
+    position: relative;
+    list-style-type: none;
+    height: 50px;
+    width: 90%;
+    margin: 0.8rem auto;
+    line-height: 50px;
+    transition: all 0.5s ease;
+}
+.sidebar ul li a{
+    color: #fcf006;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 0.8rem;
+    transition: all 0.5s ease;
+}
+.sidebar ul li a:hover{
+    background-color: #fcf006;
+    color: #12171e;
+}
+
+.sidebar ul li a i {
+    min-width: 50px;
+    text-align: center;
+    height: 50px;
+    border-radius: 12px;
+    line-height: 50px;
+}
+.sidebar .nav-item {
+    opacity: 0;
+}
+.sidebar.active .nav-item {
+    opacity: 1;
+}
+.sidebar ul li .tooltip{
+    position: absolute;
+    left :125px;
+    top:22px;
+    background-color: #fcf006;
+    transform: translate(-50%, -50%) ;
+    box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.2);
+    border-radius: .6rem;
+    padding: .4rem 1.2rem;
+    line-height: 1.8rem;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+.sidebar ul li:hover .tooltip{
+    opacity: 1;
+    z-index: 20;
+}
+.sidebar.active ul li .tooltip{
+    display: none;
+}
+.main-content{
+    position: relative;
+    min-height: 100vh;
+    top:0;
+    left: 80px;
+    transition: all 0.5s ease;
+    width: calc(100% - 80px);
+    padding: 1rem;
+}
+.logo_svg{
+    fill: #fff;
+    width: 50%;
+    z-index: -1;
+}
+.main-content .bg_logo{
+    position: relative;
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@keyframes glow {
+    0% {
+        filter: drop-shadow(0 0 5px #fcf006); /* Adjust the color and size of the glow as needed */
+      }
+      50% {
+        filter: drop-shadow(0 0 10px #fcf006); /* Adjust the color and size of the glow as needed */
+      }
+      100% {
+        filter: drop-shadow(0 0 5px #fcf006); /* Adjust the color and size of the glow as needed */
+      }
+  }
+   .logo_svg {
+    animation: glow 2s infinite; /* Adjust the duration of the animation as needed */
+  }
+@media(min-width:388px){
+    .Male-Front,
+    .Male-Back{
+        width: 320px;
+       
+    }
+    .Female-Front,
+    .Female-Back{
+    display: none;
+    width: 300px;
+   
+}
+}
+@media(min-width:670px){
+    .svg-male-container,
+    .svg-female-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}   
+    .Female-Front,
+    .Female-Back{
+    display: none;
+    width: 280px;
+    z-index: 1;
+}
+}
