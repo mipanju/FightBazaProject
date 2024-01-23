@@ -371,3 +371,30 @@ html,body{
     right: 85px;
 }
 }
+@media(min-width:388px){
+    .Male-Front,
+    .Male-Back{
+        width: 320px;
+       
+    }
+    .Female-Front,
+    .Female-Back{
+    display: none;
+    width: 300px;
+   
+}
+}
+@media(min-width:670px){
+    .svg-male-container,
+    .svg-female-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}   
+    .Female-Front,
+    .Female-Back{
+    display: none;
+    width: 280px;
+    z-index: 1;
+}
+}
