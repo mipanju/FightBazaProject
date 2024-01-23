@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: 'Oswald', sans-serif;
 }
 .background_image{
     background-image: url(Images/BackgroundFull.png);
@@ -40,10 +40,24 @@ body{
    cursor: pointer;
    font-size: 25px;
    transition: all 0.3s ease;
+   background-color: #12171e;
+   color: #fcf006;
 }
+.main_btn{
+   padding: 13px 18px;
+   border: none;
+   cursor: pointer;
+   font-size: 20px;
+   background-color: #12171e;
+   color: #fcf006;
+   font-weight: 400;
+   transition: all 0.3s ease;
+}
+.main_btn:hover,
 .js-swap_btn:hover{
-    background-color: #12171e;
-    color: #fff;
+    background-color: #fcf006;
+    color: #12171e;
+    scale: 1.1;
 }
 
 .user-img{
@@ -96,9 +110,7 @@ body{
     transform: translateX(-50%);
     cursor: pointer;
 }
-/* ul li a i{
-    color: #fcf006;
-} */
+
 .sidebar.active #btn{
     left: 90%;
 }
@@ -150,6 +162,7 @@ body{
     height: 50px;
     border-radius: 12px;
     line-height: 50px;
+    font-size: 25px;
 }
 .sidebar .nav-item {
     opacity: 0;
@@ -202,30 +215,134 @@ body{
 }
 @keyframes glow {
     0% {
-        filter: drop-shadow(0 0 5px #fcf006); /* Adjust the color and size of the glow as needed */
+        filter: drop-shadow(0 0 20px #f2f2f2); 
+      }
+      25%{
+        filter: drop-shadow(0 0 30px #f5f5f5); 
       }
       50% {
-        filter: drop-shadow(0 0 10px #fcf006); /* Adjust the color and size of the glow as needed */
+        filter: drop-shadow(0 0 30px #f5f5f5); 
+      }
+      75%{
+        filter: drop-shadow(0 0 30px #f5f5f5); 
       }
       100% {
-        filter: drop-shadow(0 0 5px #fcf006); /* Adjust the color and size of the glow as needed */
+        filter: drop-shadow(0 0 20px #ffffff); 
       }
   }
-   .logo_svg {
-    animation: glow 2s infinite; /* Adjust the duration of the animation as needed */
+  @keyframes glow2 {
+    0% {
+        filter: drop-shadow(0 0 20px #fcf006); 
+      }
+      25%{
+        filter: drop-shadow(0 0 30px #fcf006); 
+      }
+      50% {
+        filter: drop-shadow(0 0 30px #fcf006); 
+      }
+      75%{
+        filter: drop-shadow(0 0 30px #fcf006); 
+      }
+      100% {
+        filter: drop-shadow(0 0 20px #fcf006); 
+      }
   }
-@media(min-width:388px){
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1); 
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+   .main_btn:hover{
+    animation: glow2 4s infinite, pulse 2s infinite;
+   }
+   .main_btn:active{
+    scale: 0.9;
+   }
+   .logo_svg {
+    animation: glow 4s infinite, pulse 2s infinite; 
+  }
+@media(min-width:280px){
+
+    .logo_svg{
+        width: 140%;
+        }
     .Male-Front,
     .Male-Back{
-        width: 320px;
+        width: 180px;
        
     }
     .Female-Front,
     .Female-Back{
     display: none;
-    width: 300px;
-   
+    width: 170px;
 }
+body{
+    background-position-x:60% ;
+}
+}
+@media(min-width:388px){
+    .Male-Front,
+    .Male-Back{
+        width: 295px;
+       
+    }
+    .Female-Front,
+    .Female-Back{
+    display: none;
+    width: 270px;
+    
+}
+.sidebar .logo img{
+    bottom: 80px;
+}
+.sidebar.active .logo img{
+    bottom: 80px;
+    right: 70px;
+}
+.sidebar.active{
+    position: fixed;
+}
+body{
+    overflow-x: hidden;
+}
+.logo_svg{
+width: 120%;
+}
+}
+@media(min-height:913px){
+    .sidebar ul li a{
+        padding-top: 60px;
+    }
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+}
+
+@media(width<670px){
+    .sidebar .logo img{
+        bottom: 0;
+        right: -13px;
+    }
+    .sidebar.active .logo img{
+        bottom: 0;
+        right: 85px;
+    }
+}
+@media(height<660px){
+    .sidebar .logo img{
+       display: none;
+    }
+    .sidebar.active .logo img{
+       display: none;
+    }
 }
 @media(min-width:670px){
     .svg-male-container,
@@ -239,5 +356,18 @@ body{
     display: none;
     width: 280px;
     z-index: 1;
+}
+.logo_svg{
+    fill: #fff;
+    width: 40%;
+    z-index: -1;
+}
+.sidebar .logo img{
+    bottom: 0;
+    right: -13px;
+}
+.sidebar.active .logo img{
+    bottom: 0;
+    right: 85px;
 }
 }
