@@ -6,7 +6,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet"></head>
 <body> 
     <div class="sidebar">
         <div class="top">
@@ -15,7 +17,7 @@
             <i class="bx bx-menu" id="btn"></i>
         </div>
         <div class="user">
-            <img src="Images/Logo.png" alt="" class="user-img">
+            <img src="Images/user.png" alt="" class="user-img">
             <div>
                 <p class="bold">Clint B.</p>
                 <p>Admin</p>
@@ -46,9 +48,9 @@
             <li>
                 <a href="#">
                     <i class='bx bxs-info-circle' ></i>
-                    <span class="nav-item">Informaii</span>
+                    <span class="nav-item">Informații</span>
                 </a>
-                <span class="tooltip">Informaii</span>
+                <span class="tooltip">Informații</span>
             </li>
             <li>
                 <a href="#">
@@ -60,16 +62,16 @@
             <li>
                 <a href="#">
                     <i class='bx bxs-photo-album' ></i></i>
-                    <span class="nav-item">Galerie</span>
+                    <span class="nav-item">Abonamente</span>
                 </a>
-                <span class="tooltip">Galerie</span>
+                <span class="tooltip">Abonamente</span>
             </li>
             <li>
                 <a href="#">
                     <i class='bx bxs-news' ></i>
-                    <span class="nav-item">Nouti</span>
+                    <span class="nav-item">Noutăți</span>
                 </a>
-                <span class="tooltip">Nouti</span>
+                <span class="tooltip">Noutăți</span>
             </li>
         </ul>
         <div class="logo">
@@ -77,8 +79,8 @@
         </div>
     </div>
 <div class="main-content">  
+    <button onclick="swap()" class="js-swap_btn"><i class="bx bx-male-sign"></i></button>
     <div class="svg-container">
-        <button onclick="swap()" class="js-swap_btn"><i class="bx bx-male-sign"></i></button>
         <div class="svg-male-container">
             <svg class="Male-Front" id="Male-Front" data-name="MuscleMap-Male" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453.52 859.84">
                 
