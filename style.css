@@ -17,6 +17,7 @@ body{
     background-size: cover;
     background-position: 70%;
     height: 100svh;
+    overflow: hidden;
 }
 .Body_map {
     color:#3f3f3f;
@@ -218,34 +219,51 @@ body{
     z-index: 0;
 }
 .exercises_display{
- position: absolute;
- top: 50%;
- left: 50%;
- transform: translate(-50%, -50%);
- border:solid 2px #fcf006;
- height: 80vh;
- width: 70vw;
- color: #eee;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 2px #fcf006;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    height: 80vh;
+    width: 70vw;
+    background-color: #12171e;
+    color: #eee;
+    overflow: auto;
 }
 .exercises_display h1{
-    border:solid 2px #fcf006;
-    padding: 10px 189px; 
-    border-top-right-radius:20px ;
-    border-top-left-radius:20px ;
+    border:solid 3px #fcf006;
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    background-color: #fcf006;
+    color: #12171e;
 }
 .video_container{
     position: relative;
     display: flex;
-    align-items: center;
-    gap: 40px;
-    justify-content: center;
-    width: 300px;
+    left: 10%;
+    gap: 50px;
+    width: 40%;
 }
 .video_container video {
     width: 100%;
     border-bottom-right-radius:20px ;
     border-bottom-left-radius:20px ;
 }
+.instructions h2{
+   margin: 40px;
+}
+.instructions span{
+padding: 10px 22px;
+border: solid 2px #fcf006;
+border-radius:50%;
+background-color: #fcf006;
+color: #12171e;
+margin: 4px 4px;
+}
+
 @keyframes glow {
     0% {
         filter: drop-shadow(0 0 20px #f2f2f2); 
@@ -310,6 +328,31 @@ body{
   }
   .logo_svg:active{
     scale: 0.9;
+  }
+  ::-webkit-scrollbar{
+    width: .75em;
+  }
+  
+  ::-webkit-scrollbar-track{
+   background: rgb(229, 229, 33);
+   border-radius: 50vw;
+  }
+  
+  ::-webkit-scrollbar-thumb{
+    background: #24262b;
+    border-radius: 100vw;
+  
+  }
+@media(max-width:800px){
+    .video_container{
+        display: flex;
+        flex-direction: column;
+        left:5% ;
+        width: 90%;
+    }
+    .video_container video{
+        border-radius: 20px;
+    }
   }
 @media(max-width:680px){
 
