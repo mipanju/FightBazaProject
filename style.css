@@ -391,6 +391,8 @@ body{
     .logo_svg{
         width: 35%;
         }
+@media(min-width:388px){
+
     .Male-Front,
     .Male-Back{
         width: 320px;
@@ -416,4 +418,22 @@ body{
         bottom: 55px;
         left: 120px;
     }
+
+    width: 300px;
+   
+}
+}
+@media(min-width:670px){
+    .svg-male-container,
+    .svg-female-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}   
+    .Female-Front,
+    .Female-Back{
+    display: none;
+    width: 280px;
+    z-index: 1;
+}
 }
