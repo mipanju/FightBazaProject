@@ -58,13 +58,28 @@ function swap(){
      }
      btn.onclick = determine;
      let instructions = document.querySelector('.exercises_display')
-     var computedStyle = window.getComputedStyle(instructions);
-     if (computedStyle.display === 'block'){
-      buttonElement.innerHTML = '<i class="bx bx-arrow-back"></i>'
+     let computedStyle = window.getComputedStyle(instructions);
+     console.log(computedStyle.display);
+    
+    let buttonElement_nd = document.querySelector('.js-swap_btn2')
+    let specific_muscle = document.querySelector('.Body_map');
+    let ex_name = document.querySelector('.exercise_name');
+    let vieo_frames = document.querySelector('.video_container');
+    function Show_exercise(){
+      if (specific_muscle.id === 'chest'){
+       ex_name.innerHTML = 'Barbell Bench Press';
+      }
+      instructions.style.display = 'inline';
+      SVG_male_frontElement.style.display = 'none';
+      SVG_male_backElement.style.display = 'none';
+      buttonElement.style.display = 'none';
+      buttonElement_nd.style.display = 'inline';
     }
-
-     function back(){
-     if  (buttonElement.innerHTML === '<i class="bx bx-arrow-back"></i>'){
+    function get_back(){
       instructions.style.display = 'none';
-     }
-     }
+      SVG_male_frontElement.style.display = 'inline';
+      SVG_male_backElement.style.display = 'inline';
+      buttonElement_nd.style.display = 'none';
+      buttonElement.style.display = 'inline';
+    }
+ 
