@@ -1,4 +1,4 @@
-let SVG_male_frontElement = document.querySelector('.Male-Front');
+    let SVG_male_frontElement = document.querySelector('.Male-Front');
     let SVG_male_backElement = document.querySelector ('.Male-Back');
     let SVG_female_frontElement = document.querySelector('.Female-Front');
     let SVG_female_backElement = document.querySelector ('.Female-Back');
@@ -125,3 +125,4 @@ function swap(){
       buttonElement_nd.style.display = 'none';
       buttonElement.style.display = 'inline';
     }
+ 
