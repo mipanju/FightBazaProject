@@ -22,41 +22,6 @@ function swap(){
     }
 
 
-
-
-     function resize(){
-      sidebar.classList.toggle('active');
-      if (sidebar.classList.contains('active' )){
-      SVG_male_frontElement.style.display = 'none';
-      SVG_male_backElement.style.display = 'none';
-      SVG_female_frontElement.style.display = 'none';
-      SVG_female_backElement.style.display = 'none';
-      buttonElement.style.display = 'none'
-    } else if(!sidebar.classList.contains('active') && buttonElement.innerHTML === '<i class="bx bx-male-sign"></i>' ) {
-      SVG_male_frontElement.style.display = 'inline';
-      SVG_male_backElement.style.display = 'inline';
-      SVG_female_frontElement.style.display = 'none';
-      SVG_female_backElement.style.display = 'none';
-      buttonElement.style.display = 'inline';
-    } else  {
-      SVG_male_frontElement.style.display = 'none';
-      SVG_male_backElement.style.display = 'none';
-      SVG_female_frontElement.style.display = 'inline';
-      SVG_female_backElement.style.display = 'inline';
-      buttonElement.style.display = 'inline';
-    }
-    }
-    function sidebar_toggle(){
-      sidebar.classList.toggle('active');
-    }
-     function determine(){
-      if (window.innerWidth >= 721){
-        sidebar_toggle();
-      } else{
-        resize();
-      }
-     }
-     btn.onclick = determine;
      let instructions = document.querySelector('.exercises_display')
      let computedStyle = window.getComputedStyle(instructions);
      console.log(computedStyle.display);
@@ -125,4 +90,42 @@ function swap(){
       buttonElement_nd.style.display = 'none';
       buttonElement.style.display = 'inline';
     }
- 
+
+    function resize(){
+      sidebar.classList.toggle('active');
+      if (sidebar.classList.contains('active' )){
+      SVG_male_frontElement.style.display = 'none';
+      SVG_male_backElement.style.display = 'none';
+      SVG_female_frontElement.style.display = 'none';
+      SVG_female_backElement.style.display = 'none';
+      buttonElement.style.display = 'none';
+      instructions.style.display = 'none';
+      buttonElement_nd.style.display = 'none';
+    } else if(!sidebar.classList.contains('active') && buttonElement.innerHTML === '<i class="bx bx-male-sign"></i>' ) {
+      SVG_male_frontElement.style.display = 'inline';
+      SVG_male_backElement.style.display = 'inline';
+      SVG_female_frontElement.style.display = 'none';
+      SVG_female_backElement.style.display = 'none';
+      buttonElement.style.display = 'inline';
+    } else if(!sidebar.classList.contains('active') && buttonElement.innerHTML === '<i class="bx bx-female-sign" ></i>') {
+      SVG_male_frontElement.style.display = 'none';
+      SVG_male_backElement.style.display = 'none';
+      SVG_female_frontElement.style.display = 'inline';
+      SVG_female_backElement.style.display = 'inline';
+      buttonElement.style.display = 'inline';
+    } else if (!sidebar.classList.contains('active') && buttonElement.style.display === 'none'){
+      instructions.style.display = 'inline';
+      buttonElement_nd.style.display = 'inline';
+    } 
+    }
+    function sidebar_toggle(){
+      sidebar.classList.toggle('active');
+    }
+     function determine(){
+      if (window.innerWidth >= 721){
+        sidebar_toggle();
+      } else{
+        resize();
+      }
+     }
+     btn.onclick = determine;
