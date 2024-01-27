@@ -56,11 +56,10 @@ body {
     transition: all 0.3s ease;
     background-color: #12171e;
     color: #fcf006;
+    display: block;
 }
 
-.js-swap_btn2 {
-    display: none;
-}
+
 
 .main_btn {
     padding: 13px 18px;
@@ -297,6 +296,7 @@ body {
     font-weight: 100;
     text-wrap: wrap;
     z-index: 1;
+    display: block;
 }
 
 .exercises_display h1 {
@@ -333,4 +333,19 @@ body {
     background-color: #fcf006;
     color: #12171e;
     margin: 4px 4px;
+}
+
+.exercise-container {
+    display: none;
+}
+
+
+/* stiluri pentru body type */
+
+.body-type h1 {
+    display: block;
+    font-size: 80px;
+    background-color: #12171e;
+    color: #fcf006;
+    text-align: center;
 }
