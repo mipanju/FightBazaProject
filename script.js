@@ -64,10 +64,13 @@ function swap(){
     let buttonElement_nd = document.querySelector('.js-swap_btn2')
     let specific_muscle = document.querySelector('.Body_map');
     let ex_name = document.querySelector('.exercise_name');
-    let vieo_frames = document.querySelector('.video_container');
+    let video_frames = document.querySelector('.video_container');
     function Show_exercise(){
       if (specific_muscle.id === 'chest'){
        ex_name.innerHTML = 'Barbell Bench Press';
+       video_frames.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-barbell-bench-press-front.mp4#t=0.1"></video>
+                                 <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-barbell-bench-press-side_KciuhbB.mp4#t=0.1"></video>`;
+        
       }
       instructions.style.display = 'inline';
       SVG_male_frontElement.style.display = 'none';
