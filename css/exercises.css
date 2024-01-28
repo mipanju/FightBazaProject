@@ -189,6 +189,7 @@ body {
 .sidebar ul li a:hover {
     background-color: #fcf006;
     color: #12171e;
+    animation: glow2 2s infinite;
 }
 
 .sidebar ul li a i {
@@ -218,13 +219,13 @@ body {
     border-radius: .6rem;
     padding: .4rem 1.2rem;
     line-height: 1.8rem;
-    z-index: 1;
+    z-index: 100;
     opacity: 0;
     transition: all 0.5s ease;
 }
 
 .sidebar ul li:hover .tooltip {
-    opacity: 1;
+    opacity: 100;
     z-index: 20;
 }
 
@@ -276,6 +277,7 @@ body {
     text-wrap: wrap;
     z-index: 1;
 }
+
 .exercises_display h1{
     border:solid 3px #fcf006;
     height: 60px;
@@ -426,7 +428,14 @@ margin: 4px 4px;
   }
 @media(max-width:670px){
 
-
+    .sidebar.active~.main-content {
+        left: 165px;
+        width: calc(100% - 250px);
+        z-index: -100;
+        pointer-events: none;
+        filter: blur(3px);
+    }
+    
     .logo_svg {
         width: 140%;
     }
