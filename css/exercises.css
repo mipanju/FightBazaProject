@@ -150,6 +150,7 @@ body {
     display: flex;
     align-items: center;
     margin: 2.9rem .1rem;
+    height: 50.13px;
 }
 
 .user p {
@@ -515,11 +516,11 @@ body {
 
 }
 
-@media(min-height:913px) {
+/* @media(min-height:913px) {
     .sidebar ul li a {
         padding-top: 60px;
     }
-}
+} */
 
 @media(width<670px) {
     .sidebar .logo img {
