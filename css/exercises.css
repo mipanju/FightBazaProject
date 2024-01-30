@@ -426,6 +426,12 @@ margin: 4px 4px;
         font-size: 0.9rem;
      }
   }
+
+  @media(max-height:695px){
+    .svg-container{
+        top: 35px;
+    }
+  }
 @media(max-width:670px){
 
     .sidebar.active~.main-content {
