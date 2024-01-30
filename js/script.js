@@ -21,13 +21,6 @@ function swap() {
   }
 }
 
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-
-
      function resize(){
       sidebar.classList.toggle('active');
       if (sidebar.classList.contains('active' )){
@@ -72,8 +65,6 @@ function swap() {
     function Show_exercise(){
       if (specific_muscle.id === 'chest'){
        ex_name.innerHTML = 'Barbell Bench Press';
-=======
->>>>>>> 63019296c6fb67afdcd872dccaf70f23a9366339
     let instructions = document.querySelector('.exercises_display')
     let buttonElement_nd = document.querySelector('.js-swap_btn2')
     let specific_muscle = document.querySelector('.Body_map');
@@ -89,43 +80,13 @@ function swap() {
     function Show_exercise(muscle){
       if (muscle === 'chest'){
        ex_name1.innerHTML = 'Barbell Bench Press';
-       video_frames1.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-barbell-bench-press-front.mp4#t=0.1"></video>
-=======
-
-
-function resize() {
-  sidebar.classList.toggle('active');
-  if (sidebar.classList.contains('active')) {
-    SVG_male_frontElement.style.display = 'none';
-    SVG_male_backElement.style.display = 'none';
-    SVG_female_frontElement.style.display = 'none';
-    SVG_female_backElement.style.display = 'none';
-    buttonElement.style.display = 'none'
-  } else if (!sidebar.classList.contains('active') && buttonElement.innerHTML === '<i class="bx bx-male-sign"></i>') {
-    SVG_male_frontElement.style.display = 'inline';
-    SVG_male_backElement.style.display = 'inline';
-    SVG_female_frontElement.style.display = 'none';
-    SVG_female_backElement.style.display = 'none';
-    buttonElement.style.display = 'inline';
-  } else {
-    SVG_male_frontElement.style.display = 'none';
-    SVG_male_backElement.style.display = 'none';
-    SVG_female_frontElement.style.display = 'inline';
-    SVG_female_backElement.style.display = 'inline';
-    buttonElement.style.display = 'inline';
-  }
+       video_frames1.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-barbell-bench-press-front.mp4#t=0.1"></video>`
+   }
 }
 function sidebar_toggle() {
   sidebar.classList.toggle('active');
 }
-function determine() {
-  if (window.innerWidth >= 721) {
-    sidebar_toggle();
-  } else {
-    resize();
-  }
-}
-btn.onclick = determine;
+btn.onclick = sidebar_toggle;
 let instructions = document.querySelector('.exercises_display')
 let computedStyle = window.getComputedStyle(instructions);
 console.log(computedStyle.display);
@@ -145,7 +106,6 @@ function Show_exercise(muscle) {
   if (muscle === 'chest') {
     ex_name1.innerHTML = 'Barbell Bench Press';
     video_frames1.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-barbell-bench-press-front.mp4#t=0.1"></video>
->>>>>>> 1cb962adb826979c66aba430aa05269eb6554b1a
                                  <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-barbell-bench-press-side_KciuhbB.mp4#t=0.1"></video>`;
     advice1.innerHTML = `<h2> <span>1</span>Lay flat on the bench with your feet on the ground. With straight arms unrack the bar.</h2>
                            <h2> <span>2</span>Lower the bar to your mid chest.</h2>
@@ -181,11 +141,7 @@ function Show_exercise(muscle) {
     advice3.innerHTML = `<h2> <span>1</span>Lay flat on the incline bench with your feet on the ground. Raise the dumbbells until you have straight arms.</h2>
                                                <h2> <span>2</span>Lower the dumbbells to your mid chest.</h2>
                                                <h2> <span>3</span>Raise the dumbbells until you've locked your elbows.</h2>` ;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> ec439d39ed0722151fd907d527cde0bb46f1ca63
->>>>>>> 63019296c6fb67afdcd872dccaf70f23a9366339
+
       }
       instructions.style.display = 'inline';
       SVG_male_frontElement.style.display = 'none';
@@ -200,23 +156,12 @@ function Show_exercise(muscle) {
       buttonElement_nd.style.display = 'none';
       buttonElement.style.display = 'inline';
     }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
- 
-=======
->>>>>>> 63019296c6fb67afdcd872dccaf70f23a9366339
 
     
     function sidebar_toggle(){
       sidebar.classList.toggle('active');
     }
      btn.onclick = sidebar_toggle;
-<<<<<<< HEAD
-=======
->>>>>>> ec439d39ed0722151fd907d527cde0bb46f1ca63
->>>>>>> 63019296c6fb67afdcd872dccaf70f23a9366339
-=======
   }
   instructions.style.display = 'inline';
   SVG_male_frontElement.style.display = 'none';
@@ -232,4 +177,15 @@ function get_back() {
   buttonElement.style.display = 'inline';
 }
 
->>>>>>> 1cb962adb826979c66aba430aa05269eb6554b1a
+  instructions.style.display = 'inline';
+  SVG_male_frontElement.style.display = 'none';
+  SVG_male_backElement.style.display = 'none';
+  buttonElement.style.display = 'none';
+  buttonElement_nd.style.display = 'inline';
+function get_back() {
+  instructions.style.display = 'none';
+  SVG_male_frontElement.style.display = 'inline';
+  SVG_male_backElement.style.display = 'inline';
+  buttonElement_nd.style.display = 'none';
+  buttonElement.style.display = 'inline';
+}
