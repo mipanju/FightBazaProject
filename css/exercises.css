@@ -5,48 +5,18 @@
     font-family: 'Oswald', sans-serif;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-/* .background_image {
-    background-image: url(../Images/BackgroundFull.png);
 
-} */
-=======
->>>>>>> 63019296c6fb67afdcd872dccaf70f23a9366339
-=======
->>>>>>> 1cb962adb826979c66aba430aa05269eb6554b1a
+
 .background_image {
     background-image: url(Images/BackgroundFull.png);
 
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> ec439d39ed0722151fd907d527cde0bb46f1ca63
->>>>>>> 63019296c6fb67afdcd872dccaf70f23a9366339
-=======
->>>>>>> 1cb962adb826979c66aba430aa05269eb6554b1a
-
 html {
     height: 100svh;
 }
 
 body {
-<<<<<<< HEAD
-<<<<<<< HEAD
     background-image: linear-gradient(rgba(19, 20, 20, 0.7), rgba(23, 23, 24, 0.7)), url(/Images/contact_bg.jpg);
-=======
-<<<<<<< HEAD
-    background-image: linear-gradient(rgba(19, 20, 20, 0.7), rgba(23, 23, 24, 0.7)), url(../Images/contact_bg.jpg);
-=======
-    background-image: linear-gradient(rgba(19, 20, 20, 0.7), rgba(23, 23, 24, 0.7)), url(/Images/contact_bg.jpg);
->>>>>>> ec439d39ed0722151fd907d527cde0bb46f1ca63
->>>>>>> 63019296c6fb67afdcd872dccaf70f23a9366339
-=======
-    background-image: linear-gradient(rgba(19, 20, 20, 0.7), rgba(23, 23, 24, 0.7)), url(/Images/contact_bg.jpg);
->>>>>>> 1cb962adb826979c66aba430aa05269eb6554b1a
     background-repeat: repeat;
     background-size: cover;
     background-position: 70%;
@@ -57,36 +27,13 @@ body {
 .Body_map {
     color: #3f3f3f;
     fill: currentColor;
-<<<<<<< HEAD
-<<<<<<< HEAD
-    transition:color 0.2s;
-=======
-<<<<<<< HEAD
-    transition: color 0.2s;
-=======
-    transition:color 0.2s;
->>>>>>> ec439d39ed0722151fd907d527cde0bb46f1ca63
->>>>>>> 63019296c6fb67afdcd872dccaf70f23a9366339
-=======
-    transition: color 0.2s;
->>>>>>> 1cb962adb826979c66aba430aa05269eb6554b1a
+    transition: all 0.2s;
     cursor: pointer;
 }
 
 .Body_map:hover {
     color: rgb(229, 229, 33);
-<<<<<<< HEAD
-<<<<<<< HEAD
     animation: glow2 2s infinite;
-=======
-<<<<<<< HEAD
-=======
-    animation: glow2 2s infinite;
->>>>>>> ec439d39ed0722151fd907d527cde0bb46f1ca63
->>>>>>> 63019296c6fb67afdcd872dccaf70f23a9366339
-=======
-    animation: glow2 2s infinite;
->>>>>>> 1cb962adb826979c66aba430aa05269eb6554b1a
 }
 
 .Female-Front,
@@ -102,12 +49,7 @@ body {
 }
 
 .js-swap_btn,
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 1cb962adb826979c66aba430aa05269eb6554b1a
+
 .js-swap_btn2 {
     padding: 10px 15px;
     border-radius: 20px;
@@ -134,14 +76,6 @@ body {
     transition: all 0.3s ease;
 }
 
-.main_btn:hover,
-
-.js-swap_btn:hover,
-.js-swap_btn2:hover {
-
-<<<<<<< HEAD
-=======
->>>>>>> 63019296c6fb67afdcd872dccaf70f23a9366339
 .js-swap_btn2{
    padding: 10px 15px;
    border-radius: 20px;
@@ -166,16 +100,8 @@ body {
    transition: all 0.3s ease;
 }
 .main_btn:hover,
-
 .js-swap_btn:hover,
 .js-swap_btn2:hover{
-  
-<<<<<<< HEAD
-=======
->>>>>>> ec439d39ed0722151fd907d527cde0bb46f1ca63
->>>>>>> 63019296c6fb67afdcd872dccaf70f23a9366339
-=======
->>>>>>> 1cb962adb826979c66aba430aa05269eb6554b1a
     background-color: #fcf006;
     color: #12171e;
     scale: 1.1;
@@ -289,20 +215,8 @@ body {
 .sidebar ul li a:hover {
     background-color: #fcf006;
     color: #12171e;
-<<<<<<< HEAD
-<<<<<<< HEAD
     animation: glow2 2s infinite;
-=======
-<<<<<<< HEAD
-=======
-    animation: glow2 2s infinite;
->>>>>>> ec439d39ed0722151fd907d527cde0bb46f1ca63
->>>>>>> 63019296c6fb67afdcd872dccaf70f23a9366339
-=======
-    animation: glow2 2s infinite;
->>>>>>> 1cb962adb826979c66aba430aa05269eb6554b1a
 }
-
 .sidebar ul li a i {
     min-width: 50px;
     text-align: center;
@@ -330,37 +244,13 @@ body {
     border-radius: .6rem;
     padding: .4rem 1.2rem;
     line-height: 1.8rem;
-<<<<<<< HEAD
-<<<<<<< HEAD
     z-index: 100;
-=======
-<<<<<<< HEAD
-    z-index: 1;
-=======
-    z-index: 100;
->>>>>>> ec439d39ed0722151fd907d527cde0bb46f1ca63
->>>>>>> 63019296c6fb67afdcd872dccaf70f23a9366339
-=======
-    z-index: 100;
->>>>>>> 1cb962adb826979c66aba430aa05269eb6554b1a
     opacity: 0;
     transition: all 0.5s ease;
 }
 
 .sidebar ul li:hover .tooltip {
-<<<<<<< HEAD
-<<<<<<< HEAD
     opacity: 100;
-=======
-<<<<<<< HEAD
-    opacity: 1;
-=======
-    opacity: 100;
->>>>>>> ec439d39ed0722151fd907d527cde0bb46f1ca63
->>>>>>> 63019296c6fb67afdcd872dccaf70f23a9366339
-=======
-    opacity: 100;
->>>>>>> 1cb962adb826979c66aba430aa05269eb6554b1a
     z-index: 20;
 }
 
@@ -375,19 +265,7 @@ body {
     left: 80px;
     transition: all 0.5s ease;
     width: calc(100% - 80px);
-<<<<<<< HEAD
-<<<<<<< HEAD
     padding: 1rem;
-=======
-<<<<<<< HEAD
-    /* padding: 1rem; */
-=======
-    padding: 1rem;
->>>>>>> ec439d39ed0722151fd907d527cde0bb46f1ca63
->>>>>>> 63019296c6fb67afdcd872dccaf70f23a9366339
-=======
-    padding: 1rem;
->>>>>>> 1cb962adb826979c66aba430aa05269eb6554b1a
 }
 
 .logo_svg {
@@ -406,19 +284,8 @@ body {
     z-index: 0;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 .exercises_display{
-=======
-<<<<<<< HEAD
-.exercises_display {
-=======
-.exercises_display{
->>>>>>> ec439d39ed0722151fd907d527cde0bb46f1ca63
->>>>>>> 63019296c6fb67afdcd872dccaf70f23a9366339
-=======
-.exercises_display {
->>>>>>> 1cb962adb826979c66aba430aa05269eb6554b1a
     position: absolute;
     top: 50%;
     left: 50%;
@@ -435,40 +302,20 @@ body {
     font-weight: 100;
     text-wrap: wrap;
     z-index: 1;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    display: block;
-=======
->>>>>>> 1cb962adb826979c66aba430aa05269eb6554b1a
 }
 
 .exercises_display h1 {
     border: solid 3px #fcf006;
-<<<<<<< HEAD
-=======
->>>>>>> 63019296c6fb67afdcd872dccaf70f23a9366339
 }
 
 .exercises_display h1{
     border:solid 3px #fcf006;
-<<<<<<< HEAD
-=======
->>>>>>> ec439d39ed0722151fd907d527cde0bb46f1ca63
->>>>>>> 63019296c6fb67afdcd872dccaf70f23a9366339
-=======
->>>>>>> 1cb962adb826979c66aba430aa05269eb6554b1a
     height: 60px;
     width: 100%;
     text-align: center;
     background-color: #fcf006;
     color: #12171e;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-.video_container{
-=======
 
 .video_container {
     position: relative;
@@ -497,35 +344,6 @@ body {
     margin: 4px 4px;
 }
 
-.exercise-container {
-    display: none;
-}
-
-
-/* stiluri pentru body type */
-
-.body-type h1 {
-    display: block;
-    font-size: 80px;
-    background-color: #12171e;
-    color: #fcf006;
-    text-align: center;}
-.video_container video {
-    width: 100%;
-    border-bottom-right-radius:20px ;
-    border-bottom-left-radius:20px ;
-}
-.instructions h2{
-   margin: 40px;
-}
-.instructions span{
-padding: 10px 22px;
-border: solid 2px #fcf006;
-border-radius:50%;
-background-color: #fcf006;
-color: #12171e;
-margin: 4px 4px;
-}
 
 @keyframes glow {
     0% {
