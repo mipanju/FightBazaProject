@@ -425,8 +425,24 @@ body {
         filter: blur(3px);
     }
 
-    .sidebar.active~.main-content .logo_svg {
-        width: 250%;
+    .video_container video {
+        border-radius: 20px;
+    }
+}
+
+@media(max-width:680px) {
+    .exercises_display {
+        top: 35%;
+        width: 80vw;
+        font-size: 0.9rem;
+    }
+}
+
+@media(max-width:680px) {
+
+
+    .logo_svg {
+        width: 140%;
     }
 
 
@@ -478,11 +494,6 @@ body {
 
 }
 
-@media(min-height:913px) {
-    .sidebar ul li a {
-        padding-top: 60px;
-    }
-}
 
 @media(width<670px) {
     .sidebar .logo img {
