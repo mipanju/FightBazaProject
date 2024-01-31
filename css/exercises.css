@@ -5,12 +5,13 @@
     font-family: 'Oswald', sans-serif;
 }
 
+
+
 .background_image {
     background-image: url(../Images/BackgroundFull.png);
     
 
 }
-
 html {
     height: 100svh;
 }
@@ -28,7 +29,7 @@ body {
 .Body_map {
     color: #3f3f3f;
     fill: currentColor;
-    transition: color 0.2s;
+    transition: all 0.2s;
     cursor: pointer;
 }
 
@@ -50,6 +51,7 @@ body {
 }
 
 .js-swap_btn,
+
 .js-swap_btn2 {
     padding: 10px 15px;
     border-radius: 20px;
@@ -76,11 +78,32 @@ body {
     transition: all 0.3s ease;
 }
 
+.js-swap_btn2{
+   padding: 10px 15px;
+   border-radius: 20px;
+   border: none;
+   cursor: pointer;
+   font-size: 25px;
+   transition: all 0.3s ease;
+   background-color: #12171e;
+   color: #fcf006;
+}
+.js-swap_btn2{
+    display: none;
+}
+.main_btn{
+   padding: 13px 18px;
+   border: none;
+   cursor: pointer;
+   font-size: 20px;
+   background-color: #12171e;
+   color: #fcf006;
+   font-weight: 400;
+   transition: all 0.3s ease;
+}
 .main_btn:hover,
-
 .js-swap_btn:hover,
-.js-swap_btn2:hover {
-
+.js-swap_btn2:hover{
     background-color: #fcf006;
     color: #12171e;
     scale: 1.1;
@@ -196,7 +219,6 @@ body {
     color: #12171e;
     animation: glow2 2s infinite;
 }
-
 .sidebar ul li a i {
     min-width: 50px;
     text-align: center;
@@ -264,7 +286,8 @@ body {
     z-index: 0;
 }
 
-.exercises_display {
+
+.exercises_display{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -285,6 +308,10 @@ body {
 
 .exercises_display h1 {
     border: solid 3px #fcf006;
+}
+
+.exercises_display h1{
+    border:solid 3px #fcf006;
     height: 60px;
     width: 100%;
     text-align: center;
