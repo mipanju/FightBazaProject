@@ -6,7 +6,8 @@
 }
 
 .background_image {
-    background-image: url(Images/BackgroundFull.png);
+    background-image: url(../Images/BackgroundFull.png);
+    
 
 }
 
@@ -15,10 +16,11 @@ html {
 }
 
 body {
-    background-image: linear-gradient(rgba(19, 20, 20, 0.7), rgba(23, 23, 24, 0.7)), url(/Images/contact_bg.jpg);
-    background-repeat: repeat;
+    background-image: linear-gradient(rgba(19, 20, 20, 0.7), rgba(23, 23, 24, 0.7)), url(../Images/contact_bg.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: 70%;
+    background-attachment: fixed;
     height: 100svh;
     overflow: hidden;
 }
