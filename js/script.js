@@ -21,75 +21,20 @@ function swap() {
   }
 }
 
-     function resize(){
-      sidebar.classList.toggle('active');
-      if (sidebar.classList.contains('active' )){
-      SVG_male_frontElement.style.display = 'none';
-      SVG_male_backElement.style.display = 'none';
-      SVG_female_frontElement.style.display = 'none';
-      SVG_female_backElement.style.display = 'none';
-      buttonElement.style.display = 'none'
-    } else if(!sidebar.classList.contains('active') && buttonElement.innerHTML === '<i class="bx bx-male-sign"></i>' ) {
-      SVG_male_frontElement.style.display = 'inline';
-      SVG_male_backElement.style.display = 'inline';
-      SVG_female_frontElement.style.display = 'none';
-      SVG_female_backElement.style.display = 'none';
-      buttonElement.style.display = 'inline';
-    } else  {
-      SVG_male_frontElement.style.display = 'none';
-      SVG_male_backElement.style.display = 'none';
-      SVG_female_frontElement.style.display = 'inline';
-      SVG_female_backElement.style.display = 'inline';
-      buttonElement.style.display = 'inline';
-    }
-    }
-    function sidebar_toggle(){
-      sidebar.classList.toggle('active');
-    }
-     function determine(){
-      if (window.innerWidth >= 721){
-        sidebar_toggle();
-      } else{
-        resize();
-      }
-     }
      btn.onclick = determine;
      let instructions = document.querySelector('.exercises_display')
      let computedStyle = window.getComputedStyle(instructions);
      console.log(computedStyle.display);
     
-    let buttonElement_nd = document.querySelector('.js-swap_btn2')
-    let specific_muscle = document.querySelector('.Body_map');
     let ex_name = document.querySelector('.exercise_name');
     let vieo_frames = document.querySelector('.video_container');
     function Show_exercise(){
-      if (specific_muscle.id === 'chest'){
-       ex_name.innerHTML = 'Barbell Bench Press';
-    let instructions = document.querySelector('.exercises_display')
-    let buttonElement_nd = document.querySelector('.js-swap_btn2')
-    let specific_muscle = document.querySelector('.Body_map');
-    let ex_name1 = document.querySelector('#exercise_name1');
-    let video_frames1 = document.querySelector('#video_container1');
-    let advice1 = document.querySelector('#instructions1');
-    let ex_name2 = document.querySelector('#exercise_name2');
-    let video_frames2 = document.querySelector('#video_container2');
-    let advice2 = document.querySelector('#instructions2');
-    let ex_name3 = document.querySelector('#exercise_name3');
-    let video_frames3 = document.querySelector('#video_container3');
-    let advice3 = document.querySelector('#instructions3');
-    function Show_exercise(muscle){
-      if (muscle === 'chest'){
-       ex_name1.innerHTML = 'Barbell Bench Press';
-       video_frames1.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-barbell-bench-press-front.mp4#t=0.1"></video>`
-   }
+
 }
 function sidebar_toggle() {
   sidebar.classList.toggle('active');
 }
 btn.onclick = sidebar_toggle;
-let instructions = document.querySelector('.exercises_display')
-let computedStyle = window.getComputedStyle(instructions);
-console.log(computedStyle.display);
 
 let buttonElement_nd = document.querySelector('.js-swap_btn2')
 let specific_muscle = document.querySelector('.Body_map');
@@ -162,13 +107,11 @@ function Show_exercise(muscle) {
       sidebar.classList.toggle('active');
     }
      btn.onclick = sidebar_toggle;
-  }
   instructions.style.display = 'inline';
   SVG_male_frontElement.style.display = 'none';
   SVG_male_backElement.style.display = 'none';
   buttonElement.style.display = 'none';
   buttonElement_nd.style.display = 'inline';
-}
 function get_back() {
   instructions.style.display = 'none';
   SVG_male_frontElement.style.display = 'inline';
@@ -177,15 +120,3 @@ function get_back() {
   buttonElement.style.display = 'inline';
 }
 
-  instructions.style.display = 'inline';
-  SVG_male_frontElement.style.display = 'none';
-  SVG_male_backElement.style.display = 'none';
-  buttonElement.style.display = 'none';
-  buttonElement_nd.style.display = 'inline';
-function get_back() {
-  instructions.style.display = 'none';
-  SVG_male_frontElement.style.display = 'inline';
-  SVG_male_backElement.style.display = 'inline';
-  buttonElement_nd.style.display = 'none';
-  buttonElement.style.display = 'inline';
-}
