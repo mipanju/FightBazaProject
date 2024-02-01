@@ -215,7 +215,7 @@ body {
   .container-about{
     width: 90%;
     margin: 0 auto;
-    padding: 10px 20px;
+    padding: 10px 10px;
   }
   .about{
     display: flex;
@@ -224,17 +224,12 @@ body {
     flex-wrap:wrap ;
     overflow-x: hidden;
   }
-  .about-slides{
-    width: 50%;
-    overflow-x: hidden;
-  }
   .about-images{
-    /* flex: 0.75; */
-    width: 40%;
-    display: flex;
+    flex: 1;
     margin-right:40px ;
     /* animation: slide 16s infinite; */
     border-radius: 10px;
+    overflow: hidden;
   }
   .about-images img{
     max-width: 100%; 
@@ -509,6 +504,9 @@ body{
 }
 
 @media screen and (max-width:768px){
+    body{
+        overflow-y: visible;
+    }
     .heading{
       padding: 0px 20px;
     }
@@ -521,7 +519,7 @@ body{
     }
     .container-about{
       padding:0px;
-  
+      
     }
     .about{
       padding: 20px;
