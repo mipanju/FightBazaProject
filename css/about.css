@@ -12,11 +12,12 @@ html {
 
 body {
     background-image: linear-gradient(rgba(19, 20, 20, 0.7), rgba(23, 23, 24, 0.7)), url(../Images/contact_bg.jpg);
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: 70%;
+    background-attachment: fixed;
     height: 100svh;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 /* Sidebar */
 .user-img {
@@ -174,7 +175,7 @@ body {
 .main-content {
     position: relative;
     min-height: 100vh;
-    top: -50px;
+    top: -40px;
     left: 80px;
     transition: all 0.5s ease;
     width: calc(100% - 80px);
@@ -195,6 +196,7 @@ body {
     color: #ffffff;
     margin-bottom: 25px;
     position: relative;
+    animation: glow 4s infinite;
   }
   .heading h1::after{
     content: "";
@@ -204,7 +206,7 @@ body {
     display:block;
     margin: 0 auto;
     border-radius:3px ;
-    background-color:rgb(229, 229, 33) ;
+    background-color:#fcf006 ;
   }
   .heading p{
     font-size: 18px;
@@ -225,21 +227,41 @@ body {
     overflow-x: hidden;
   }
   .about-images{
+    display: flex;
     flex: 0.75;
-    margin-right:40px ;
-    /* animation: slide 16s infinite; */
+    margin-right: 40px;
     border-radius: 10px;
     overflow: hidden;
+    transition: all 0.3s ease-in-out;
   }
   .about-images img{
-    max-width: 100%; 
+    max-width: 100%;
     height: auto;
     display: block;
-    transition: 0.5s ease;
+    transition: 0.2s ease-in-out;
   }
-  .about-images:hover img{
+  .fade {
+    display: flex;
+    transition: transform 1s linear;
+    overflow: hidden;
+}
+
+.fade img {
+    flex: 0 0 auto;
+    width: 100%;
+    opacity: 1;
+    transition: opacity 1s linear;
+}
+
+.fade img:not(:first-child) {
+    opacity: 0;
+}
+
+
+
+  /* .about-images:hover img{
     transform: scale(1.2);
-  }
+  } */
   .about-content{
     flex: 1;
   }
@@ -256,7 +278,7 @@ body {
   .about-content .read-more{
    display: inline-block;
    padding: 10px 20px;
-   background-color: rgb(229, 229, 33);
+   background-color: #fcf006;
    color: #12171e;
    font-size: 19px;
    font-weight: 500;
@@ -266,37 +288,10 @@ body {
    transition: 0.3s ease;
   }
   .about-content .read-more:hover{
-    background-color: rgb(198, 198, 11) ;
+    background-color: #fcf006 ;
   }
 
 /* animations */
-
-@keyframes slide{
-    0%{
-        transform: translateX(0);
-    }
-    25%{
-        transform: translateX(0);
-    }
-    30%{
-        transform: translateX(-100%);
-    }
-    50%{
-        transform: translateX(-100%);
-    }
-    55%{
-        transform: translateX(-200%);
-    }
-    75%{
-        transform: translateX(-200%);
-    }
-    80%{
-        transform: translateX(-300%);
-    }
-    100%{
-        transform: translateX(-300%);
-    }
-}
 @keyframes glow {
     0% {
         filter: drop-shadow(0 0 20px #f2f2f2);
@@ -506,7 +501,7 @@ body{
     }
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:800px){
     body{
         overflow-y: visible;
     }
