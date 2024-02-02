@@ -21,17 +21,17 @@ function swap() {
   }
 }
 
-     let instructions = document.querySelector('.exercises_display')
-    
-    let ex_name = document.querySelector('.exercise_name');
-    let vieo_frames = document.querySelector('.video_container');
-    function Show_exercise(){
+let instructions = document.querySelector('.exercises_display')
+
+let ex_name = document.querySelector('.exercise_name');
+let vieo_frames = document.querySelector('.video_container');
+function Show_exercise() {
 
 }
-function sidebar_toggle() {
-  sidebar.classList.toggle('active');
-}
-btn.onclick = sidebar_toggle;
+// function sidebar_toggle() {
+//   sidebar.classList.toggle('active');
+// }
+// btn.onclick = sidebar_toggle;
 
 let buttonElement_nd = document.querySelector('.js-swap_btn2')
 let specific_muscle = document.querySelector('.Body_map');
@@ -84,20 +84,34 @@ function Show_exercise(muscle) {
                                                <h2> <span>2</span>Lower the dumbbells to your mid chest.</h2>
                                                <h2> <span>3</span>Raise the dumbbells until you've locked your elbows.</h2>` ;
 
-      }
-      instructions.style.display = 'inline';
-      SVG_male_frontElement.style.display = 'none';
-      SVG_male_backElement.style.display = 'none';
-      buttonElement.style.display = 'none';
-      buttonElement_nd.style.display = 'inline';
-    }
-    function get_back(){
-      instructions.style.display = 'none';
-      SVG_male_frontElement.style.display = 'inline';
-      SVG_male_backElement.style.display = 'inline';
-      buttonElement_nd.style.display = 'none';
-      buttonElement.style.display = 'inline';
-    }
+  }
+  instructions.style.display = 'inline';
+  SVG_male_frontElement.style.display = 'none';
+  SVG_male_backElement.style.display = 'none';
+  buttonElement.style.display = 'none';
+  buttonElement_nd.style.display = 'inline';
+}
+function get_back() {
+  instructions.style.display = 'none';
+  SVG_male_frontElement.style.display = 'inline';
+  SVG_male_backElement.style.display = 'inline';
+  buttonElement_nd.style.display = 'none';
+  buttonElement.style.display = 'inline';
+}
 
-  
+
+function sidebar_toggle() {
+  sidebar.classList.toggle('active')
+}
+
+function sidebar_active() {
+  sidebar.classList.add('active');
+}
+
+function sidebar_pasive() {
+  sidebar.classList.remove('active')
+}
+btn.onclick = sidebar_toggle;
+
+
 
