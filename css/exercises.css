@@ -9,9 +9,10 @@
 
 .background_image {
     background-image: url(../Images/BackgroundFull.png);
-    
+
 
 }
+
 html {
     height: 100svh;
 }
@@ -43,14 +44,59 @@ body {
     display: none;
 }
 
+.svg-container {
+    position: relative;
+    height: calc(100vh - 32px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Female-Front,
+.Female-Back,
+.Male-Front,
+.Male-Back {
+    height: calc(100vh - 72px);
+}
+
 .svg-male-container,
 .svg-female-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     z-index: 100;
 }
 
 .js-swap_btn,
+
+.js-swap_btn2 {
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    transition: all 0.3s ease;
+    background-color: #12171e;
+    color: #fcf006;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.js-swap_btn2 {
+    display: none;
+}
+
+.main_btn {
+    padding: 13px 18px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: #12171e;
+    color: #fcf006;
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
 
 .js-swap_btn2 {
     padding: 10px 15px;
@@ -78,32 +124,9 @@ body {
     transition: all 0.3s ease;
 }
 
-.js-swap_btn2{
-   padding: 10px 15px;
-   border-radius: 20px;
-   border: none;
-   cursor: pointer;
-   font-size: 25px;
-   transition: all 0.3s ease;
-   background-color: #12171e;
-   color: #fcf006;
-}
-.js-swap_btn2{
-    display: none;
-}
-.main_btn{
-   padding: 13px 18px;
-   border: none;
-   cursor: pointer;
-   font-size: 20px;
-   background-color: #12171e;
-   color: #fcf006;
-   font-weight: 400;
-   transition: all 0.3s ease;
-}
 .main_btn:hover,
 .js-swap_btn:hover,
-.js-swap_btn2:hover{
+.js-swap_btn2:hover {
     background-color: #fcf006;
     color: #12171e;
     scale: 1.1;
@@ -198,7 +221,7 @@ body {
 .sidebar ul li {
     position: relative;
     list-style-type: none;
-    height: 50px;
+    /* height: 50px; */
     width: 90%;
     margin: 0.8rem auto;
     line-height: 50px;
@@ -219,6 +242,17 @@ body {
     color: #12171e;
     animation: glow2 2s infinite;
 }
+
+.bx-dumbbell {
+    background-color: #fcf006;
+    color: #12171e;
+}
+
+.active-page {
+    background-color: #fcf006;
+    color: #12171e;
+}
+
 .sidebar ul li a i {
     min-width: 50px;
     text-align: center;
@@ -226,6 +260,7 @@ body {
     border-radius: 12px;
     line-height: 50px;
     font-size: 25px;
+    margin-right: 10px;
 }
 
 .sidebar .nav-item {
@@ -236,7 +271,22 @@ body {
     opacity: 1;
 }
 
-.sidebar ul li .tooltip {
+
+
+
+
+/* .calories {
+    padding: 0;
+    margin-left: 60px;
+}
+
+.calories a {
+    height: 25px;
+    margin-left: 60px;
+
+} */
+
+/* .sidebar ul li .tooltip {
     position: absolute;
     left: 125px;
     top: 22px;
@@ -258,12 +308,12 @@ body {
 
 .sidebar.active ul li .tooltip {
     display: none;
-}
+} */
 
 .main-content {
     position: relative;
     min-height: 100vh;
-    top: 0;
+    /* top: 0; */
     left: 80px;
     transition: all 0.5s ease;
     width: calc(100% - 80px);
@@ -276,7 +326,7 @@ body {
     z-index: -1;
 }
 
-.main-content .bg_logo {
+.bg_logo {
     position: relative;
     height: calc(100vh - 60px);
     display: flex;
@@ -286,15 +336,13 @@ body {
     z-index: 0;
 }
 
-.exercise-container{
-    position: relative;
-}
 
 
-.exercises_display{
+
+.exercises_display {
     position: absolute;
     top: 50%;
-    /* margin-top: -40vh; */
+    margin-top: -40vh;
     left: 50%;
     margin-left: -35vw;
     /* transform: translate(-50%, -50%); */
@@ -316,8 +364,8 @@ body {
     border: solid 3px #fcf006;
 }
 
-.exercises_display h1{
-    border:solid 3px #fcf006;
+.exercises_display h1 {
+    border: solid 3px #fcf006;
     height: 60px;
     width: 100%;
     text-align: center;
@@ -471,7 +519,7 @@ body {
         top: 35%;
         width: 80vw;
         font-size: 0.9rem;
-    } 
+    }
 }
 
 .sidebar.active~.main-content {
@@ -486,31 +534,20 @@ body {
     width: 140%;
 }
 
-.Male-Front,
+/* .Male-Front,
 .Male-Back {
     width: 200px;
 
-}
+} */
 
-.Female-Front,
+/* .Female-Front,
 .Female-Back {
     display: none;
     width: 170px;
-}
+} */
 
-.svg-container {
-    position: relative;
-    height: calc(150vh - 60px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
 
-.svg-bodies-container{
-    position: absolute;
-    top: 0;
-}
+
 
 body {
     background-position-x: 60%;
@@ -529,19 +566,18 @@ body {
 
 @media(min-width:388px) {
 
-    .Male-Front,
+    /* .Male-Front,
     .Male-Back {
         width: 295px;
 
-    }
+    } */
 
-    .Female-Front,
-
+    /* .Female-Front,
     .Female-Back {
         display: none;
         width: 255px;
 
-    }
+    } */
 
     .sidebar.active {
         position: fixed;
@@ -561,11 +597,7 @@ body {
 
 }
 
-@media(min-height:913px) {
-    .sidebar ul li a {
-        padding-top: 60px;
-    }
-}
+
 
 @media(width<670px) {
     .sidebar .logo img {
@@ -598,12 +630,12 @@ body {
         justify-content: center;
     }
 
-    .Female-Front,
+    /* .Female-Front,
     .Female-Back {
         display: none;
         width: 280px;
         z-index: 1;
-    }
+    } */
 
     .logo_svg {
         fill: #fff;
@@ -635,17 +667,17 @@ body {
 
     @media(min-width:388px) {
 
-        .Male-Front,
+        /* .Male-Front,
         .Male-Back {
             width: 320px;
 
-        }
+        } */
 
-        .Female-Front,
+        /* .Female-Front,
         .Female-Back {
             display: none;
             width: 285px;
-        }
+        } */
     }
 
     @media(max-width:400px) {
@@ -680,10 +712,34 @@ body {
         justify-content: center;
     }
 
-    .Female-Front,
+    /* .Female-Front,
     .Female-Back {
         display: none;
         width: 280px;
         z-index: 1;
-    }
+    } */
+}
+
+.workout a {
+    height: 25px;
+}
+
+.cal {
+    margin-left: 60px;
+}
+
+.cal-container {
+    margin-bottom: 20px;
+}
+
+.workout a:hover {
+    /* text-decoration: underline; */
+    background-color: #12171e;
+    color: #fcf006;
+}
+
+.cal:hover {
+    text-decoration: underline;
+    background-color: #12171e;
+
 }
