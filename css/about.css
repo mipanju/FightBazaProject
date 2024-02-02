@@ -180,6 +180,7 @@ body {
     transition: all 0.5s ease;
     width: calc(100% - 80px);
     padding: 1rem;
+    z-index: -1;
 }
 /* About Us */
 .heading{
@@ -212,6 +213,7 @@ body {
     font-size: 18px;
     color: #ffffff;
     margin-bottom: 35px;
+    animation: glow 4s infinite;
   
   }
   .container-about{
@@ -238,7 +240,7 @@ body {
     max-width: 100%;
     height: auto;
     display: block;
-    transition: 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
   .fade {
     display: flex;
@@ -285,10 +287,15 @@ body {
    text-decoration: none;
    border-radius: 25px;
    margin-top: 15px;
+   cursor: pointer;
    transition: 0.3s ease;
   }
   .about-content .read-more:hover{
-    background-color: #fcf006 ;
+    background-color: #12171e ;
+    color: #fcf006;
+  }
+  .about-content .read-more:active{
+    transform: scale(0.9);
   }
 
 /* animations */
