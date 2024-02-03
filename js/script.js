@@ -5,6 +5,7 @@ let SVG_female_backElement = document.querySelector('.Female-Back');
 let buttonElement = document.querySelector('.js-swap_btn');
 let btn = document.querySelector('#btn');
 let sidebar = document.querySelector('.sidebar');
+let cal_container = document.querySelector('.cal_container');
 function swap() {
   if (buttonElement.innerHTML === '<i class="bx bx-male-sign"></i>') {
     buttonElement.innerHTML = '<i class="bx bx-female-sign" ></i>';
@@ -101,15 +102,18 @@ function get_back() {
 
 
 function sidebar_toggle() {
-  sidebar.classList.toggle('active')
+  sidebar.classList.toggle('active');
+  // cal_container.classList.toggle('active');
 }
 
 function sidebar_active() {
   sidebar.classList.add('active');
+  // cal_container.classList.add('active');
 }
 
 function sidebar_pasive() {
-  sidebar.classList.remove('active')
+  sidebar.classList.remove('active');
+  // cal_container.classList.remove('active')
 }
 btn.onclick = sidebar_toggle;
 
