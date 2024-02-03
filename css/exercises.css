@@ -243,6 +243,8 @@ body {
     animation: glow2 2s infinite;
 }
 
+
+
 .bx-dumbbell {
     background-color: #fcf006;
     color: #12171e;
@@ -265,6 +267,8 @@ body {
 
 .sidebar .nav-item {
     opacity: 0;
+    height: 25px;
+    margin-bottom: 25px;
 }
 
 .sidebar.active .nav-item {
@@ -720,26 +724,34 @@ body {
     } */
 }
 
-.workout a {
+/* .workout a {
     height: 25px;
+} */
+
+.workout a {
+    height: 50px;
 }
 
-.cal {
-    margin-left: 60px;
+.cal_container {
+    display: none;
 }
 
-.cal-container {
-    margin-bottom: 20px;
+.cal_container.active {
+    display: block;
+    transition: all 0.5s ease;
+
 }
 
-.workout a:hover {
-    /* text-decoration: underline; */
+.sidebar ul li a.cal {
+    margin-left: 80px;
+    margin-bottom: 10px;
+    border-radius: 0px;
+    transition: none;
+}
+
+.sidebar ul li a.cal:hover {
     background-color: #12171e;
     color: #fcf006;
-}
-
-.cal:hover {
-    text-decoration: underline;
-    background-color: #12171e;
-
+    animation: none;
+    border-bottom: 1px solid #fcf006;
 }
