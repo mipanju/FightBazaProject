@@ -24,7 +24,7 @@ function slideShow() {
     image.offsetWidth;
     image.style.transform = `translateX(-${currentImageIndex * 100}%)`;
 }
-let intervalId = setInterval(slideShow, 7000);
+let intervalId = setInterval(slideShow, 6000);
 
 
 let text_container = document.querySelector('.text');
