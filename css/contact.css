@@ -12,11 +12,12 @@ html {
 
 body {
     background-image: linear-gradient(rgba(19, 20, 20, 0.7), rgba(23, 23, 24, 0.7)), url(../Images/contact_bg.jpg);
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: 70%;
+    background-attachment: fixed;
     height: 100svh;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .Body_map {
@@ -258,9 +259,9 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: linear-gradient( rgba(19, 20, 20, 0.7),rgba(23, 23, 24, 0.7)), url(Images/contact_bg.jpg);
-    background-size: cover;
-    box-shadow: 0 0 10px black;
+    /* background: linear-gradient( rgba(19, 20, 20, 0.7),rgba(23, 23, 24, 0.7)), url(Images/contact_bg.jpg); */
+    /* background-size: cover; */
+    /* box-shadow: 0 0 10px black; */
   }
   .contacts .content-contacts {
     max-width: 800px;
@@ -268,19 +269,21 @@ body {
   }
   .contacts .content-contacts h1{
     position: absolute;
-    top: 60px;
-    left: 650px;
-    font-size: 36px;
+    top: 2%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
     font-weight: 800;
+    animation: glow 4s infinite;
     color: #fff;
   }
   .contacts .content-contacts h1::after{
     content: "";
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 4px;
     display:block;
-    margin: 0 auto;
+    margin: -10px auto;
     border-radius:3px ;
     background-color:rgb(229, 229, 33) ;
   }
@@ -418,6 +421,9 @@ body {
     .contacts{
       padding: 50px;
     }
+    .contacts .content-contacts h1{
+        font-size: 36px;
+      }
     .container-contacts{
       flex-direction: column;
     }
@@ -515,6 +521,7 @@ body {
 
 ::-webkit-scrollbar {
     width: .75em;
+    display: none;
 }
 
 ::-webkit-scrollbar-track {
@@ -581,6 +588,7 @@ body {
   }
   ::-webkit-scrollbar{
     width: .75em;
+    display: none;
   }
   
   ::-webkit-scrollbar-track{
@@ -628,30 +636,12 @@ body {
 
 @media(min-width:388px) {
 
-    .Male-Front,
-    .Male-Back {
-        width: 295px;
-
-    }
-
-    .Female-Front,
-
-    .Female-Back {
-        display: none;
-        width: 255px;
-
-    }
-
     .sidebar.active {
         position: fixed;
     }
 
     body {
         overflow-x: hidden;
-    }
-
-    .logo_svg {
-        width: 95%;
     }
 
     body {
@@ -707,26 +697,6 @@ body{
 
 @media(min-width:680px) {
 
-    .svg-male-container,
-    .svg-female-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .Female-Front,
-    .Female-Back {
-        display: none;
-        width: 280px;
-        z-index: 1;
-    }
-
-    .logo_svg {
-        fill: #fff;
-        width: 40%;
-        z-index: -1;
-    }
-
     .sidebar .logo img {
         bottom: 0;
         right: -13px;
@@ -743,27 +713,6 @@ body{
         width: 80%;
     }
 }
-
-@media(min-width:900px) {
-    .logo_svg {
-        width: 35%;
-    }
-}
-    @media(min-width:388px) {
-
-        .Male-Front,
-        .Male-Back {
-            width: 320px;
-
-        }
-
-        .Female-Front,
-        .Female-Back {
-            display: none;
-            width: 285px;
-        }
-    }
-
     @media(max-width:400px) {
 
         html,
@@ -785,19 +734,3 @@ body{
 
 
     }
-@media(min-width:670px){
-
-    .svg-male-container,
-    .svg-female-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .Female-Front,
-    .Female-Back {
-        display: none;
-        width: 280px;
-        z-index: 1;
-    }
-}
