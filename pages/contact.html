@@ -82,61 +82,62 @@
         </div>
     </div>
     <div class="main-content">
-        <div class="content-contacts">
-            <h1>Contact Us</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-              Quas, expedita eum veniam neque quae nisi libero atque provident 
-              autem corporis repellendus.
-            </p>
-          </div>
-          <div class="container-contacts">
-            <div class="contactInfo">
-              <div class="box-contacts">
-                <div class="icon-contacts"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-                <div class="text-contacts">
-                  <h3>Adress</h3>
-                  <p>Strada Naţionala 15, Ungheni 3600</p>
-                </div>
-              </div>
-              <div class="box-contacts">
-                <div class="icon-contacts"><i class="fa fa-phone" aria-hidden="true"></i></div>
-                <div class="text-contacts">
-                  <h3>Phone</h3>
-                  <p>005-903-3459</p>
-                </div>
-              </div>
-              <div class="box-contacts">
-                <div class="icon-contacts"><i class="fa fa-envelope" aria-hidden="true"></i></i></div>
-                <div class="text-contacts">
-                  <h3>Email</h3>
-                  <p>fightbaza@gmail.com</p>
-                </div>
-              </div>
+        <div class="contacts">
+            <div class="content-contacts">
+                <h1>Contact Us</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Quas, expedita eum veniam neque quae nisi libero atque provident 
+                autem corporis repellendus.
+                </p>
             </div>
-            <div class="contactForm">
-              <form action="">
-                <h2>Send Message</h2>
-                <div class="inputBox">
-                  <input type="text" required="required">
-                  <span>Full Name</span>
+            <div class="container-contacts">
+                <div class="contactInfo">
+                <div class="box-contacts">
+                    <div class="icon-contacts"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="text-contacts">
+                    <h3>Adress</h3>
+                    <p>Strada Naţionala 15, Ungheni 3600</p>
+                    </div>
                 </div>
-                <div class="inputBox">
-                  <input type="text" required="required">
-                  <span>Email</span>
+                <div class="box-contacts">
+                    <div class="icon-contacts"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="text-contacts">
+                    <h3>Phone</h3>
+                    <p>005-903-3459</p>
+                    </div>
                 </div>
-                <div class="inputBox">
-                  <textarea required="required"></textarea>
-                  <span>Type your Message...</span>
+                <div class="box-contacts">
+                    <div class="icon-contacts"><i class="fa fa-envelope" aria-hidden="true"></i></i></div>
+                    <div class="text-contacts">
+                    <h3>Email</h3>
+                    <p>fightbaza@gmail.com</p>
+                    </div>
                 </div>
-                <div class="inputBox">
-                  <input type="submit" value="Send">
                 </div>
-              </form>
+                <div class="contactForm">
+                <form onsubmit="sendEmail(); reset(); return false;" >
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                    <input type="text" required="required">
+                    <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                    <input type="text" id="email" required="required">
+                    <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                    <textarea required="required"></textarea>
+                    <span>Type your Message...</span>
+                    </div>
+                    <div class="inputBox">
+                    <input type="submit" value="Send">
+                    </div>
+                </form>
+                </div>
             </div>
-          </div>
-    
-
+        </div>
     </div>
-    <script src="../js/script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="../js/contact.js"></script>
 </body>
 </html>
