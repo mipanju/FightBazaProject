@@ -122,6 +122,19 @@ function get_back() {
   buttonElement.style.display = 'inline';
 }
 
+document.addEventListener('keydown', function (event) {
+  if (event.key === 'Escape') {
+    instructions.style.display = 'none';
+    SVG_male_frontElement.style.display = 'inline';
+    SVG_male_backElement.style.display = 'inline';
+    buttonElement_nd.style.display = 'none';
+    buttonElement.style.display = 'inline';
+  }
+});
+
+
+
+
 
 function sidebar_toggle() {
   sidebar.classList.toggle('active');
@@ -138,6 +151,8 @@ function sidebar_pasive() {
   cal_container.classList.remove('active')
 }
 btn.onclick = sidebar_toggle;
+
+
 
 
 
