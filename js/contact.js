@@ -1,13 +1,23 @@
-function sendEmail(){
-    Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "alexandru.teodor.at@gmail.com",
-        Password : "4C0E16886E7CCBFE77AFE44A6AAEA9AF621C",
-        To : 'alexandru.teodor.at@gmail.com',
-        From : document.getElementById("email").value,
-        Subject : "This is the subject",
-        Body : "And this is the body"
-    }).then(
-      message => alert(message)
-    );
+function sendMail() {
+  var params = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    message: document.getElementById("message").value,
+  };
+
+  const serviceID = "service_60euqwo";
+  const templateID = "template_7i256g4";
+
+    emailjs.send(serviceID, templateID, params)
+    .then(res=>{
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("message").value = "";
+        console.log(res);
+        alert("Your message sent successfully!!")
+
+    })
+    .catch(err=>console.log(err));
+
 }
+
