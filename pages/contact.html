@@ -116,10 +116,10 @@
                 </div>
                 </div>
                 <div class="contactForm">
-                <form onsubmit="sendEmail(); reset(); return false;" >
+                <form onsubmit="sendEmail()">
                     <h2>Send Message</h2>
                     <div class="inputBox">
-                    <input type="text" required="required">
+                    <input type="text" required="required" id="name">
                     <span>Full Name</span>
                     </div>
                     <div class="inputBox">
@@ -127,7 +127,7 @@
                     <span>Email</span>
                     </div>
                     <div class="inputBox">
-                    <textarea required="required"></textarea>
+                    <textarea required="required" id="message"></textarea>
                     <span>Type your Message...</span>
                     </div>
                     <div class="inputBox">
@@ -140,5 +140,15 @@
     </div>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="../js/contact.js"></script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+    emailjs.init({
+        publicKey: "VSatlDJnIidzIJU6D",
+    });
+    })();
+</script>
 </body>
 </html>
