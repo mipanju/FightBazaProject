@@ -104,6 +104,25 @@ function Show_exercise(muscle) {
     advice3.innerHTML = `<h2> <span>1</span>Stand up straight with a dumbbell in each hand at arm's length.</h2 >
                                                <h2> <span>2</span>Raise one dumbbell and twist your forearm until it is vertical and your palm faces the shoulder.</h2>
                                                <h2> <span>3</span>Lower to original position and repeat with opposite arm</h2>`
+  } else if (muscle == 'forearms') {
+    ex_name1.innerHTML = 'Chin Ups';
+    video_frames1.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-barbell-overhead-press-front_wHKQjdY.mp4#t=0.1"></video>
+                                 <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-barbell-overhead-press-side_1DIUbfS.mp4#t=0.1"></video>`;
+    advice1.innerHTML = `<h2> <span>1</span>Grab the bar shoulder width apart with a supinated grip (palms facing you)</h2>
+                          <h2> <span>2</span>With your body hanging and arms fully extended, pull yourself up until your chin is past the bar.</h2>
+                          <h2> <span>3</span>Slowly return to starting position. Repeat.</h2>`;
+    ex_name2.innerHTML = 'Dumbbell Wrist Curl';
+    video_frames2.innerHTML = `< video loop src = "https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-front.mp4#t=0.1" ></video >
+                           <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-side.mp4#t=0.1"></video>`;
+    advice2.innerHTML = `<h2> <span>1</span>Grip the dumbbell with your palm facing upwards with your forearm rested against the bench.</h2 >
+                           <h2> <span>2</span>Slowly curl your wrist upwards in a semicircular motion.</h2>
+                           <h2> <span>3</span>Return to starting position and repeat.</h2>` ;
+    ex_name3.innerHTML = 'Dumbbell Row Unilateral';
+    video_frames3.innerHTML = `< video loop src = "https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-front.mp4#t=0.1" ></video >
+                                <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-side.mp4#t=0.1"></video>`;
+    advice3.innerHTML = `<h2> <span>1</span>Stand up straight with a dumbbell in each hand at arm's length.</h2 >
+                                               <h2> <span>2</span>Raise one dumbbell and twist your forearm until it is vertical and your palm faces the shoulder.</h2>
+                                               <h2> <span>3</span>Lower to original position and repeat with opposite arm</h2>`
   }
 
 
