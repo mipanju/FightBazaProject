@@ -175,3 +175,150 @@ btn.onclick = sidebar_toggle;
 
 
 
+// funcion for number of ages
+
+var age = document.querySelector('.age');
+var currentAge = parseInt(age.textContent);
+var weight = document.querySelector('.weight');
+var currentWeight = parseInt(weight.textContent);
+var height = document.querySelector('.height');
+var currentHeight = parseInt(height.textContent);
+
+
+
+
+// age
+function upAge() {
+  if (currentAge < 100)
+    age.innerHTML = ++currentAge;
+}
+
+function downAge() {
+  if (currentAge > 0)
+    age.innerHTML = --currentAge;
+}
+
+// weight
+function upWeight() {
+  if (currentWeight < 150)
+    weight.innerHTML = ++currentWeight;
+}
+
+function downWeight() {
+  if (currentWeight > 0)
+    weight.innerHTML = --currentWeight;
+}
+
+// height
+function upHeight() {
+  if (currentHeight < 220)
+    height.innerHTML = ++currentHeight;
+}
+
+function downHeight() {
+  if (currentHeight > 0)
+    height.innerHTML = --currentHeight;
+}
+
+
+
+
+
+
+
+
+
+// function for progressive bar
+
+// var interior = document.querySelector('.exterior');
+// var circle = document.querySelector('.circle');
+// var pointer = document.querySelector('.pointer');
+// var age = document.querySelector('.age');
+
+// let isRotating = false;
+
+// document.addEventListener('mousedown', function (e) {
+//   if (e.target.closest('.exterior')) {
+//     isRotating = true;
+//   }
+// });
+
+// const rotateInterior = function (e) {
+//   if (isRotating === true) {
+//     let interiorX = interior.getBoundingClientRect().left + interior.clientWidth / 2;
+//     let interiorY = interior.getBoundingClientRect().top + interior.clientHeight / 2;
+
+//     let deltaX = e.clientX - interiorX;
+//     let deltaY = e.clientY - interiorY;
+
+//     let angleRad = Math.atan2(deltaY, deltaX);
+//     let angleDeg = (angleRad * 180) / Math.PI;
+
+//     let rotationAngle = ((angleDeg + 90 + 360) % 360);
+//     pointer.style.transform = `rotate(${rotationAngle}deg)`
+
+//     let progressPercent = rotationAngle / 360;
+//     circle.style.strokeDashoffset = `${880 - (880 * (progressPercent))}`;
+
+//     age.innerHTML = `${Math.round(progressPercent * 100)}`
+
+//   }
+// }
+
+// document.addEventListener('mousemove',
+//   rotateInterior);
+
+
+
+var interior = document.querySelector('.interior');
+var circle = document.querySelector('.circle');
+var pointer = document.querySelector('.pointer');
+var age = document.querySelector('.age');
+
+let isRotating = false;
+let lastAngle = 0; // Variable to store the last angle
+
+document.addEventListener('mousedown', function (e) {
+  if (e.target.closest('.interior')) {
+    isRotating = true;
+    // Get initial angle when mouse is clicked
+    let interiorX = interior.getBoundingClientRect().left + interior.clientWidth / 2;
+    let interiorY = interior.getBoundingClientRect().top + interior.clientHeight / 2;
+    let deltaX = e.clientX - interiorX;
+    let deltaY = e.clientY - interiorY;
+    lastAngle = Math.atan2(deltaY, deltaX) * (180 / Math.PI);
+  }
+});
+
+const rotateInterior = function (e) {
+  if (isRotating === true) {
+    let interiorX = interior.getBoundingClientRect().left + interior.clientWidth / 2;
+    let interiorY = interior.getBoundingClientRect().top + interior.clientHeight / 2;
+
+    let deltaX = e.clientX - interiorX;
+    let deltaY = e.clientY - interiorY;
+
+    let angleRad = Math.atan2(deltaY, deltaX);
+    let angleDeg = (angleRad * 180) / Math.PI;
+
+    let rotationAngle = ((angleDeg + 90 + 360) % 360);
+
+    // Calculate the difference in angle from the last position
+    let angleDiff = rotationAngle - lastAngle;
+    lastAngle = rotationAngle; // Update the last angle
+
+    pointer.style.transform = `rotate(${rotationAngle}deg)`;
+
+    let progressPercent = rotationAngle / 360;
+    circle.style.strokeDashoffset = `${880 - (880 * (progressPercent))}`;
+
+    age.innerHTML = `${Math.round(progressPercent * 100)}`;
+
+  }
+}
+
+document.addEventListener('mousemove', rotateInterior);
+
+document.addEventListener('mouseup', function () {
+  isRotating = false;
+});
