@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FightBaza</title>
+    <link rel="stylesheet" href="../css/exercises.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="../Images/Logo2.png">
+</head>
+
+<body>
+    <div onmouseenter="sidebar_active()" onmouseleave="sidebar_pasive()" class="sidebar">
+        <div class="top-container">
+            <div class="top">
+                <i class="bx bx-menu" id="btn"></i>
+            </div>
+            <div class="user">
+                <img src="../Images/user.png" alt="" class="user-img">
+                <div>
+                    <p class="bold">Clint B.</p>
+                    <p>Admin</p>
+                </div>
+            </div>
+        </div>
+        <div class="mid-container">
+            <ul class="nav-list">
+                <li>
+                    <a href="../pages/index.html">
+                        <i class='bx bxs-home-alt-2'></i>
+                        <span class="nav-item">Principal</span>
+                    </a>
+                    <!-- <span class="tooltip">Principal</span> -->
+                </li>
+                <li class="workout">
+                    <a href="../pages/exercises.html">
+                        <i class='bx bx-dumbbell'></i>
+                        <span class="nav-item">Antrenamente</span>
+                    </a>
+                    <!-- <span class="tooltip">Antrenamente</span> -->
+                    <div class="cal_container">
+                        <a href="../pages/calories.html" class="cal">
+                            <span class="nav-item">-Calories</span>
+                        </a>
+                        <a href="../pages/nutrients.html" class="cal">
+                            <span class="nav-item">-Nutrients</span>
+                        </a>
+                        <a href="../pages/bmi.html" class="cal">
+                            <span class="nav-item">-BMI</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+
+                    <a href="../pages/contact.html">
+
+
+                        <i class='bx bxs-phone'></i>
+                        <span class="nav-item">Contacte</span>
+                    </a>
+                    <!-- <span class="tooltip">Contacte</span> -->
+                </li>
+                <li>
+                    <a href="../pages/about.html">
+                        <i class='bx bxs-info-circle'></i>
+                        <span class="nav-item">About</span>
+                    </a>
+                    <!-- <span class="tooltip">About</span> -->
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bxs-shopping-bag'></i>
+                        <span class="nav-item">Magazin</span>
+                    </a>
+                    <!-- <span class="tooltip">Magazin</span> -->
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bxs-photo-album'></i></i>
+                        <span class="nav-item">Abonamente</span>
+                    </a>
+                    <!-- <span class="tooltip">Abonamente</span> -->
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bxs-news'></i>
+                        <span class="nav-item">Noutăți</span>
+                    </a>
+                    <!-- <span class="tooltip">Noutăți</span> -->
+                </li>
+            </ul>
+        </div>
+        <img class="logo" width="55" height="50" src="../Images/Logo2.png" alt="">
+    </div>
+
+    <div class="main-content">
+        <h1 class="topic_c">Calories Calculator</h1>
+        <div class="principal_container">
+            <div class="square_container">
+                <ul class="intensity-list">
+                    <li>Little to no exercise</li>
+                    <li>Light exercise (1-3 days per week)</li>
+                    <li>Moderate exercise (3-5 days per week)</li>
+                    <li>Heavy exercise (6-7 days per week)</li>
+                    <li>Very heavy exercise (twice per day, extra heavy workouts)</li>
+                </ul>
+                <ul class="weight_list">
+                    <li>Lose 1 Kg per Week</li>
+                    <li>Lose 0.5 Kg per Week</li>
+                    <li>Stay the Same Weight</li>
+                    <li>Gain 0.5 Kg per Week</li>
+                    <li>Gain 1 Kg per Week</li>
+                </ul>
+            </div>
+            <div class="circular-container">
+
+            </div>
+        </div>
+    </div>
+    <script src="../js/script.js"></script>
+    <!-- <script src="../js/workout.js"></script>    -->
+</body>
+
+</html>
