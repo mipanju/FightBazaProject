@@ -516,6 +516,69 @@ body {
 
 }
 
+
+
+/* pagina de calculare a caloriilor */
+
+.topic_c {
+    font-size: 70px;
+    text-align: center;
+    color: #fcf006;
+}
+
+.square_container {
+    display: flex;
+    justify-content: center;
+}
+
+.square_container ul {
+    background-color: #fcf006;
+    list-style: none;
+    padding: 20px;
+    width: 500px;
+    margin: 0 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media(max-width:800px) {
     .video_container {
         display: flex;
