@@ -21,8 +21,8 @@ let advice3 = document.querySelector('#instructions3');
 function Show_exercise(muscle) {
   if (muscle === 'chest') {
     ex_name1.innerHTML = 'Barbell Bench Press';
-    video_frames1.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-barbell-bench-press-front.mp4#t=0.1"></video>
-                                 <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-barbell-bench-press-side_KciuhbB.mp4#t=0.1"></video>`;
+    video_frames1.innerHTML = `<video loop src="/Videos/IMG_9932.MOV"></video>
+                                 <video loop src="/Videos/IMG_9933.MOV"></video>`;
     advice1.innerHTML = `<h2> <span>1</span>Lay flat on the bench with your feet on the ground. With straight arms unrack the bar.</h2>
                            <h2> <span>2</span>Lower the bar to your mid chest.</h2>
                            <h2> <span>3</span>Raise the bar until you've locked your elbows.</h2>` ;
