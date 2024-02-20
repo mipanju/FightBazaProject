@@ -57,6 +57,7 @@ body {
 .main_btn {
     padding: 13px 18px;
     border: none;
+    text-decoration: none;
     cursor: pointer;
     font-size: 20px;
     background-color: #12171e;
@@ -196,6 +197,12 @@ body {
 .sidebar ul li a:hover {
     background-color: #fcf006;
     color: #12171e;
+    animation: glow2 2s infinite;
+}
+
+.sidebar ul li .home{
+    background-color: #fcf006;
+    color: #12171e;
 }
 
 .sidebar ul li a i {
@@ -264,6 +271,11 @@ body {
     align-items: center;
     justify-content: center;
     z-index: 0;
+}
+
+.bxs-bowl-hot {
+    background-color: #fcf006;
+    color: #12171e;
 }
 
 .exercises_display {
@@ -594,11 +606,6 @@ body{
     background-position-x:50% ;
 }
 
-@media(min-height:913px) {
-    .sidebar ul li a {
-        padding-top: 60px;
-    }
-}
 @media(width<670px) {
     .sidebar .logo img {
         bottom: 0;
