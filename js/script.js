@@ -177,48 +177,48 @@ btn.onclick = sidebar_toggle;
 
 // funcion for number of ages
 
-var age = document.querySelector('.age');
-var currentAge = parseInt(age.textContent);
-var weight = document.querySelector('.weight');
-var currentWeight = parseInt(weight.textContent);
-var height = document.querySelector('.height');
-var currentHeight = parseInt(height.textContent);
+// var age = document.querySelector('.age');
+// var currentAge = parseInt(age.textContent);
+// var weight = document.querySelector('.weight');
+// var currentWeight = parseInt(weight.textContent);
+// var height = document.querySelector('.height');
+// var currentHeight = parseInt(height.textContent);
 
 
 
 
 // age
-function upAge() {
-  if (currentAge < 100)
-    age.innerHTML = ++currentAge;
-}
+// function upAge() {
+//   if (currentAge < 100)
+//     age.innerHTML = ++currentAge;
+// }
 
-function downAge() {
-  if (currentAge > 0)
-    age.innerHTML = --currentAge;
-}
+// function downAge() {
+//   if (currentAge > 0)
+//     age.innerHTML = --currentAge;
+// }
 
-// weight
-function upWeight() {
-  if (currentWeight < 150)
-    weight.innerHTML = ++currentWeight;
-}
+// // weight
+// function upWeight() {
+//   if (currentWeight < 150)
+//     weight.innerHTML = ++currentWeight;
+// }
 
-function downWeight() {
-  if (currentWeight > 0)
-    weight.innerHTML = --currentWeight;
-}
+// function downWeight() {
+//   if (currentWeight > 0)
+//     weight.innerHTML = --currentWeight;
+// }
 
-// height
-function upHeight() {
-  if (currentHeight < 220)
-    height.innerHTML = ++currentHeight;
-}
+// // height
+// function upHeight() {
+//   if (currentHeight < 220)
+//     height.innerHTML = ++currentHeight;
+// }
 
-function downHeight() {
-  if (currentHeight > 0)
-    height.innerHTML = --currentHeight;
-}
+// function downHeight() {
+//   if (currentHeight > 0)
+//     height.innerHTML = --currentHeight;
+// }
 
 
 
@@ -274,6 +274,7 @@ var interior = document.querySelector('.interior');
 var circle = document.querySelector('.circle');
 var pointer = document.querySelector('.pointer');
 var age = document.querySelector('.age');
+var currentAge = parseInt(age.textContent)
 
 let isRotating = false;
 let lastAngle = 0; // Variable to store the last angle
@@ -312,7 +313,8 @@ const rotateInterior = function (e) {
     let progressPercent = rotationAngle / 360;
     circle.style.strokeDashoffset = `${880 - (880 * (progressPercent))}`;
 
-    age.innerHTML = `${Math.round(progressPercent * 100)}`;
+    let currentAge = Math.round(progressPercent * 100);
+    age.innerHTML = `${currentAge}`;
 
   }
 }
@@ -322,3 +324,73 @@ document.addEventListener('mousemove', rotateInterior);
 document.addEventListener('mouseup', function () {
   isRotating = false;
 });
+
+
+
+
+
+
+// var age = document.querySelector('.age');
+// var currentAge = parseInt(age.textContent);
+var weight = document.querySelector('.weight');
+var currentWeight = parseInt(weight.textContent);
+var height = document.querySelector('.height');
+var currentHeight = parseInt(height.textContent);
+var upButton = document.querySelector('.up_button');
+
+//age
+function upAge(e) {
+  if (currentAge < 100) {
+    let interiorX = interior.getBoundingClientRect().left + interior.clientWidth / 2;
+    let interiorY = interior.getBoundingClientRect().top + interior.clientHeight / 2;
+
+    let deltaX = e.clientX - interiorX;
+    let deltaY = e.clientY - interiorY;
+
+    let angleRad = Math.atan2(deltaY, deltaX);
+    let angleDeg = (angleRad * 180) / Math.PI;
+
+    let rotationAngle = ((angleDeg + 90 + 360) % 360);
+    console.log(rotationAngle)
+
+    pointer.style.transform = `rotate(${rotationAngle}deg)`;
+
+    let progressPercent = rotationAngle / 360;
+    circle.style.strokeDashoffset = `${880 - (880 * (progressPercent))}`;
+
+
+    let currentAge = Math.round(progressPercent * 100);
+    console.log(currentAge)
+    age.innerHTML = `${++currentAge}`;
+  }
+}
+
+upButton.addEventListener('click', upAge);
+
+
+function downAge() {
+  if (currentAge > 0)
+    age.innerHTML = --currentAge;
+}
+
+// weight
+function upWeight() {
+  if (currentWeight < 150)
+    weight.innerHTML = ++currentWeight;
+}
+
+function downWeight() {
+  if (currentWeight > 0)
+    weight.innerHTML = --currentWeight;
+}
+
+// height
+function upHeight() {
+  if (currentHeight < 220)
+    height.innerHTML = ++currentHeight;
+}
+
+function downHeight() {
+  if (currentHeight > 0)
+    height.innerHTML = --currentHeight;
+}
