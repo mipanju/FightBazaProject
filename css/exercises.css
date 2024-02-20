@@ -68,7 +68,6 @@ body {
 }
 
 .js-swap_btn,
-
 .js-swap_btn2 {
     padding: 10px 15px;
     border-radius: 20px;
@@ -697,10 +696,10 @@ button:hover {
 }
 
 
-button i {
+/* button i {
     color: #12171e;
     font-size: 23px;
-}
+} */
 
 .numbers_container {
     display: flex;
@@ -710,7 +709,22 @@ button i {
     justify-content: space-between;
 }
 
-
+@media(max-width:570px){
+    .sidebar.active{
+        width:100%;
+        position: relative;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+    }
+    .sidebar.active ul li a,
+    .sidebar.active .user{
+    justify-content: center;
+    } 
+    .sidebar.active .logo img{
+        right:38%;
+    }
+} 
 
 
 
