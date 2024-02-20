@@ -394,3 +394,14 @@ function downHeight() {
   if (currentHeight > 0)
     height.innerHTML = --currentHeight;
 }
+
+function sidebar_active() {
+  sidebar.classList.add('active');
+  cal_container.classList.add('active');
+}
+
+function sidebar_pasive() {
+  sidebar.classList.remove('active');
+  cal_container.classList.remove('active')
+}
+btn.onclick = sidebar_toggle;
