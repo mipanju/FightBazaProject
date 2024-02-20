@@ -15,79 +15,86 @@
 
 <body>
     <div onmouseenter="sidebar_active()" onmouseleave="sidebar_pasive()" class="sidebar">
-        <div class="top">
-            <div class="logo">
+        <div class="top-container">
+            <div class="top">
+                <i class="bx bx-menu" id="btn"></i>
             </div>
-            <i class="bx bx-menu" id="btn"></i>
-        </div>
-        <div class="user">
-            <img src="../Images/user.png" alt="" class="user-img">
-            <div>
-                <p class="bold">Clint B.</p>
-                <p>Admin</p>
-            </div>
-        </div>
-        <ul>
-            <li>
-                <a href="../pages/index.html">
-                    <i class='bx bxs-home-alt-2'></i>
-                    <span class="nav-item">Principal</span>
-                </a>
-                <!-- <span class="tooltip">Principal</span> -->
-            </li>
-            <li class="workout">
-                <a href="../pages/exercises.html">
-                    <i class='bx bx-dumbbell'></i>
-                    <span class="nav-item">Antrenamente</span>
-                </a>
-                <!-- <span class="tooltip">Antrenamente</span> -->
-                <div class="cal-container">
-                    <a href="../pages/calories.html" class="cal">Calories</a>
-                    <a href="../pages/nutrients.html" class="cal">Nutrients</a>
+            <div class="user">
+                <img src="../Images/user.png" alt="" class="user-img">
+                <div>
+                    <p class="bold">Clint B.</p>
+                    <p>Admin</p>
                 </div>
-            </li>
-            <li>
-
-                <a href="../pages/contact.html">
-
-
-                    <i class='bx bxs-phone'></i>
-                    <span class="nav-item">Contacte</span>
-                </a>
-                <!-- <span class="tooltip">Contacte</span> -->
-            </li>
-            <li>
-                <a href="../pages/about.html">
-                    <i class='bx bxs-info-circle'></i>
-                    <span class="nav-item">About</span>
-                </a>
-                <span class="tooltip">About</span>
-            </li>
-            <li>
-                <a href="#">
-                    <i class='bx bxs-shopping-bag'></i>
-                    <span class="nav-item">Magazin</span>
-                </a>
-                <!-- <span class="tooltip">Magazin</span> -->
-            </li>
-            <li>
-                <a href="#">
-                    <i class='bx bxs-photo-album'></i></i>
-                    <span class="nav-item">Abonamente</span>
-                </a>
-                <!-- <span class="tooltip">Abonamente</span> -->
-            </li>
-            <li>
-                <a href="#">
-                    <i class='bx bxs-news'></i>
-                    <span class="nav-item">Noutăți</span>
-                </a>
-                <!-- <span class="tooltip">Noutăți</span> -->
-            </li>
-        </ul>
-        <div class="logo">
-            <img src="../Images/Logo2.png" alt="">
+            </div>
         </div>
+        <div class="mid-container">
+            <ul class="nav-list">
+                <li>
+                    <a href="../pages/index.html">
+                        <i class='bx bxs-home-alt-2'></i>
+                        <span class="nav-item">Principal</span>
+                    </a>
+                    <!-- <span class="tooltip">Principal</span> -->
+                </li>
+                <li class="workout">
+                    <a href="../pages/exercises.html">
+                        <i class='bx bx-dumbbell'></i>
+                        <span class="nav-item">Antrenamente</span>
+                    </a>
+                    <!-- <span class="tooltip">Antrenamente</span> -->
+                    <div class="cal_container">
+                        <a href="../pages/calories.html" class="cal">
+                            <span class="nav-item">-Calories</span>
+                        </a>
+                        <a href="../pages/nutrients.html" class="cal">
+                            <span class="nav-item">-Nutrients</span>
+                        </a>
+                        <a href="../pages/bmi.html" class="cal">
+                            <span class="nav-item">-BMI</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+
+                    <a href="../pages/contact.html">
+
+
+                        <i class='bx bxs-phone'></i>
+                        <span class="nav-item">Contacte</span>
+                    </a>
+                    <!-- <span class="tooltip">Contacte</span> -->
+                </li>
+                <li>
+                    <a href="../pages/about.html">
+                        <i class='bx bxs-info-circle'></i>
+                        <span class="nav-item">About</span>
+                    </a>
+                    <!-- <span class="tooltip">About</span> -->
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bxs-shopping-bag'></i>
+                        <span class="nav-item">Magazin</span>
+                    </a>
+                    <!-- <span class="tooltip">Magazin</span> -->
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bxs-photo-album'></i></i>
+                        <span class="nav-item">Abonamente</span>
+                    </a>
+                    <!-- <span class="tooltip">Abonamente</span> -->
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bxs-news'></i>
+                        <span class="nav-item">Noutăți</span>
+                    </a>
+                    <!-- <span class="tooltip">Noutăți</span> -->
+                </li>
+            </ul>
+        </div>
+        <img class="logo" width="55" height="50" src="../Images/Logo2.png" alt="">
     </div>
 
     <div class="main-content">
@@ -155,7 +162,7 @@
                         <path
                             d="M112.51,182.69c.1-7.1,1.9-13.12,6.83-17.83s9.56-9.79,15.07-13.64c12.47-8.71,23.85-6.27,34.56.36,1.39.86,2.38,3.07,2.62,4.79.1.7-2.18,1.94-3.55,2.61-2.29,1.12-4.75,1.9-7.09,2.94-7.47,3.36-11.27,8.83-10.53,17.35.61,7-.1,13.9-5.37,19.42-2.91,3-5.61,6.33-8.78,9.08a6,6,0,0,1-5.12,1C122.72,205.18,111.83,194,112.51,182.69Z" />
                     </g>
-                    <g class="Body_map" id="biceps" data-name="biceps">
+                    <g class="Body_map" onclick="Show_exercise('biceps')" id="biceps" data-name="biceps">
                         <path
                             d="M103.87,263.52c.33-12.31,1.11-23.88,7.73-34a79.17,79.17,0,0,1,9-11.32c3.78-4,7.69-3,9.87,2.17,2.28,5.35,3.25,11.1,1.62,16.59-2.8,9.42-6.23,18.67-9.73,27.86-2.16,5.66-7.37,8-12.72,9.63-4.25,1.3-5.7,0-5.79-4.32V269Z" />
                         <path
@@ -1338,9 +1345,8 @@
         <!-- </div> -->
     </div>
     </div>
-
     <script src="../js/script.js"></script>
-    <!-- <script src="../js/workout.js"></script> -->
+    <!-- <script src="../js/workout.js"></script>    -->
 </body>
 
 </html>
