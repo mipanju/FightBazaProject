@@ -731,6 +731,21 @@ body{
             bottom: 55px;
             left: 120px;
         }
-
-
     }
+    @media(max-width:570px){
+        .sidebar.active{
+            width:100%;
+            position: relative;
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+        }
+        .sidebar.active ul li a,
+        .sidebar.active .user{
+        justify-content: center;
+        } 
+        .sidebar.active .logo img{
+            right:38%;
+        }
+    } 
+    
