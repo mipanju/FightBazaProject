@@ -198,6 +198,10 @@ body {
     animation: glow2 2s infinite;
 }
 
+.bxs-phone {
+    background-color: #fcf006;
+    color: #12171e;
+}
 .sidebar ul li a i {
     min-width: 50px;
     text-align: center;
