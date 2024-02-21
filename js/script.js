@@ -123,6 +123,501 @@ function Show_exercise(muscle) {
     advice3.innerHTML = `<h2> <span>1</span>Stand up straight with a dumbbell in each hand at arm's length.</h2 >
                                                <h2> <span>2</span>Raise one dumbbell and twist your forearm until it is vertical and your palm faces the shoulder.</h2>
                                                <h2> <span>3</span>Lower to original position and repeat with opposite arm</h2>`
+  } else if (muscle === 'obliques') {
+    ex_name1.innerHTML = 'Barbell Overhead Press';
+    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>
+                                 <video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>`;
+    advice1.innerHTML = `<h2> <span>1</span>Take a roughly shoulder width grip. There should be a straight line from your elbow to fist (vertical forearms).</h2>
+                           <h2> <span>2</span>Pull your chin back and press the weight toward the ceiling by extending at the elbow joint and flexing at the shoulder joint.</h2>
+                           <h2> <span>3</span>Press until your elbows are extended and push your head forward slightly.</h2>` ;
+    ex_name2.innerHTML = 'Dumbell Seated Overhead Press';
+    video_frames2.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-front.mp4#t=0.1"></video>
+                                 <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-side.mp4#t=0.1"></video>`;
+    advice2.innerHTML = `<h2> <span>1</span>Sit on a bench with back support. Raise the dumbbells to shoulder height with your palms forward.</h2>
+                           <h2> <span>2</span>Raise the dumbbells upwards and pause at the contracted position.</h2>
+                           <h2> <span>3</span>Lower the weights back to starting position.</h2>` ;
+    ex_name3.innerHTML = 'Cable Low Single Arm Laterlar Raise';
+    video_frames3.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-front.mp4#t=0.1"></video>
+                                  <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-side.mp4#t=0.1"></video>`;
+    advice3.innerHTML = `<h2> <span>1</span>Lay flat on the incline bench with your feet on the ground. Raise the dumbbells until you have straight arms.</h2>
+                                               <h2> <span>2</span>Lower the dumbbells to your mid chest.</h2>
+                                               <h2> <span>3</span>Raise the dumbbells until you've locked your elbows.</h2>` ;
+  } else if (muscle === 'abs') {
+    ex_name1.innerHTML = 'Barbell Overhead Press';
+    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>
+                                 <video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>`;
+    advice1.innerHTML = `<h2> <span>1</span>Take a roughly shoulder width grip. There should be a straight line from your elbow to fist (vertical forearms).</h2>
+                           <h2> <span>2</span>Pull your chin back and press the weight toward the ceiling by extending at the elbow joint and flexing at the shoulder joint.</h2>
+                           <h2> <span>3</span>Press until your elbows are extended and push your head forward slightly.</h2>` ;
+    ex_name2.innerHTML = 'Dumbell Seated Overhead Press';
+    video_frames2.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-front.mp4#t=0.1"></video>
+                                 <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-side.mp4#t=0.1"></video>`;
+    advice2.innerHTML = `<h2> <span>1</span>Sit on a bench with back support. Raise the dumbbells to shoulder height with your palms forward.</h2>
+                           <h2> <span>2</span>Raise the dumbbells upwards and pause at the contracted position.</h2>
+                           <h2> <span>3</span>Lower the weights back to starting position.</h2>` ;
+    ex_name3.innerHTML = 'Cable Low Single Arm Laterlar Raise';
+    video_frames3.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-front.mp4#t=0.1"></video>
+                                  <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-side.mp4#t=0.1"></video>`;
+    advice3.innerHTML = `<h2> <span>1</span>Lay flat on the incline bench with your feet on the ground. Raise the dumbbells until you have straight arms.</h2>
+                                               <h2> <span>2</span>Lower the dumbbells to your mid chest.</h2>
+                                               <h2> <span>3</span>Raise the dumbbells until you've locked your elbows.</h2>` ;
+  } else if (muscle === 'quads') {
+    ex_name1.innerHTML = 'Barbell Overhead Press';
+    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>
+                                 <video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>`;
+    advice1.innerHTML = `<h2> <span>1</span>Take a roughly shoulder width grip. There should be a straight line from your elbow to fist (vertical forearms).</h2>
+                           <h2> <span>2</span>Pull your chin back and press the weight toward the ceiling by extending at the elbow joint and flexing at the shoulder joint.</h2>
+                           <h2> <span>3</span>Press until your elbows are extended and push your head forward slightly.</h2>` ;
+    ex_name2.innerHTML = 'Dumbell Seated Overhead Press';
+    video_frames2.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-front.mp4#t=0.1"></video>
+                                 <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-side.mp4#t=0.1"></video>`;
+    advice2.innerHTML = `<h2> <span>1</span>Sit on a bench with back support. Raise the dumbbells to shoulder height with your palms forward.</h2>
+                           <h2> <span>2</span>Raise the dumbbells upwards and pause at the contracted position.</h2>
+                           <h2> <span>3</span>Lower the weights back to starting position.</h2>` ;
+    ex_name3.innerHTML = 'Cable Low Single Arm Laterlar Raise';
+    video_frames3.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-front.mp4#t=0.1"></video>
+                                  <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-side.mp4#t=0.1"></video>`;
+    advice3.innerHTML = `<h2> <span>1</span>Lay flat on the incline bench with your feet on the ground. Raise the dumbbells until you have straight arms.</h2>
+                                               <h2> <span>2</span>Lower the dumbbells to your mid chest.</h2>
+                                               <h2> <span>3</span>Raise the dumbbells until you've locked your elbows.</h2>` ;
+  } else if (muscle === 'calves') {
+    ex_name1.innerHTML = 'Barbell Overhead Press';
+    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>
+                                 <video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>`;
+    advice1.innerHTML = `<h2> <span>1</span>Take a roughly shoulder width grip. There should be a straight line from your elbow to fist (vertical forearms).</h2>
+                           <h2> <span>2</span>Pull your chin back and press the weight toward the ceiling by extending at the elbow joint and flexing at the shoulder joint.</h2>
+                           <h2> <span>3</span>Press until your elbows are extended and push your head forward slightly.</h2>` ;
+    ex_name2.innerHTML = 'Dumbell Seated Overhead Press';
+    video_frames2.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-front.mp4#t=0.1"></video>
+                                 <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-side.mp4#t=0.1"></video>`;
+    advice2.innerHTML = `<h2> <span>1</span>Sit on a bench with back support. Raise the dumbbells to shoulder height with your palms forward.</h2>
+                           <h2> <span>2</span>Raise the dumbbells upwards and pause at the contracted position.</h2>
+                           <h2> <span>3</span>Lower the weights back to starting position.</h2>` ;
+    ex_name3.innerHTML = 'Cable Low Single Arm Laterlar Raise';
+    video_frames3.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-front.mp4#t=0.1"></video>
+                                  <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-side.mp4#t=0.1"></video>`;
+    advice3.innerHTML = `<h2> <span>1</span>Lay flat on the incline bench with your feet on the ground. Raise the dumbbells until you have straight arms.</h2>
+                                               <h2> <span>2</span>Lower the dumbbells to your mid chest.</h2>
+                                               <h2> <span>3</span>Raise the dumbbells until you've locked your elbows.</h2>` ;
+  } else if (muscle === 'traps') {
+    ex_name1.innerHTML = 'Barbell Overhead Press';
+    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>
+                                 <video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>`;
+    advice1.innerHTML = `<h2> <span>1</span>Take a roughly shoulder width grip. There should be a straight line from your elbow to fist (vertical forearms).</h2>
+                           <h2> <span>2</span>Pull your chin back and press the weight toward the ceiling by extending at the elbow joint and flexing at the shoulder joint.</h2>
+                           <h2> <span>3</span>Press until your elbows are extended and push your head forward slightly.</h2>` ;
+    ex_name2.innerHTML = 'Dumbell Seated Overhead Press';
+    video_frames2.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-front.mp4#t=0.1"></video>
+                                 <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-side.mp4#t=0.1"></video>`;
+    advice2.innerHTML = `<h2> <span>1</span>Sit on a bench with back support. Raise the dumbbells to shoulder height with your palms forward.</h2>
+                           <h2> <span>2</span>Raise the dumbbells upwards and pause at the contracted position.</h2>
+                           <h2> <span>3</span>Lower the weights back to starting position.</h2>` ;
+    ex_name3.innerHTML = 'Cable Low Single Arm Laterlar Raise';
+    video_frames3.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-front.mp4#t=0.1"></video>
+                                  <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-side.mp4#t=0.1"></video>`;
+    advice3.innerHTML = `<h2> <span>1</span>Lay flat on the incline bench with your feet on the ground. Raise the dumbbells until you have straight arms.</h2>
+                                               <h2> <span>2</span>Lower the dumbbells to your mid chest.</h2>
+                                               <h2> <span>3</span>Raise the dumbbells until you've locked your elbows.</h2>` ;
+  } else if (muscle === 'lads') {
+    ex_name1.innerHTML = 'Barbell Overhead Press';
+    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>
+                                 <video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>`;
+    advice1.innerHTML = `<h2> <span>1</span>Take a roughly shoulder width grip. There should be a straight line from your elbow to fist (vertical forearms).</h2>
+                           <h2> <span>2</span>Pull your chin back and press the weight toward the ceiling by extending at the elbow joint and flexing at the shoulder joint.</h2>
+                           <h2> <span>3</span>Press until your elbows are extended and push your head forward slightly.</h2>` ;
+    ex_name2.innerHTML = 'Dumbell Seated Overhead Press';
+    video_frames2.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-front.mp4#t=0.1"></video>
+                                 <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-side.mp4#t=0.1"></video>`;
+    advice2.innerHTML = `<h2> <span>1</span>Sit on a bench with back support. Raise the dumbbells to shoulder height with your palms forward.</h2>
+                           <h2> <span>2</span>Raise the dumbbells upwards and pause at the contracted position.</h2>
+                           <h2> <span>3</span>Lower the weights back to starting position.</h2>` ;
+    ex_name3.innerHTML = 'Cable Low Single Arm Laterlar Raise';
+    video_frames3.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-front.mp4#t=0.1"></video>
+                                  <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-side.mp4#t=0.1"></video>`;
+    advice3.innerHTML = `<h2> <span>1</span>Lay flat on the incline bench with your feet on the ground. Raise the dumbbells until you have straight arms.</h2>
+                                               <h2> <span>2</span>Lower the dumbbells to your mid chest.</h2>
+                                               <h2> <span>3</span>Raise the dumbbells until you've locked your elbows.</h2>` ;
+  } else if (muscle === 'traps-middle') {
+    ex_name1.innerHTML = 'Barbell Overhead Press';
+    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>
+                                 <video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>`;
+    advice1.innerHTML = `<h2> <span>1</span>Take a roughly shoulder width grip. There should be a straight line from your elbow to fist (vertical forearms).</h2>
+                           <h2> <span>2</span>Pull your chin back and press the weight toward the ceiling by extending at the elbow joint and flexing at the shoulder joint.</h2>
+                           <h2> <span>3</span>Press until your elbows are extended and push your head forward slightly.</h2>` ;
+    ex_name2.innerHTML = 'Dumbell Seated Overhead Press';
+    video_frames2.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-front.mp4#t=0.1"></video>
+                                 <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-side.mp4#t=0.1"></video>`;
+    advice2.innerHTML = `<h2> <span>1</span>Sit on a bench with back support. Raise the dumbbells to shoulder height with your palms forward.</h2>
+                           <h2> <span>2</span>Raise the dumbbells upwards and pause at the contracted position.</h2>
+                           <h2> <span>3</span>Lower the weights back to starting position.</h2>` ;
+    ex_name3.innerHTML = 'Cable Low Single Arm Laterlar Raise';
+    video_frames3.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-front.mp4#t=0.1"></video>
+                                  <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-side.mp4#t=0.1"></video>`;
+    advice3.innerHTML = `<h2> <span>1</span>Lay flat on the incline bench with your feet on the ground. Raise the dumbbells until you have straight arms.</h2>
+                                               <h2> <span>2</span>Lower the dumbbells to your mid chest.</h2>
+                                               <h2> <span>3</span>Raise the dumbbells until you've locked your elbows.</h2>` ;
+  } else if (muscle === 'lowerback') {
+    ex_name1.innerHTML = 'Barbell Overhead Press';
+    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>
+                                 <video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>`;
+    advice1.innerHTML = `<h2> <span>1</span>Take a roughly shoulder width grip. There should be a straight line from your elbow to fist (vertical forearms).</h2>
+                           <h2> <span>2</span>Pull your chin back and press the weight toward the ceiling by extending at the elbow joint and flexing at the shoulder joint.</h2>
+                           <h2> <span>3</span>Press until your elbows are extended and push your head forward slightly.</h2>` ;
+    ex_name2.innerHTML = 'Dumbell Seated Overhead Press';
+    video_frames2.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-front.mp4#t=0.1"></video>
+                                 <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-side.mp4#t=0.1"></video>`;
+    advice2.innerHTML = `<h2> <span>1</span>Sit on a bench with back support. Raise the dumbbells to shoulder height with your palms forward.</h2>
+                           <h2> <span>2</span>Raise the dumbbells upwards and pause at the contracted position.</h2>
+                           <h2> <span>3</span>Lower the weights back to starting position.</h2>` ;
+    ex_name3.innerHTML = 'Cable Low Single Arm Laterlar Raise';
+    video_frames3.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-front.mp4#t=0.1"></video>
+                                  <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-side.mp4#t=0.1"></video>`;
+    advice3.innerHTML = `<h2> <span>1</span>Lay flat on the incline bench with your feet on the ground. Raise the dumbbells until you have straight arms.</h2>
+                                               <h2> <span>2</span>Lower the dumbbells to your mid chest.</h2>
+                                               <h2> <span>3</span>Raise the dumbbells until you've locked your elbows.</h2>` ;
+  } else if (muscle === 'triceps') {
+    ex_name1.innerHTML = 'Barbell Overhead Press';
+    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>
+                                 <video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>`;
+    advice1.innerHTML = `<h2> <span>1</span>Take a roughly shoulder width grip. There should be a straight line from your elbow to fist (vertical forearms).</h2>
+                           <h2> <span>2</span>Pull your chin back and press the weight toward the ceiling by extending at the elbow joint and flexing at the shoulder joint.</h2>
+                           <h2> <span>3</span>Press until your elbows are extended and push your head forward slightly.</h2>` ;
+    ex_name2.innerHTML = 'Dumbell Seated Overhead Press';
+    video_frames2.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-front.mp4#t=0.1"></video>
+                                 <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-side.mp4#t=0.1"></video>`;
+    advice2.innerHTML = `<h2> <span>1</span>Sit on a bench with back support. Raise the dumbbells to shoulder height with your palms forward.</h2>
+                           <h2> <span>2</span>Raise the dumbbells upwards and pause at the contracted position.</h2>
+                           <h2> <span>3</span>Lower the weights back to starting position.</h2>` ;
+    ex_name3.innerHTML = 'Cable Low Single Arm Laterlar Raise';
+    video_frames3.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-front.mp4#t=0.1"></video>
+                                  <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-side.mp4#t=0.1"></video>`;
+    advice3.innerHTML = `<h2> <span>1</span>Lay flat on the incline bench with your feet on the ground. Raise the dumbbells until you have straight arms.</h2>
+                                               <h2> <span>2</span>Lower the dumbbells to your mid chest.</h2>
+                                               <h2> <span>3</span>Raise the dumbbells until you've locked your elbows.</h2>` ;
+  } else if (muscle === 'glutes') {
+    ex_name1.innerHTML = 'Barbell Overhead Press';
+    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>
+                                 <video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>`;
+    advice1.innerHTML = `<h2> <span>1</span>Take a roughly shoulder width grip. There should be a straight line from your elbow to fist (vertical forearms).</h2>
+                           <h2> <span>2</span>Pull your chin back and press the weight toward the ceiling by extending at the elbow joint and flexing at the shoulder joint.</h2>
+                           <h2> <span>3</span>Press until your elbows are extended and push your head forward slightly.</h2>` ;
+    ex_name2.innerHTML = 'Dumbell Seated Overhead Press';
+    video_frames2.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-front.mp4#t=0.1"></video>
+                                 <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-side.mp4#t=0.1"></video>`;
+    advice2.innerHTML = `<h2> <span>1</span>Sit on a bench with back support. Raise the dumbbells to shoulder height with your palms forward.</h2>
+                           <h2> <span>2</span>Raise the dumbbells upwards and pause at the contracted position.</h2>
+                           <h2> <span>3</span>Lower the weights back to starting position.</h2>` ;
+    ex_name3.innerHTML = 'Cable Low Single Arm Laterlar Raise';
+    video_frames3.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-front.mp4#t=0.1"></video>
+                                  <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-side.mp4#t=0.1"></video>`;
+    advice3.innerHTML = `<h2> <span>1</span>Lay flat on the incline bench with your feet on the ground. Raise the dumbbells until you have straight arms.</h2>
+                                               <h2> <span>2</span>Lower the dumbbells to your mid chest.</h2>
+                                               <h2> <span>3</span>Raise the dumbbells until you've locked your elbows.</h2>` ;
+  } else if (muscle === 'hamstrings') {
+    ex_name1.innerHTML = 'Barbell Overhead Press';
+    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>
+                                 <video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>`;
+    advice1.innerHTML = `<h2> <span>1</span>Take a roughly shoulder width grip. There should be a straight line from your elbow to fist (vertical forearms).</h2>
+                           <h2> <span>2</span>Pull your chin back and press the weight toward the ceiling by extending at the elbow joint and flexing at the shoulder joint.</h2>
+                           <h2> <span>3</span>Press until your elbows are extended and push your head forward slightly.</h2>` ;
+    ex_name2.innerHTML = 'Dumbell Seated Overhead Press';
+    video_frames2.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-front.mp4#t=0.1"></video>
+                                 <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-side.mp4#t=0.1"></video>`;
+    advice2.innerHTML = `<h2> <span>1</span>Sit on a bench with back support. Raise the dumbbells to shoulder height with your palms forward.</h2>
+                           <h2> <span>2</span>Raise the dumbbells upwards and pause at the contracted position.</h2>
+                           <h2> <span>3</span>Lower the weights back to starting position.</h2>` ;
+    ex_name3.innerHTML = 'Cable Low Single Arm Laterlar Raise';
+    video_frames3.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-front.mp4#t=0.1"></video>
+                                  <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-side.mp4#t=0.1"></video>`;
+    advice3.innerHTML = `<h2> <span>1</span>Lay flat on the incline bench with your feet on the ground. Raise the dumbbells until you have straight arms.</h2>
+                                               <h2> <span>2</span>Lower the dumbbells to your mid chest.</h2>
+                                               <h2> <span>3</span>Raise the dumbbells until you've locked your elbows.</h2>` ;
+  } else if (muscle === 'chest-f') {
+    ex_name1.innerHTML = 'Barbell Overhead Press';
+    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>
+                                 <video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>`;
+    advice1.innerHTML = `<h2> <span>1</span>Take a roughly shoulder width grip. There should be a straight line from your elbow to fist (vertical forearms).</h2>
+                           <h2> <span>2</span>Pull your chin back and press the weight toward the ceiling by extending at the elbow joint and flexing at the shoulder joint.</h2>
+                           <h2> <span>3</span>Press until your elbows are extended and push your head forward slightly.</h2>` ;
+    ex_name2.innerHTML = 'Dumbell Seated Overhead Press';
+    video_frames2.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-front.mp4#t=0.1"></video>
+                                 <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-side.mp4#t=0.1"></video>`;
+    advice2.innerHTML = `<h2> <span>1</span>Sit on a bench with back support. Raise the dumbbells to shoulder height with your palms forward.</h2>
+                           <h2> <span>2</span>Raise the dumbbells upwards and pause at the contracted position.</h2>
+                           <h2> <span>3</span>Lower the weights back to starting position.</h2>` ;
+    ex_name3.innerHTML = 'Cable Low Single Arm Laterlar Raise';
+    video_frames3.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-front.mp4#t=0.1"></video>
+                                  <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-side.mp4#t=0.1"></video>`;
+    advice3.innerHTML = `<h2> <span>1</span>Lay flat on the incline bench with your feet on the ground. Raise the dumbbells until you have straight arms.</h2>
+                                               <h2> <span>2</span>Lower the dumbbells to your mid chest.</h2>
+                                               <h2> <span>3</span>Raise the dumbbells until you've locked your elbows.</h2>` ;
+  } else if (muscle === 'shoulders-f') {
+    ex_name1.innerHTML = 'Barbell Overhead Press';
+    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>
+                                 <video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>`;
+    advice1.innerHTML = `<h2> <span>1</span>Take a roughly shoulder width grip. There should be a straight line from your elbow to fist (vertical forearms).</h2>
+                           <h2> <span>2</span>Pull your chin back and press the weight toward the ceiling by extending at the elbow joint and flexing at the shoulder joint.</h2>
+                           <h2> <span>3</span>Press until your elbows are extended and push your head forward slightly.</h2>` ;
+    ex_name2.innerHTML = 'Dumbell Seated Overhead Press';
+    video_frames2.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-front.mp4#t=0.1"></video>
+                                 <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-side.mp4#t=0.1"></video>`;
+    advice2.innerHTML = `<h2> <span>1</span>Sit on a bench with back support. Raise the dumbbells to shoulder height with your palms forward.</h2>
+                           <h2> <span>2</span>Raise the dumbbells upwards and pause at the contracted position.</h2>
+                           <h2> <span>3</span>Lower the weights back to starting position.</h2>` ;
+    ex_name3.innerHTML = 'Cable Low Single Arm Laterlar Raise';
+    video_frames3.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-front.mp4#t=0.1"></video>
+                                  <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-side.mp4#t=0.1"></video>`;
+    advice3.innerHTML = `<h2> <span>1</span>Lay flat on the incline bench with your feet on the ground. Raise the dumbbells until you have straight arms.</h2>
+                                               <h2> <span>2</span>Lower the dumbbells to your mid chest.</h2>
+                                               <h2> <span>3</span>Raise the dumbbells until you've locked your elbows.</h2>` ;
+  } else if (muscle == 'biceps-f') {
+    ex_name1.innerHTML = 'Barbell Curl';
+    video_frames1.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-barbell-overhead-press-front_wHKQjdY.mp4#t=0.1"></video>
+                                 <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-barbell-overhead-press-side_1DIUbfS.mp4#t=0.1"></video>`;
+    advice1.innerHTML = `<h2> <span>1</span>While holding the upper arms stationary, curl the weights forward while contracting the biceps as you breathe out.</h2>
+                          <h2> <span>2</span>Continue the movement until your biceps are fully contracted and the bar is at shoulder level.</h2>
+                          <h2> <span>3</span>Hold the contracted position for a second and squeeze the biceps hard.</h2>
+                          <h2> <span>4</span>Slowly bring the weight back down to the starting position.</h2 >`;
+    ex_name2.innerHTML = 'Chin Ups';
+    video_frames2.innerHTML = `< video loop src = "https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-front.mp4#t=0.1" ></video >
+                           <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-side.mp4#t=0.1"></video>`;
+    advice2.innerHTML = `<h2> <span>1</span>Grab the bar shoulder width apart with a supinated grip (palms facing you)</h2 >
+                           <h2> <span>2</span>With your body hanging and arms fully extended, pull yourself up until your chin is past the bar.</h2>
+                           <h2> <span>3</span>Slowly return to starting position. Repeat.</h2>` ;
+    ex_name3.innerHTML = 'Dumbbell Curl';
+    video_frames3.innerHTML = `< video loop src = "https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-front.mp4#t=0.1" ></video >
+                                <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-side.mp4#t=0.1"></video>`;
+    advice3.innerHTML = `<h2> <span>1</span>Stand up straight with a dumbbell in each hand at arm's length.</h2 >
+                                               <h2> <span>2</span>Raise one dumbbell and twist your forearm until it is vertical and your palm faces the shoulder.</h2>
+                                               <h2> <span>3</span>Lower to original position and repeat with opposite arm</h2>`
+  } else if (muscle == 'forearms-f') {
+    ex_name1.innerHTML = 'Chin Ups';
+    video_frames1.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-barbell-overhead-press-front_wHKQjdY.mp4#t=0.1"></video>
+                                 <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-barbell-overhead-press-side_1DIUbfS.mp4#t=0.1"></video>`;
+    advice1.innerHTML = `<h2> <span>1</span>Grab the bar shoulder width apart with a supinated grip (palms facing you)</h2>
+                          <h2> <span>2</span>With your body hanging and arms fully extended, pull yourself up until your chin is past the bar.</h2>
+                          <h2> <span>3</span>Slowly return to starting position. Repeat.</h2>`;
+    ex_name2.innerHTML = 'Dumbbell Wrist Curl';
+    video_frames2.innerHTML = `< video loop src = "https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-front.mp4#t=0.1" ></video >
+                           <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-side.mp4#t=0.1"></video>`;
+    advice2.innerHTML = `<h2> <span>1</span>Grip the dumbbell with your palm facing upwards with your forearm rested against the bench.</h2 >
+                           <h2> <span>2</span>Slowly curl your wrist upwards in a semicircular motion.</h2>
+                           <h2> <span>3</span>Return to starting position and repeat.</h2>` ;
+    ex_name3.innerHTML = 'Dumbbell Row Unilateral';
+    video_frames3.innerHTML = `< video loop src = "https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-front.mp4#t=0.1" ></video >
+                                <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-side.mp4#t=0.1"></video>`;
+    advice3.innerHTML = `<h2> <span>1</span>Stand up straight with a dumbbell in each hand at arm's length.</h2 >
+                                               <h2> <span>2</span>Raise one dumbbell and twist your forearm until it is vertical and your palm faces the shoulder.</h2>
+                                               <h2> <span>3</span>Lower to original position and repeat with opposite arm</h2>`
+  } else if (muscle === 'obliques-f') {
+    ex_name1.innerHTML = 'Barbell Overhead Press';
+    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>
+                                 <video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>`;
+    advice1.innerHTML = `<h2> <span>1</span>Take a roughly shoulder width grip. There should be a straight line from your elbow to fist (vertical forearms).</h2>
+                           <h2> <span>2</span>Pull your chin back and press the weight toward the ceiling by extending at the elbow joint and flexing at the shoulder joint.</h2>
+                           <h2> <span>3</span>Press until your elbows are extended and push your head forward slightly.</h2>` ;
+    ex_name2.innerHTML = 'Dumbell Seated Overhead Press';
+    video_frames2.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-front.mp4#t=0.1"></video>
+                                 <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-side.mp4#t=0.1"></video>`;
+    advice2.innerHTML = `<h2> <span>1</span>Sit on a bench with back support. Raise the dumbbells to shoulder height with your palms forward.</h2>
+                           <h2> <span>2</span>Raise the dumbbells upwards and pause at the contracted position.</h2>
+                           <h2> <span>3</span>Lower the weights back to starting position.</h2>` ;
+    ex_name3.innerHTML = 'Cable Low Single Arm Laterlar Raise';
+    video_frames3.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-front.mp4#t=0.1"></video>
+                                  <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-side.mp4#t=0.1"></video>`;
+    advice3.innerHTML = `<h2> <span>1</span>Lay flat on the incline bench with your feet on the ground. Raise the dumbbells until you have straight arms.</h2>
+                                               <h2> <span>2</span>Lower the dumbbells to your mid chest.</h2>
+                                               <h2> <span>3</span>Raise the dumbbells until you've locked your elbows.</h2>` ;
+  } else if (muscle === 'abs-f') {
+    ex_name1.innerHTML = 'Barbell Overhead Press';
+    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>
+                                 <video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>`;
+    advice1.innerHTML = `<h2> <span>1</span>Take a roughly shoulder width grip. There should be a straight line from your elbow to fist (vertical forearms).</h2>
+                           <h2> <span>2</span>Pull your chin back and press the weight toward the ceiling by extending at the elbow joint and flexing at the shoulder joint.</h2>
+                           <h2> <span>3</span>Press until your elbows are extended and push your head forward slightly.</h2>` ;
+    ex_name2.innerHTML = 'Dumbell Seated Overhead Press';
+    video_frames2.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-front.mp4#t=0.1"></video>
+                                 <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-side.mp4#t=0.1"></video>`;
+    advice2.innerHTML = `<h2> <span>1</span>Sit on a bench with back support. Raise the dumbbells to shoulder height with your palms forward.</h2>
+                           <h2> <span>2</span>Raise the dumbbells upwards and pause at the contracted position.</h2>
+                           <h2> <span>3</span>Lower the weights back to starting position.</h2>` ;
+    ex_name3.innerHTML = 'Cable Low Single Arm Laterlar Raise';
+    video_frames3.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-front.mp4#t=0.1"></video>
+                                  <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-side.mp4#t=0.1"></video>`;
+    advice3.innerHTML = `<h2> <span>1</span>Lay flat on the incline bench with your feet on the ground. Raise the dumbbells until you have straight arms.</h2>
+                                               <h2> <span>2</span>Lower the dumbbells to your mid chest.</h2>
+                                               <h2> <span>3</span>Raise the dumbbells until you've locked your elbows.</h2>` ;
+  } else if (muscle === 'quads-f') {
+    ex_name1.innerHTML = 'Barbell Overhead Press';
+    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>
+                                 <video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>`;
+    advice1.innerHTML = `<h2> <span>1</span>Take a roughly shoulder width grip. There should be a straight line from your elbow to fist (vertical forearms).</h2>
+                           <h2> <span>2</span>Pull your chin back and press the weight toward the ceiling by extending at the elbow joint and flexing at the shoulder joint.</h2>
+                           <h2> <span>3</span>Press until your elbows are extended and push your head forward slightly.</h2>` ;
+    ex_name2.innerHTML = 'Dumbell Seated Overhead Press';
+    video_frames2.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-front.mp4#t=0.1"></video>
+                                 <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-side.mp4#t=0.1"></video>`;
+    advice2.innerHTML = `<h2> <span>1</span>Sit on a bench with back support. Raise the dumbbells to shoulder height with your palms forward.</h2>
+                           <h2> <span>2</span>Raise the dumbbells upwards and pause at the contracted position.</h2>
+                           <h2> <span>3</span>Lower the weights back to starting position.</h2>` ;
+    ex_name3.innerHTML = 'Cable Low Single Arm Laterlar Raise';
+    video_frames3.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-front.mp4#t=0.1"></video>
+                                  <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-side.mp4#t=0.1"></video>`;
+    advice3.innerHTML = `<h2> <span>1</span>Lay flat on the incline bench with your feet on the ground. Raise the dumbbells until you have straight arms.</h2>
+                                               <h2> <span>2</span>Lower the dumbbells to your mid chest.</h2>
+                                               <h2> <span>3</span>Raise the dumbbells until you've locked your elbows.</h2>` ;
+  } else if (muscle === 'calves-f') {
+    ex_name1.innerHTML = 'Barbell Overhead Press';
+    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>
+                                 <video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>`;
+    advice1.innerHTML = `<h2> <span>1</span>Take a roughly shoulder width grip. There should be a straight line from your elbow to fist (vertical forearms).</h2>
+                           <h2> <span>2</span>Pull your chin back and press the weight toward the ceiling by extending at the elbow joint and flexing at the shoulder joint.</h2>
+                           <h2> <span>3</span>Press until your elbows are extended and push your head forward slightly.</h2>` ;
+    ex_name2.innerHTML = 'Dumbell Seated Overhead Press';
+    video_frames2.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-front.mp4#t=0.1"></video>
+                                 <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-side.mp4#t=0.1"></video>`;
+    advice2.innerHTML = `<h2> <span>1</span>Sit on a bench with back support. Raise the dumbbells to shoulder height with your palms forward.</h2>
+                           <h2> <span>2</span>Raise the dumbbells upwards and pause at the contracted position.</h2>
+                           <h2> <span>3</span>Lower the weights back to starting position.</h2>` ;
+    ex_name3.innerHTML = 'Cable Low Single Arm Laterlar Raise';
+    video_frames3.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-front.mp4#t=0.1"></video>
+                                  <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-side.mp4#t=0.1"></video>`;
+    advice3.innerHTML = `<h2> <span>1</span>Lay flat on the incline bench with your feet on the ground. Raise the dumbbells until you have straight arms.</h2>
+                                               <h2> <span>2</span>Lower the dumbbells to your mid chest.</h2>
+                                               <h2> <span>3</span>Raise the dumbbells until you've locked your elbows.</h2>` ;
+  } else if (muscle === 'traps-f') {
+    ex_name1.innerHTML = 'Barbell Overhead Press';
+    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>
+                                 <video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>`;
+    advice1.innerHTML = `<h2> <span>1</span>Take a roughly shoulder width grip. There should be a straight line from your elbow to fist (vertical forearms).</h2>
+                           <h2> <span>2</span>Pull your chin back and press the weight toward the ceiling by extending at the elbow joint and flexing at the shoulder joint.</h2>
+                           <h2> <span>3</span>Press until your elbows are extended and push your head forward slightly.</h2>` ;
+    ex_name2.innerHTML = 'Dumbell Seated Overhead Press';
+    video_frames2.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-front.mp4#t=0.1"></video>
+                                 <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-side.mp4#t=0.1"></video>`;
+    advice2.innerHTML = `<h2> <span>1</span>Sit on a bench with back support. Raise the dumbbells to shoulder height with your palms forward.</h2>
+                           <h2> <span>2</span>Raise the dumbbells upwards and pause at the contracted position.</h2>
+                           <h2> <span>3</span>Lower the weights back to starting position.</h2>` ;
+    ex_name3.innerHTML = 'Cable Low Single Arm Laterlar Raise';
+    video_frames3.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-front.mp4#t=0.1"></video>
+                                  <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-side.mp4#t=0.1"></video>`;
+    advice3.innerHTML = `<h2> <span>1</span>Lay flat on the incline bench with your feet on the ground. Raise the dumbbells until you have straight arms.</h2>
+                                               <h2> <span>2</span>Lower the dumbbells to your mid chest.</h2>
+                                               <h2> <span>3</span>Raise the dumbbells until you've locked your elbows.</h2>` ;
+  } else if (muscle === 'lads-f') {
+    ex_name1.innerHTML = 'Barbell Overhead Press';
+    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>
+                                 <video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>`;
+    advice1.innerHTML = `<h2> <span>1</span>Take a roughly shoulder width grip. There should be a straight line from your elbow to fist (vertical forearms).</h2>
+                           <h2> <span>2</span>Pull your chin back and press the weight toward the ceiling by extending at the elbow joint and flexing at the shoulder joint.</h2>
+                           <h2> <span>3</span>Press until your elbows are extended and push your head forward slightly.</h2>` ;
+    ex_name2.innerHTML = 'Dumbell Seated Overhead Press';
+    video_frames2.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-front.mp4#t=0.1"></video>
+                                 <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-side.mp4#t=0.1"></video>`;
+    advice2.innerHTML = `<h2> <span>1</span>Sit on a bench with back support. Raise the dumbbells to shoulder height with your palms forward.</h2>
+                           <h2> <span>2</span>Raise the dumbbells upwards and pause at the contracted position.</h2>
+                           <h2> <span>3</span>Lower the weights back to starting position.</h2>` ;
+    ex_name3.innerHTML = 'Cable Low Single Arm Laterlar Raise';
+    video_frames3.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-front.mp4#t=0.1"></video>
+                                  <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-side.mp4#t=0.1"></video>`;
+    advice3.innerHTML = `<h2> <span>1</span>Lay flat on the incline bench with your feet on the ground. Raise the dumbbells until you have straight arms.</h2>
+                                               <h2> <span>2</span>Lower the dumbbells to your mid chest.</h2>
+                                               <h2> <span>3</span>Raise the dumbbells until you've locked your elbows.</h2>` ;
+  } else if (muscle === 'traps-middle-f') {
+    ex_name1.innerHTML = 'Barbell Overhead Press';
+    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>
+                                 <video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>`;
+    advice1.innerHTML = `<h2> <span>1</span>Take a roughly shoulder width grip. There should be a straight line from your elbow to fist (vertical forearms).</h2>
+                           <h2> <span>2</span>Pull your chin back and press the weight toward the ceiling by extending at the elbow joint and flexing at the shoulder joint.</h2>
+                           <h2> <span>3</span>Press until your elbows are extended and push your head forward slightly.</h2>` ;
+    ex_name2.innerHTML = 'Dumbell Seated Overhead Press';
+    video_frames2.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-front.mp4#t=0.1"></video>
+                                 <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-side.mp4#t=0.1"></video>`;
+    advice2.innerHTML = `<h2> <span>1</span>Sit on a bench with back support. Raise the dumbbells to shoulder height with your palms forward.</h2>
+                           <h2> <span>2</span>Raise the dumbbells upwards and pause at the contracted position.</h2>
+                           <h2> <span>3</span>Lower the weights back to starting position.</h2>` ;
+    ex_name3.innerHTML = 'Cable Low Single Arm Laterlar Raise';
+    video_frames3.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-front.mp4#t=0.1"></video>
+                                  <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-side.mp4#t=0.1"></video>`;
+    advice3.innerHTML = `<h2> <span>1</span>Lay flat on the incline bench with your feet on the ground. Raise the dumbbells until you have straight arms.</h2>
+                                               <h2> <span>2</span>Lower the dumbbells to your mid chest.</h2>
+                                               <h2> <span>3</span>Raise the dumbbells until you've locked your elbows.</h2>` ;
+  } else if (muscle === 'lowerback-f') {
+    ex_name1.innerHTML = 'Barbell Overhead Press';
+    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>
+                                 <video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>`;
+    advice1.innerHTML = `<h2> <span>1</span>Take a roughly shoulder width grip. There should be a straight line from your elbow to fist (vertical forearms).</h2>
+                           <h2> <span>2</span>Pull your chin back and press the weight toward the ceiling by extending at the elbow joint and flexing at the shoulder joint.</h2>
+                           <h2> <span>3</span>Press until your elbows are extended and push your head forward slightly.</h2>` ;
+    ex_name2.innerHTML = 'Dumbell Seated Overhead Press';
+    video_frames2.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-front.mp4#t=0.1"></video>
+                                 <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-side.mp4#t=0.1"></video>`;
+    advice2.innerHTML = `<h2> <span>1</span>Sit on a bench with back support. Raise the dumbbells to shoulder height with your palms forward.</h2>
+                           <h2> <span>2</span>Raise the dumbbells upwards and pause at the contracted position.</h2>
+                           <h2> <span>3</span>Lower the weights back to starting position.</h2>` ;
+    ex_name3.innerHTML = 'Cable Low Single Arm Laterlar Raise';
+    video_frames3.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-front.mp4#t=0.1"></video>
+                                  <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-side.mp4#t=0.1"></video>`;
+    advice3.innerHTML = `<h2> <span>1</span>Lay flat on the incline bench with your feet on the ground. Raise the dumbbells until you have straight arms.</h2>
+                                               <h2> <span>2</span>Lower the dumbbells to your mid chest.</h2>
+                                               <h2> <span>3</span>Raise the dumbbells until you've locked your elbows.</h2>` ;
+  } else if (muscle === 'triceps-f') {
+    ex_name1.innerHTML = 'Barbell Overhead Press';
+    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>
+                                 <video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>`;
+    advice1.innerHTML = `<h2> <span>1</span>Take a roughly shoulder width grip. There should be a straight line from your elbow to fist (vertical forearms).</h2>
+                           <h2> <span>2</span>Pull your chin back and press the weight toward the ceiling by extending at the elbow joint and flexing at the shoulder joint.</h2>
+                           <h2> <span>3</span>Press until your elbows are extended and push your head forward slightly.</h2>` ;
+    ex_name2.innerHTML = 'Dumbell Seated Overhead Press';
+    video_frames2.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-front.mp4#t=0.1"></video>
+                                 <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-side.mp4#t=0.1"></video>`;
+    advice2.innerHTML = `<h2> <span>1</span>Sit on a bench with back support. Raise the dumbbells to shoulder height with your palms forward.</h2>
+                           <h2> <span>2</span>Raise the dumbbells upwards and pause at the contracted position.</h2>
+                           <h2> <span>3</span>Lower the weights back to starting position.</h2>` ;
+    ex_name3.innerHTML = 'Cable Low Single Arm Laterlar Raise';
+    video_frames3.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-front.mp4#t=0.1"></video>
+                                  <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-side.mp4#t=0.1"></video>`;
+    advice3.innerHTML = `<h2> <span>1</span>Lay flat on the incline bench with your feet on the ground. Raise the dumbbells until you have straight arms.</h2>
+                                               <h2> <span>2</span>Lower the dumbbells to your mid chest.</h2>
+                                               <h2> <span>3</span>Raise the dumbbells until you've locked your elbows.</h2>` ;
+  } else if (muscle === 'glutes-f') {
+    ex_name1.innerHTML = 'Barbell Overhead Press';
+    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>
+                                 <video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>`;
+    advice1.innerHTML = `<h2> <span>1</span>Take a roughly shoulder width grip. There should be a straight line from your elbow to fist (vertical forearms).</h2>
+                           <h2> <span>2</span>Pull your chin back and press the weight toward the ceiling by extending at the elbow joint and flexing at the shoulder joint.</h2>
+                           <h2> <span>3</span>Press until your elbows are extended and push your head forward slightly.</h2>` ;
+    ex_name2.innerHTML = 'Dumbell Seated Overhead Press';
+    video_frames2.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-front.mp4#t=0.1"></video>
+                                 <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-side.mp4#t=0.1"></video>`;
+    advice2.innerHTML = `<h2> <span>1</span>Sit on a bench with back support. Raise the dumbbells to shoulder height with your palms forward.</h2>
+                           <h2> <span>2</span>Raise the dumbbells upwards and pause at the contracted position.</h2>
+                           <h2> <span>3</span>Lower the weights back to starting position.</h2>` ;
+    ex_name3.innerHTML = 'Cable Low Single Arm Laterlar Raise';
+    video_frames3.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-front.mp4#t=0.1"></video>
+                                  <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-side.mp4#t=0.1"></video>`;
+    advice3.innerHTML = `<h2> <span>1</span>Lay flat on the incline bench with your feet on the ground. Raise the dumbbells until you have straight arms.</h2>
+                                               <h2> <span>2</span>Lower the dumbbells to your mid chest.</h2>
+                                               <h2> <span>3</span>Raise the dumbbells until you've locked your elbows.</h2>` ;
+  } else if (muscle === 'hamstrings-f') {
+    ex_name1.innerHTML = 'Barbell Overhead Press';
+    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>
+                                 <video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>`;
+    advice1.innerHTML = `<h2> <span>1</span>Take a roughly shoulder width grip. There should be a straight line from your elbow to fist (vertical forearms).</h2>
+                           <h2> <span>2</span>Pull your chin back and press the weight toward the ceiling by extending at the elbow joint and flexing at the shoulder joint.</h2>
+                           <h2> <span>3</span>Press until your elbows are extended and push your head forward slightly.</h2>` ;
+    ex_name2.innerHTML = 'Dumbell Seated Overhead Press';
+    video_frames2.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-front.mp4#t=0.1"></video>
+                                 <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-side.mp4#t=0.1"></video>`;
+    advice2.innerHTML = `<h2> <span>1</span>Sit on a bench with back support. Raise the dumbbells to shoulder height with your palms forward.</h2>
+                           <h2> <span>2</span>Raise the dumbbells upwards and pause at the contracted position.</h2>
+                           <h2> <span>3</span>Lower the weights back to starting position.</h2>` ;
+    ex_name3.innerHTML = 'Cable Low Single Arm Laterlar Raise';
+    video_frames3.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-front.mp4#t=0.1"></video>
+                                  <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-side.mp4#t=0.1"></video>`;
+    advice3.innerHTML = `<h2> <span>1</span>Lay flat on the incline bench with your feet on the ground. Raise the dumbbells until you have straight arms.</h2>
+                                               <h2> <span>2</span>Lower the dumbbells to your mid chest.</h2>
+                                               <h2> <span>3</span>Raise the dumbbells until you've locked your elbows.</h2>` ;
   }
 
 
@@ -130,6 +625,8 @@ function Show_exercise(muscle) {
   instructions.style.display = 'inline';
   SVG_male_frontElement.style.display = 'none';
   SVG_male_backElement.style.display = 'none';
+  SVG_female_frontElement.style.display = 'none';
+  SVG_female_backElement.style.display = 'none';
   buttonElement.style.display = 'none';
   buttonElement_nd.style.display = 'inline';
 }
