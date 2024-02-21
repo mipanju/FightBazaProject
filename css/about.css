@@ -116,6 +116,11 @@ body {
     transition: all 0.5s ease;
 }
 
+.bxs-info-circle {
+    background-color: #fcf006;
+    color: #12171e;
+}
+
 .sidebar ul li a {
     color: #fcf006;
     display: flex;
