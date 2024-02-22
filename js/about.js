@@ -1,9 +1,13 @@
 let image = document.querySelector('#image-slideshow');
 let images = [
-    '../Images/About.img',
-    '../Images/Background.jpg',
-    '../Images/BackgroundFull.png',
-    '../Images/Bakground1.jpg'
+    '../Images/IMG_9921.JPG',
+    '../Images/IMG_9922.JPG',
+    '../Images/IMG_9923.JPG',
+    '../Images/IMG_9924.JPG',
+    '../Images/IMG_9925.JPG',
+    '../Images/IMG_9930.JPG',
+
+
 ];
 let currentImageIndex = 0;
 
