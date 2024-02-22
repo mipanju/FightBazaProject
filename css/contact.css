@@ -293,8 +293,10 @@ body {
     background-color:rgb(229, 229, 33) ;
   }
   .contacts .content-contacts p{
-    font-weight: 300;
+    font-weight: 400;
+    font-size: 23px;
     color: #fff;
+    animation:glow 4s infinite ;
   }
   .container-contacts{
     width: 100%;
