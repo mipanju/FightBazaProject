@@ -48,78 +48,78 @@ let advice3 = document.querySelector('#instructions3');
 function Show_exercise(muscle) {
   if (muscle === 'chest') {
     ex_name1.innerHTML = 'Barbell Bench Press';
-    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/IMG_9933.MOV"></video>
-                                 <video autoplay playsinline loop  muted src="/Videos/IMG_9933.MOV"></video>`;
+    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/BenchPress1.MOV"></video>
+                                 <video autoplay playsinline loop  muted src="/Videos/BenchPress1.MOV"></video>`;
     advice1.innerHTML = `<h2> <span>1</span>Lay flat on the bench with your feet on the ground. With straight arms unrack the bar.</h2>
                            <h2> <span>2</span>Lower the bar to your mid chest.</h2>
                            <h2> <span>3</span>Raise the bar until you've locked your elbows.</h2>` ;
     ex_name2.innerHTML = 'Push Up';
-    video_frames2.innerHTML = `<video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>
-                                 <video autoplay playsinline loop muted src="/Videos/IMG_9935 (1).MOV"></video>`;
+    video_frames2.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Push_Up1.MOV"></video>
+                                 <video autoplay playsinline loop muted src="/Videos/Push_Up2.MOV"></video>`;
     advice2.innerHTML = `<h2> <span>1</span>Lay Place your hands firmly on the ground, directly under shoulders.</h2>
                            <h2> <span>2</span>Flatten your back so your entire body is straight and slowly lower your body.</h2>
                            <h2> <span>3</span>Exhale as you push back to the starting position.</h2>` ;
     ex_name3.innerHTML = 'Dumbell Incline Bench Press';
-    video_frames3.innerHTML = `<video  autoplay playsinline loop muted src="/Videos/IMG_9936.MOV"></video>
-                                  <video  autoplay playsinline loop muted src="/Videos/IMG_9937.MOV"></video>`;
+    video_frames3.innerHTML = `<video  autoplay playsinline loop muted src="/Videos/Dumbell_Incline_BenchPress1.MOV"></video>
+                                  <video  autoplay playsinline loop muted src="/Videos/Dumbell_Incline_BenchPress2.MOV"></video>`;
     advice3.innerHTML = `<h2> <span>1</span>Lay flat on the incline bench with your feet on the ground. Raise the dumbbells until you have straight arms.</h2>
                                                <h2> <span>2</span>Lower the dumbbells to your mid chest.</h2>
                                                <h2> <span>3</span>Raise the dumbbells until you've locked your elbows.</h2>` ;
   } else if (muscle === 'shoulders') {
     ex_name1.innerHTML = 'Barbell Overhead Press';
-    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>
-                                 <video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>`;
+    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Barbell_Overhead_Press1.MOV"></video>
+                                 <video autoplay playsinline loop muted src="/Videos/Barbell_Overhead_Press1.MOV"></video>`;
     advice1.innerHTML = `<h2> <span>1</span>Take a roughly shoulder width grip. There should be a straight line from your elbow to fist (vertical forearms).</h2>
                            <h2> <span>2</span>Pull your chin back and press the weight toward the ceiling by extending at the elbow joint and flexing at the shoulder joint.</h2>
                            <h2> <span>3</span>Press until your elbows are extended and push your head forward slightly.</h2>` ;
     ex_name2.innerHTML = 'Dumbell Seated Overhead Press';
-    video_frames2.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-front.mp4#t=0.1"></video>
-                                 <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-side.mp4#t=0.1"></video>`;
+    video_frames2.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Dumbell_Seated_Overhead_Press1.MOV"></video>
+                                 <video autoplay playsinline loop muted src="/Videos/Dumbell_Seated_Overhead_Press2.MOV"></video>`;
     advice2.innerHTML = `<h2> <span>1</span>Sit on a bench with back support. Raise the dumbbells to shoulder height with your palms forward.</h2>
                            <h2> <span>2</span>Raise the dumbbells upwards and pause at the contracted position.</h2>
                            <h2> <span>3</span>Lower the weights back to starting position.</h2>` ;
     ex_name3.innerHTML = 'Cable Low Single Arm Laterlar Raise';
-    video_frames3.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-front.mp4#t=0.1"></video>
-                                  <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-side.mp4#t=0.1"></video>`;
+    video_frames3.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Cable_Low_Single_Arm_Latral_Raise1.MOV"></video>
+                                  <video autoplay playsinline loop muted src="/Videos/Cable_Low_Single_Arm_Lateral_Raise2.MOV"></video>`;
     advice3.innerHTML = `<h2> <span>1</span>Lay flat on the incline bench with your feet on the ground. Raise the dumbbells until you have straight arms.</h2>
                                                <h2> <span>2</span>Lower the dumbbells to your mid chest.</h2>
                                                <h2> <span>3</span>Raise the dumbbells until you've locked your elbows.</h2>` ;
   } else if (muscle == 'biceps') {
     ex_name1.innerHTML = 'Barbell Curl';
-    video_frames1.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-barbell-overhead-press-front_wHKQjdY.mp4#t=0.1"></video>
-                                 <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-barbell-overhead-press-side_1DIUbfS.mp4#t=0.1"></video>`;
+    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Barbell_Curl1.MOV"></video>
+                                 <video autoplay playsinline loop muted src="/Videos/Barbell_Curl1.MOV"></video>`;
     advice1.innerHTML = `<h2> <span>1</span>While holding the upper arms stationary, curl the weights forward while contracting the biceps as you breathe out.</h2>
                           <h2> <span>2</span>Continue the movement until your biceps are fully contracted and the bar is at shoulder level.</h2>
                           <h2> <span>3</span>Hold the contracted position for a second and squeeze the biceps hard.</h2>
                           <h2> <span>4</span>Slowly bring the weight back down to the starting position.</h2 >`;
     ex_name2.innerHTML = 'Chin Ups';
-    video_frames2.innerHTML = `< video loop src = "https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-front.mp4#t=0.1" ></video >
-                           <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-side.mp4#t=0.1"></video>`;
+    video_frames2.innerHTML = `<video autoplay playsinline loop muted src = "/Videos/Chin_Ups1.MOV" ></video >
+                           <video autoplay playsinline loop muted src="/Videos/Chin_Ups1.MOV"></video>`;
     advice2.innerHTML = `<h2> <span>1</span>Grab the bar shoulder width apart with a supinated grip (palms facing you)</h2 >
                            <h2> <span>2</span>With your body hanging and arms fully extended, pull yourself up until your chin is past the bar.</h2>
                            <h2> <span>3</span>Slowly return to starting position. Repeat.</h2>` ;
     ex_name3.innerHTML = 'Dumbbell Curl';
-    video_frames3.innerHTML = `< video loop src = "https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-front.mp4#t=0.1" ></video >
-                                <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-side.mp4#t=0.1"></video>`;
+    video_frames3.innerHTML = `<video autoplay playsinline loop muted src = "/Videos/Dumbell_Curl1.MOV" ></video >
+                                <video autoplay playsinline loop muted src="/Videos/Dumbell_Curl1.MOV"></video>`;
     advice3.innerHTML = `<h2> <span>1</span>Stand up straight with a dumbbell in each hand at arm's length.</h2 >
                                                <h2> <span>2</span>Raise one dumbbell and twist your forearm until it is vertical and your palm faces the shoulder.</h2>
                                                <h2> <span>3</span>Lower to original position and repeat with opposite arm</h2>`
   } else if (muscle == 'forearms') {
     ex_name1.innerHTML = 'Chin Ups';
-    video_frames1.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-barbell-overhead-press-front_wHKQjdY.mp4#t=0.1"></video>
-                                 <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-barbell-overhead-press-side_1DIUbfS.mp4#t=0.1"></video>`;
+    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Chin_Ups1.MOV"></video>
+                                 <video autoplay playsinline loop muted src="/Videos/Chin_Ups1.MOV"></video>`;
     advice1.innerHTML = `<h2> <span>1</span>Grab the bar shoulder width apart with a supinated grip (palms facing you)</h2>
                           <h2> <span>2</span>With your body hanging and arms fully extended, pull yourself up until your chin is past the bar.</h2>
                           <h2> <span>3</span>Slowly return to starting position. Repeat.</h2>`;
     ex_name2.innerHTML = 'Dumbbell Wrist Curl';
-    video_frames2.innerHTML = `< video loop src = "https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-front.mp4#t=0.1" ></video >
-                           <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-side.mp4#t=0.1"></video>`;
+    video_frames2.innerHTML = `<video autoplay playsinline loop muted src = "/Videos/Wrist_Curls1.MOV" ></video >
+                           <video autoplay playsinline loop muted src="/Videos/Wrist_Curls1.MOV"></video>`;
     advice2.innerHTML = `<h2> <span>1</span>Grip the dumbbell with your palm facing upwards with your forearm rested against the bench.</h2 >
                            <h2> <span>2</span>Slowly curl your wrist upwards in a semicircular motion.</h2>
                            <h2> <span>3</span>Return to starting position and repeat.</h2>` ;
-    ex_name3.innerHTML = 'Dumbbell Row Unilateral';
-    video_frames3.innerHTML = `< video loop src = "https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-front.mp4#t=0.1" ></video >
-                                <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-side.mp4#t=0.1"></video>`;
+    ex_name3.innerHTML = 'Forearm Wrist Rotations';
+    video_frames3.innerHTML = `<video autoplay playsinline loop muted src = "/Videos/Forearm_Wrist_Rotations1.MOV" ></video >
+                                <video autoplay playsinline loop muted src="/Videos/Forearm_Wrist_Rotations1.MOV"></video>`;
     advice3.innerHTML = `<h2> <span>1</span>Stand up straight with a dumbbell in each hand at arm's length.</h2 >
                                                <h2> <span>2</span>Raise one dumbbell and twist your forearm until it is vertical and your palm faces the shoulder.</h2>
                                                <h2> <span>3</span>Lower to original position and repeat with opposite arm</h2>`
@@ -182,8 +182,8 @@ function Show_exercise(muscle) {
                                                <h2> <span>3</span>Raise the dumbbells until you've locked your elbows.</h2>` ;
   } else if (muscle === 'calves') {
     ex_name1.innerHTML = 'Barbell Overhead Press';
-    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>
-                                 <video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>`;
+    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="../Videos/Barbell_Calf_Raises1.MOV"></video>
+                                 <video autoplay playsinline loop muted src="../Videos/Barbell_Calf_Raises2.MOV"></video>`;
     advice1.innerHTML = `<h2> <span>1</span>Take a roughly shoulder width grip. There should be a straight line from your elbow to fist (vertical forearms).</h2>
                            <h2> <span>2</span>Pull your chin back and press the weight toward the ceiling by extending at the elbow joint and flexing at the shoulder joint.</h2>
                            <h2> <span>3</span>Press until your elbows are extended and push your head forward slightly.</h2>` ;
@@ -600,21 +600,21 @@ function Show_exercise(muscle) {
                                                <h2> <span>2</span>Lower the dumbbells to your mid chest.</h2>
                                                <h2> <span>3</span>Raise the dumbbells until you've locked your elbows.</h2>` ;
   } else if (muscle === 'hamstrings-f') {
-    ex_name1.innerHTML = 'Barbell Overhead Press';
-    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>
-                                 <video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>`;
+    ex_name1.innerHTML = 'Machine Seated Calf Raises';
+    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Machine_Hamstring_Curl(F)1.mp4"></video>
+                                  <video autoplay playsinline loop muted src="/Videos/Machine_Hamstrings_Curls(F)2.mp4"></video>`;
     advice1.innerHTML = `<h2> <span>1</span>Take a roughly shoulder width grip. There should be a straight line from your elbow to fist (vertical forearms).</h2>
                            <h2> <span>2</span>Pull your chin back and press the weight toward the ceiling by extending at the elbow joint and flexing at the shoulder joint.</h2>
                            <h2> <span>3</span>Press until your elbows are extended and push your head forward slightly.</h2>` ;
     ex_name2.innerHTML = 'Dumbell Seated Overhead Press';
-    video_frames2.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-front.mp4#t=0.1"></video>
-                                 <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-side.mp4#t=0.1"></video>`;
+    video_frames2.innerHTML = `<video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>
+                                 <video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>`;
     advice2.innerHTML = `<h2> <span>1</span>Sit on a bench with back support. Raise the dumbbells to shoulder height with your palms forward.</h2>
                            <h2> <span>2</span>Raise the dumbbells upwards and pause at the contracted position.</h2>
                            <h2> <span>3</span>Lower the weights back to starting position.</h2>` ;
     ex_name3.innerHTML = 'Cable Low Single Arm Laterlar Raise';
-    video_frames3.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-front.mp4#t=0.1"></video>
-                                  <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-side.mp4#t=0.1"></video>`;
+    video_frames3.innerHTML = `<video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>
+                                  <video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>`;
     advice3.innerHTML = `<h2> <span>1</span>Lay flat on the incline bench with your feet on the ground. Raise the dumbbells until you have straight arms.</h2>
                                                <h2> <span>2</span>Lower the dumbbells to your mid chest.</h2>
                                                <h2> <span>3</span>Raise the dumbbells until you've locked your elbows.</h2>` ;
