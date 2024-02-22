@@ -722,7 +722,7 @@ button:hover {
     justify-content: center;
     } 
     .sidebar.active .logo img{
-        right:38%;
+        right:18%;
     }
 } 
 
@@ -781,9 +781,13 @@ button:hover {
 }
 
 @media(max-width:681px) {
+    .js-swap_btn2{
+        position: absolute;
+    }
     .exercises_display {
-        top: 35%;
-        width: 80vw;
+        top: 55%;
+        left: 45%;
+        width: auto;
         font-size: 0.9rem;
     }
 }
