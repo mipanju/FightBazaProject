@@ -334,8 +334,8 @@ function Show_exercise(muscle) {
                                                <h2> <span>3</span>Raise the dumbbells until you've locked your elbows.</h2>` ;
   } else if (muscle === 'chest-f') {
     ex_name1.innerHTML = 'Barbell Overhead Press';
-    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>
-                                 <video autoplay playsinline loop muted src="/Videos/IMG_9934.MOV"></video>`;
+    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/BenchPress(F)1.MOV"></video>
+                                 <video autoplay playsinline loop muted src="/Videos/BenchPress(F)2.MOV"></video>`;
     advice1.innerHTML = `<h2> <span>1</span>Take a roughly shoulder width grip. There should be a straight line from your elbow to fist (vertical forearms).</h2>
                            <h2> <span>2</span>Pull your chin back and press the weight toward the ceiling by extending at the elbow joint and flexing at the shoulder joint.</h2>
                            <h2> <span>3</span>Press until your elbows are extended and push your head forward slightly.</h2>` ;

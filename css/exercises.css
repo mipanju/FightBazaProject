@@ -58,6 +58,7 @@ body {
 .Male-Front,
 .Male-Back {
     height: calc(100vh - 72px);
+    z-index: -1;
 }
 
 .svg-male-container,
@@ -80,6 +81,10 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.js-swap_btn{
+z-index: 100;
 }
 
 .js-swap_btn2 {
