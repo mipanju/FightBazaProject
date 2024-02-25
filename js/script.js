@@ -391,9 +391,9 @@ function Show_exercise(muscle) {
                                                <h2> <span>2</span>Raise one dumbbell and twist your forearm until it is vertical and your palm faces the shoulder.</h2>
                                                <h2> <span>3</span>Lower to original position and repeat with opposite arm</h2>`
   } else if (muscle == 'forearms-f') {
-    ex_name1.innerHTML = 'Chin Ups';
-    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Chin_Ups1.MOV"></video>
-                                 <video autoplay playsinline loop muted src="/Videos/Chin_Ups1.MOV"></video>`;
+    ex_name1.innerHTML = 'Dumbell Row Unilateral';
+    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Dumbell_Row_Unilateral(1)F.mp4"></video>
+                                 <video autoplay playsinline loop muted src="/Videos/Dumbell_Row_Unilateral(F)2.mp4"></video>`;
     advice1.innerHTML = `<h2> <span>1</span>Grab the bar shoulder width apart with a supinated grip (palms facing you)</h2>
                           <h2> <span>2</span>With your body hanging and arms fully extended, pull yourself up until your chin is past the bar.</h2>
                           <h2> <span>3</span>Slowly return to starting position. Repeat.</h2>`;
@@ -411,8 +411,8 @@ function Show_exercise(muscle) {
                                                <h2> <span>3</span>Lower to original position and repeat with opposite arm</h2>`
   } else if (muscle === 'obliques-f') {
     ex_name1.innerHTML = 'Hand Side Plank';
-    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Hand_Side_Plank1.MOV"></video>
-                                 <video autoplay playsinline loop muted src="/Videos/Hand_Side_Plank2.MOV"></video>`;
+    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Hand_Side_Plank(F)1.MOV"></video>
+                                 <video autoplay playsinline loop muted src="/Videos/Hand_Side_Plank(F)2.mp4"></video>`;
     advice1.innerHTML = `<h2> <span>1</span>Take a roughly shoulder width grip. There should be a straight line from your elbow to fist (vertical forearms).</h2>
                            <h2> <span>2</span>Pull your chin back and press the weight toward the ceiling by extending at the elbow joint and flexing at the shoulder joint.</h2>
                            <h2> <span>3</span>Press until your elbows are extended and push your head forward slightly.</h2>` ;
@@ -430,8 +430,8 @@ function Show_exercise(muscle) {
                                                <h2> <span>3</span>Raise the dumbbells until you've locked your elbows.</h2>` ;
   } else if (muscle === 'abs-f') {
     ex_name1.innerHTML = 'Hand Plank';
-    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Hand_Plank1.MOV"></video>
-                                 <video autoplay playsinline loop muted src="/Videos/Hand_Plank2.MOV"></video>`;
+    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Hand_Plank(F)1.mp4"></video>
+                                 <video autoplay playsinline loop muted src="/Videos/Hand_Plank(f)2.MOV"></video>`;
     advice1.innerHTML = `<h2> <span>1</span>Take a roughly shoulder width grip. There should be a straight line from your elbow to fist (vertical forearms).</h2>
                            <h2> <span>2</span>Pull your chin back and press the weight toward the ceiling by extending at the elbow joint and flexing at the shoulder joint.</h2>
                            <h2> <span>3</span>Press until your elbows are extended and push your head forward slightly.</h2>` ;
