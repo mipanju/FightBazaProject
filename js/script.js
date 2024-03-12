@@ -672,126 +672,72 @@ btn.onclick = sidebar_toggle;
 
 
 
-// funcion for number of ages
-
-// var age = document.querySelector('.age');
-// var currentAge = parseInt(age.textContent);
-// var weight = document.querySelector('.weight');
-// var currentWeight = parseInt(weight.textContent);
-// var height = document.querySelector('.height');
-// var currentHeight = parseInt(height.textContent);
-
-
-
-
-// age
-// function upAge() {
-//   if (currentAge < 100)
-//     age.innerHTML = ++currentAge;
-// }
-
-// function downAge() {
-//   if (currentAge > 0)
-//     age.innerHTML = --currentAge;
-// }
-
-// // weight
-// function upWeight() {
-//   if (currentWeight < 150)
-//     weight.innerHTML = ++currentWeight;
-// }
-
-// function downWeight() {
-//   if (currentWeight > 0)
-//     weight.innerHTML = --currentWeight;
-// }
-
-// // height
-// function upHeight() {
-//   if (currentHeight < 220)
-//     height.innerHTML = ++currentHeight;
-// }
-
-// function downHeight() {
-//   if (currentHeight > 0)
-//     height.innerHTML = --currentHeight;
-// }
 
 
 
 
 
-
-
-
-
-// function for progressive bar
-
-// var interior = document.querySelector('.exterior');
-// var circle = document.querySelector('.circle');
-// var pointer = document.querySelector('.pointer');
-// var age = document.querySelector('.age');
-
-// let isRotating = false;
-
-// document.addEventListener('mousedown', function (e) {
-//   if (e.target.closest('.exterior')) {
-//     isRotating = true;
-//   }
-// });
-
-// const rotateInterior = function (e) {
-//   if (isRotating === true) {
-//     let interiorX = interior.getBoundingClientRect().left + interior.clientWidth / 2;
-//     let interiorY = interior.getBoundingClientRect().top + interior.clientHeight / 2;
-
-//     let deltaX = e.clientX - interiorX;
-//     let deltaY = e.clientY - interiorY;
-
-//     let angleRad = Math.atan2(deltaY, deltaX);
-//     let angleDeg = (angleRad * 180) / Math.PI;
-
-//     let rotationAngle = ((angleDeg + 90 + 360) % 360);
-//     pointer.style.transform = `rotate(${rotationAngle}deg)`
-
-//     let progressPercent = rotationAngle / 360;
-//     circle.style.strokeDashoffset = `${880 - (880 * (progressPercent))}`;
-
-//     age.innerHTML = `${Math.round(progressPercent * 100)}`
-
-//   }
-// }
-
-// document.addEventListener('mousemove',
-//   rotateInterior);
-
-
-
-var interior = document.querySelector('.interior');
-var circle = document.querySelector('.circle');
-var pointer = document.querySelector('.pointer');
+var interior_1 = document.querySelector('.interior_1');
+var circle_1 = document.querySelector('.circle_1');
+var pointer_1 = document.querySelector('.pointer_1');
+var interior_2 = document.querySelector('.interior_2');
+var circle_2 = document.querySelector('.circle_2');
+var pointer_2 = document.querySelector('.pointer_2');
+var interior_3 = document.querySelector('.interior_3');
+var circle_3 = document.querySelector('.circle_3');
+var pointer_3 = document.querySelector('.pointer_3');
 var age = document.querySelector('.age');
-var currentAge = parseInt(age.textContent)
+var weight = document.querySelector('.weight');
+var height = document.querySelector('.height');
+var currentAge = parseInt(age.textContent);
+var currentWeight = parseInt(weight.textContent);
+var currentHeight = parseInt(height.textContent);
 
 let isRotating = false;
-let lastAngle = 0; // Variable to store the last angle
+let lastAngle_1 = 0;
+let lastAngle_2 = 0;
+let lastAngle_3 = 0;
 
+
+//age
 document.addEventListener('mousedown', function (e) {
-  if (e.target.closest('.interior')) {
+  if (e.target.closest('.interior_1')) {
     isRotating = true;
-    // Get initial angle when mouse is clicked
-    let interiorX = interior.getBoundingClientRect().left + interior.clientWidth / 2;
-    let interiorY = interior.getBoundingClientRect().top + interior.clientHeight / 2;
+
+    let interiorX = interior_1.getBoundingClientRect().left + interior_1.clientWidth / 2;
+    let interiorY = interior_1.getBoundingClientRect().top + interior_1.clientHeight / 2;
     let deltaX = e.clientX - interiorX;
     let deltaY = e.clientY - interiorY;
-    lastAngle = Math.atan2(deltaY, deltaX) * (180 / Math.PI);
-  }
+    lastAngle_1 = Math.atan2(deltaY, deltaX) * (180 / Math.PI);
+  } else
+
+    if (e.target.closest('.interior_2')) {
+      isRotating = true;
+
+      let interiorX = interior_2.getBoundingClientRect().left + interior_2.clientWidth / 2;
+      let interiorY = interior_2.getBoundingClientRect().top + interior_2.clientHeight / 2;
+      let deltaX = e.clientX - interiorX;
+      let deltaY = e.clientY - interiorY;
+      lastAngle_2 = Math.atan2(deltaY, deltaX) * (180 / Math.PI);
+    } else
+
+      if (e.target.closest('.interior_3')) {
+        isRotating = true;
+
+        let interiorX = interior_3.getBoundingClientRect().left + interior_3.clientWidth / 2;
+        let interiorY = interior_3.getBoundingClientRect().top + interior_3.clientHeight / 2;
+        let deltaX = e.clientX - interiorX;
+        let deltaY = e.clientY - interiorY;
+        lastAngle_3 = Math.atan2(deltaY, deltaX) * (180 / Math.PI);
+      }
 });
 
-const rotateInterior = function (e) {
+
+
+const rotateInterior_1 = function (e) {
   if (isRotating === true) {
-    let interiorX = interior.getBoundingClientRect().left + interior.clientWidth / 2;
-    let interiorY = interior.getBoundingClientRect().top + interior.clientHeight / 2;
+    let interiorX = interior_1.getBoundingClientRect().left + interior_1.clientWidth / 2;
+    let interiorY = interior_1.getBoundingClientRect().top + interior_1.clientHeight / 2;
 
     let deltaX = e.clientX - interiorX;
     let deltaY = e.clientY - interiorY;
@@ -801,22 +747,67 @@ const rotateInterior = function (e) {
 
     let rotationAngle = ((angleDeg + 90 + 360) % 360);
 
-    // Calculate the difference in angle from the last position
-    let angleDiff = rotationAngle - lastAngle;
-    lastAngle = rotationAngle; // Update the last angle
+    lastAngle_1 = rotationAngle;
 
-    pointer.style.transform = `rotate(${rotationAngle}deg)`;
+    pointer_1.style.transform = `rotate(${rotationAngle}deg)`;
 
     let progressPercent = rotationAngle / 360;
-    circle.style.strokeDashoffset = `${880 - (880 * (progressPercent))}`;
+    circle_1.style.strokeDashoffset = `${880 - (880 * (progressPercent))}`;
 
     let currentAge = Math.round(progressPercent * 100);
     age.innerHTML = `${currentAge}`;
 
-  }
-}
 
-document.addEventListener('mousemove', rotateInterior);
+  }
+  if (age.textContent <= 100) {
+    progressPercent = age.textContent / 100;
+    circle_1.style.strokeDashoffset = `${880 - (880 * (progressPercent))}`
+    rotationAngle = progressPercent * 360;
+    pointer_1.style.transform = `rotate(${rotationAngle}deg)`
+  } else {
+    age.textContent = 100;
+  }
+
+}
+interior_1.addEventListener('mousemove', rotateInterior_1);
+
+
+const rotateInterior_2 = function (e) {
+  if (isRotating === true) {
+    let interiorX = interior_2.getBoundingClientRect().left + interior_2.clientWidth / 2;
+    let interiorY = interior_2.getBoundingClientRect().top + interior_2.clientHeight / 2;
+
+    let deltaX = e.clientX - interiorX;
+    let deltaY = e.clientY - interiorY;
+
+    let angleRad = Math.atan2(deltaY, deltaX);
+    let angleDeg = (angleRad * 180) / Math.PI;
+
+    let rotationAngle = ((angleDeg + 90 + 360) % 360);
+
+    lastAngle_2 = rotationAngle;
+
+    pointer_2.style.transform = `rotate(${rotationAngle}deg)`;
+
+    let progressPercent = rotationAngle / 360;
+    circle_2.style.strokeDashoffset = `${880 - (880 * (progressPercent))}`;
+
+    let currentWeight = Math.round(progressPercent * 100);
+    weight.innerHTML = `${currentWeight}`;
+
+
+  }
+  // if (age.textContent <= 100) {
+  //   progressPercent = age.textContent / 100;
+  //   circle_1.style.strokeDashoffset = `${880 - (880 * (progressPercent))}`
+  //   rotationAngle = progressPercent * 360;
+  //   pointer_1.style.transform = `rotate(${rotationAngle}deg)`
+  // } else {
+  //   age.textContent = 100;
+  // }
+}
+interior_2.addEventListener('mousemove', rotateInterior_2);
+
 
 document.addEventListener('mouseup', function () {
   isRotating = false;
@@ -826,79 +817,15 @@ document.addEventListener('mouseup', function () {
 
 
 
+// function sidebar_active() {
+//   sidebar.classList.add('active');
+//   cal_container.classList.add('active');
+// }
 
-// var age = document.querySelector('.age');
-// var currentAge = parseInt(age.textContent);
-var weight = document.querySelector('.weight');
-var currentWeight = parseInt(weight.textContent);
-var height = document.querySelector('.height');
-var currentHeight = parseInt(height.textContent);
-var upButton = document.querySelector('.up_button');
-
-//age
-function upAge(e) {
-  if (currentAge < 100) {
-    let interiorX = interior.getBoundingClientRect().left + interior.clientWidth / 2;
-    let interiorY = interior.getBoundingClientRect().top + interior.clientHeight / 2;
-
-    let deltaX = e.clientX - interiorX;
-    let deltaY = e.clientY - interiorY;
-
-    let angleRad = Math.atan2(deltaY, deltaX);
-    let angleDeg = (angleRad * 180) / Math.PI;
-
-    let rotationAngle = ((angleDeg + 90 + 360) % 360);
-    console.log(rotationAngle)
-
-    pointer.style.transform = `rotate(${rotationAngle}deg)`;
-
-    let progressPercent = rotationAngle / 360;
-    circle.style.strokeDashoffset = `${880 - (880 * (progressPercent))}`;
+// function sidebar_pasive() {
+//   sidebar.classList.remove('active');
+//   cal_container.classList.remove('active')
+// }
+// btn.onclick = sidebar_toggle;
 
 
-    let currentAge = Math.round(progressPercent * 100);
-    console.log(currentAge)
-    age.innerHTML = `${++currentAge}`;
-  }
-}
-
-upButton.addEventListener('click', upAge);
-
-
-function downAge() {
-  if (currentAge > 0)
-    age.innerHTML = --currentAge;
-}
-
-// weight
-function upWeight() {
-  if (currentWeight < 150)
-    weight.innerHTML = ++currentWeight;
-}
-
-function downWeight() {
-  if (currentWeight > 0)
-    weight.innerHTML = --currentWeight;
-}
-
-// height
-function upHeight() {
-  if (currentHeight < 220)
-    height.innerHTML = ++currentHeight;
-}
-
-function downHeight() {
-  if (currentHeight > 0)
-    height.innerHTML = --currentHeight;
-}
-
-function sidebar_active() {
-  sidebar.classList.add('active');
-  cal_container.classList.add('active');
-}
-
-function sidebar_pasive() {
-  sidebar.classList.remove('active');
-  cal_container.classList.remove('active')
-}
-btn.onclick = sidebar_toggle;
