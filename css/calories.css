@@ -567,6 +567,10 @@ workout .main-content {
     border-bottom: 1px solid #12171e;
 }
 
+ul h2 {
+    text-align: center;
+}
+
 .human_character {
     display: flex;
     flex-wrap: wrap;
@@ -612,6 +616,7 @@ p {
     -ms-user-select: none;
 }
 
+
 .pointer_1 {
     width: 30px;
     height: 30px;
@@ -636,7 +641,7 @@ p {
     justify-content: center;
     align-items: flex-start;
     transform-origin: 10px 150px;
-    transform: rotate(120deg);
+    transform: rotate(63deg);
     z-index: 3;
 }
 
@@ -650,7 +655,7 @@ p {
     justify-content: center;
     align-items: flex-start;
     transform-origin: 10px 150px;
-    transform: rotate(210deg);
+    transform: rotate(70deg);
     z-index: 3;
 }
 
@@ -671,7 +676,7 @@ circle.circle_2 {
     stroke: #fcf006;
     stroke-width: 20px;
     stroke-dasharray: 880;
-    stroke-dashoffset: calc(880 - (880 * 60)/180);
+    stroke-dashoffset: calc(880 - (880 * 70)/400);
     transform-origin: center;
     transform: rotate(-90deg);
     z-index: 2;
@@ -682,7 +687,7 @@ circle.circle_3 {
     stroke: #fcf006;
     stroke-width: 20px;
     stroke-dasharray: 880;
-    stroke-dashoffset: calc(880 - (880 * 70)/120);
+    stroke-dashoffset: calc(880 - (880 * 140)/720);
     transform-origin: center;
     transform: rotate(-90deg);
     z-index: 2;
@@ -706,7 +711,10 @@ svg {
 .height {
     font-weight: 900;
     font-size: 45px;
+    height: 65px;
 }
+
+/* .numbers {} */
 
 
 .buttons_container button {
