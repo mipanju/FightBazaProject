@@ -324,8 +324,7 @@ body {
     display: none;
 } */
 
-workout
-.main-content {
+workout .main-content {
     position: relative;
     min-height: 100vh;
     /* top: 0; */
@@ -587,7 +586,9 @@ workout
     position: relative;
 }
 
-.exterior .interior {
+.interior_1,
+.interior_2,
+.interior_3 {
     width: 260px;
     height: 260px;
     background-color: #12171e;
@@ -602,29 +603,16 @@ workout
     z-index: 5;
 }
 
-.exterior .interior1 {
-    width: 260px;
-    height: 260px;
-    background-color: #12171e;
-    color: #eee;
-    font-size: 25px;
-    padding: 30px;
-    border-radius: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    z-index: 5;
-}
 
-.interior p {
+
+p {
     user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
 }
 
-.pointer {
+.pointer_1 {
     width: 30px;
     height: 30px;
     position: absolute;
@@ -638,13 +626,63 @@ workout
     z-index: 3;
 }
 
+.pointer_2 {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    transform-origin: 10px 150px;
+    transform: rotate(120deg);
+    z-index: 3;
+}
+
+.pointer_3 {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    transform-origin: 10px 150px;
+    transform: rotate(210deg);
+    z-index: 3;
+}
 
 
-circle:nth-child(1) {
+
+circle.circle_1 {
     stroke: #fcf006;
     stroke-width: 20px;
     stroke-dasharray: 880;
     stroke-dashoffset: calc(880 - (880 * 17)/100);
+    transform-origin: center;
+    transform: rotate(-90deg);
+    z-index: 2;
+    fill: none;
+}
+
+circle.circle_2 {
+    stroke: #fcf006;
+    stroke-width: 20px;
+    stroke-dasharray: 880;
+    stroke-dashoffset: calc(880 - (880 * 60)/180);
+    transform-origin: center;
+    transform: rotate(-90deg);
+    z-index: 2;
+    fill: none;
+}
+
+circle.circle_3 {
+    stroke: #fcf006;
+    stroke-width: 20px;
+    stroke-dasharray: 880;
+    stroke-dashoffset: calc(880 - (880 * 70)/120);
     transform-origin: center;
     transform: rotate(-90deg);
     z-index: 2;
@@ -1004,19 +1042,21 @@ body {
     border-bottom: 1px solid #fcf006;
 }
 
-@media(max-width:570px){
-    .sidebar.active{
-        width:100%;
+@media(max-width:570px) {
+    .sidebar.active {
+        width: 100%;
         position: relative;
         position: fixed;
         display: flex;
         flex-direction: column;
     }
+
     .sidebar.active ul li a,
-    .sidebar.active .user{
-    justify-content: center;
-    } 
-    .sidebar.active .logo img{
-        right:38%;
+    .sidebar.active .user {
+        justify-content: center;
     }
-} 
+
+    .sidebar.active .logo img {
+        right: 38%;
+    }
+}
