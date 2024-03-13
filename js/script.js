@@ -45,6 +45,7 @@ let advice2 = document.querySelector('#instructions2');
 let ex_name3 = document.querySelector('#exercise_name3');
 let video_frames3 = document.querySelector('#video_container3');
 let advice3 = document.querySelector('#instructions3');
+let indicator;
 function Show_exercise(muscle) {
   if (muscle === 'chest') {
     ex_name1.innerHTML = 'Barbell Bench Press';
@@ -176,7 +177,7 @@ function Show_exercise(muscle) {
                            <h2> <span>3</span>Lower the weights back to starting position.</h2>` ;
     ex_name3.innerHTML = 'Kettlebell Step Up';
     video_frames3.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Kettlebell_Step_Up1.MOV"></video>
-                                  <video autoplay playsinline loop muted src="/Videos/Kettlebell_Step_Up2.MOV"></video>`;
+                                  <video autoplay playsinline loop muted src="/Videos/KettleBelll_Step_Up2.MOV"></video>`;
     advice3.innerHTML = `<h2> <span>1</span>Lay flat on the incline bench with your feet on the ground. Raise the dumbbells until you have straight arms.</h2>
                                                <h2> <span>2</span>Lower the dumbbells to your mid chest.</h2>
                                                <h2> <span>3</span>Raise the dumbbells until you've locked your elbows.</h2>` ;
@@ -225,15 +226,15 @@ function Show_exercise(muscle) {
     advice1.innerHTML = `<h2> <span>1</span>Take a roughly shoulder width grip. There should be a straight line from your elbow to fist (vertical forearms).</h2>
                            <h2> <span>2</span>Pull your chin back and press the weight toward the ceiling by extending at the elbow joint and flexing at the shoulder joint.</h2>
                            <h2> <span>3</span>Press until your elbows are extended and push your head forward slightly.</h2>` ;
-    ex_name2.innerHTML = 'Dumbell Seated Overhead Press';
-    video_frames2.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-front.mp4#t=0.1"></video>
-                                 <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-side.mp4#t=0.1"></video>`;
+    ex_name2.innerHTML = 'Deadlift';
+    video_frames2.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Barbell_Deadlift1.MOV"></video>
+                                 <video autoplay playsinline loop muted src="/Videos/Barbell_Deadlift2.MOV"></video>`;
     advice2.innerHTML = `<h2> <span>1</span>Sit on a bench with back support. Raise the dumbbells to shoulder height with your palms forward.</h2>
                            <h2> <span>2</span>Raise the dumbbells upwards and pause at the contracted position.</h2>
                            <h2> <span>3</span>Lower the weights back to starting position.</h2>` ;
-    ex_name3.innerHTML = 'Cable Low Single Arm Laterlar Raise';
-    video_frames3.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-front.mp4#t=0.1"></video>
-                                  <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-side.mp4#t=0.1"></video>`;
+    ex_name3.innerHTML = 'Silverback shrugs';
+    video_frames3.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Barbell_Silverback_Shrug.MOV"></video>
+                                  <video autoplay playsinline loop muted src="/Videos/Barbell_Silverback_Shrug1.MOV"></video>`;
     advice3.innerHTML = `<h2> <span>1</span>Lay flat on the incline bench with your feet on the ground. Raise the dumbbells until you have straight arms.</h2>
                                                <h2> <span>2</span>Lower the dumbbells to your mid chest.</h2>
                                                <h2> <span>3</span>Raise the dumbbells until you've locked your elbows.</h2>` ;
@@ -391,21 +392,21 @@ function Show_exercise(muscle) {
                                                <h2> <span>2</span>Raise one dumbbell and twist your forearm until it is vertical and your palm faces the shoulder.</h2>
                                                <h2> <span>3</span>Lower to original position and repeat with opposite arm</h2>`
   } else if (muscle == 'forearms-f') {
-    ex_name1.innerHTML = 'Dumbell Row Unilateral';
-    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Dumbell_Row_Unilateral(1)F.mp4"></video>
-                                 <video autoplay playsinline loop muted src="/Videos/Dumbell_Row_Unilateral(F)2.mp4"></video>`;
+    ex_name1.innerHTML = 'Cable Low Single Arm Lateral Raise';
+    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Cable_Low_Single_Arm_Lateral_Raise(F)1.mp4"></video>
+                                 <video autoplay playsinline loop muted src="/Videos/Cable_Low_Single_Arm_Lateral_Raise(F)2.mp4"></video>`;
     advice1.innerHTML = `<h2> <span>1</span>Grab the bar shoulder width apart with a supinated grip (palms facing you)</h2>
                           <h2> <span>2</span>With your body hanging and arms fully extended, pull yourself up until your chin is past the bar.</h2>
                           <h2> <span>3</span>Slowly return to starting position. Repeat.</h2>`;
     ex_name2.innerHTML = 'Dumbbell Wrist Curl';
-    video_frames2.innerHTML = `<video autoplay playsinline loop muted src = "/Videos/Wrist_Curls1.MOV" ></video >
-                           <video autoplay playsinline loop muted src="/Videos/Wrist_Curls1.MOV"></video>`;
+    video_frames2.innerHTML = `<video autoplay playsinline loop muted src = "/Videos/Dumbell_Shrugs(F)1.mp4" ></video >
+                           <video autoplay playsinline loop muted src="/Videos/Dumbell_Shrugs(F)2.mp4"></video>`;
     advice2.innerHTML = `<h2> <span>1</span>Grip the dumbbell with your palm facing upwards with your forearm rested against the bench.</h2 >
                            <h2> <span>2</span>Slowly curl your wrist upwards in a semicircular motion.</h2>
                            <h2> <span>3</span>Return to starting position and repeat.</h2>` ;
     ex_name3.innerHTML = 'Forearm Wrist Rotations';
-    video_frames3.innerHTML = `<video autoplay playsinline loop muted src = "/Videos/Forearm_Wrist_Rotations1.MOV" ></video >
-                                <video autoplay playsinline loop muted src="/Videos/Forearm_Wrist_Rotations1.MOV"></video>`;
+    video_frames3.innerHTML = `<video autoplay playsinline loop muted src = "/Videos/Barbell_SilverBack_Shrugs(F)1.mp4" ></video >
+                                <video autoplay playsinline loop muted src="/Videos/Barbell_SilverBack_Shrugs(F)2.mp4"></video>`;
     advice3.innerHTML = `<h2> <span>1</span>Stand up straight with a dumbbell in each hand at arm's length.</h2 >
                                                <h2> <span>2</span>Raise one dumbbell and twist your forearm until it is vertical and your palm faces the shoulder.</h2>
                                                <h2> <span>3</span>Lower to original position and repeat with opposite arm</h2>`
@@ -417,14 +418,14 @@ function Show_exercise(muscle) {
                            <h2> <span>2</span>Pull your chin back and press the weight toward the ceiling by extending at the elbow joint and flexing at the shoulder joint.</h2>
                            <h2> <span>3</span>Press until your elbows are extended and push your head forward slightly.</h2>` ;
     ex_name2.innerHTML = 'Russian Twist';
-    video_frames2.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Russian_Twist1.MOV"></video>
-                                 <video autoplay playsinline loop muted src="/Videos/Russian_Twist2.MOV"></video>`;
+    video_frames2.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Russian_Twist(F)1.mp4"></video>
+                                 <video autoplay playsinline loop muted src="/Videos/Russian_Twist(F)2.MOV"></video>`;
     advice2.innerHTML = `<h2> <span>1</span>Sit on a bench with back support. Raise the dumbbells to shoulder height with your palms forward.</h2>
                            <h2> <span>2</span>Raise the dumbbells upwards and pause at the contracted position.</h2>
                            <h2> <span>3</span>Lower the weights back to starting position.</h2>` ;
     ex_name3.innerHTML = 'Dumbell Landmine Side Band';
-    video_frames3.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Dumbell_Landmine_Side_Band1.MOV"></video>
-                                  <video autoplay playsinline loop muted src="/Videos/Dumbell_Landmine_Side_Band1.MOV"></video>`;
+    video_frames3.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Dumbell_Landmine_Side_Bend(F)1.mp4"></video>
+                                  <video autoplay playsinline loop muted src="/Videos/Dumbell_Landmine_Side_Bend(F)2.mp4"></video>`;
     advice3.innerHTML = `<h2> <span>1</span>Lay flat on the incline bench with your feet on the ground. Raise the dumbbells until you have straight arms.</h2>
                                                <h2> <span>2</span>Lower the dumbbells to your mid chest.</h2>
                                                <h2> <span>3</span>Raise the dumbbells until you've locked your elbows.</h2>` ;
@@ -436,192 +437,197 @@ function Show_exercise(muscle) {
                            <h2> <span>2</span>Pull your chin back and press the weight toward the ceiling by extending at the elbow joint and flexing at the shoulder joint.</h2>
                            <h2> <span>3</span>Press until your elbows are extended and push your head forward slightly.</h2>` ;
     ex_name2.innerHTML = 'Russian Twist';
-    video_frames2.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Russian_Twist1.MOV"></video>
-                                 <video autoplay playsinline loop muted src="/Videos/Russian_Twist2.MOV"></video>`;
+    video_frames2.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Russian_Twist(F)1.mp4"></video>
+                                 <video autoplay playsinline loop muted src="/Videos/Russian_Twist(F)2.MOV"></video>`;
     advice2.innerHTML = `<h2> <span>1</span>Sit on a bench with back support. Raise the dumbbells to shoulder height with your palms forward.</h2>
                            <h2> <span>2</span>Raise the dumbbells upwards and pause at the contracted position.</h2>
                            <h2> <span>3</span>Lower the weights back to starting position.</h2>` ;
     ex_name3.innerHTML = 'Hip Thrust';
-    video_frames3.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Barbell_Hip_Thrust1.MOV"></video>
-                                  <video autoplay playsinline loop muted src="/Videos/Barbell_Hip_Thrust2.MOV"></video>`;
+    video_frames3.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Barbell_Hip_Thrust(F)1.mp4"></video>
+                                  <video autoplay playsinline loop muted src="/Videos/Barbell_Hip_Thrust(F)2.mp4"></video>`;
     advice3.innerHTML = `<h2> <span>1</span>Lay flat on the incline bench with your feet on the ground. Raise the dumbbells until you have straight arms.</h2>
                                                <h2> <span>2</span>Lower the dumbbells to your mid chest.</h2>
                                                <h2> <span>3</span>Raise the dumbbells until you've locked your elbows.</h2>` ;
   } else if (muscle === 'quads-f') {
     ex_name1.innerHTML = 'Squat';
-    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Barbell_Squat1.MOV"></video>
-                                 <video autoplay playsinline loop muted src="/Videos/Barbell_Squat2.MOV"></video>`;
+    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Barbell_Squat(F)1.mp4"></video>
+                                 <video autoplay playsinline loop muted src="/Videos/Barbell_Squat(F)2.mp4"></video>`;
     advice1.innerHTML = `<h2> <span>1</span>Take a roughly shoulder width grip. There should be a straight line from your elbow to fist (vertical forearms).</h2>
                            <h2> <span>2</span>Pull your chin back and press the weight toward the ceiling by extending at the elbow joint and flexing at the shoulder joint.</h2>
                            <h2> <span>3</span>Press until your elbows are extended and push your head forward slightly.</h2>` ;
-    ex_name2.innerHTML = 'Leg Press';
-    video_frames2.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Machine_Leg_Press.MOV"></video>
-                                 <video autoplay playsinline loop muted src="/Videos/Machine_Leg_Press2.MOV"></video>`;
+    ex_name2.innerHTML = 'Barbell Step Up';
+    video_frames2.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Barbell_Step_Up(F)1.mp4"></video>
+                                 <video autoplay playsinline loop muted src="/Videos/Barbell_Step_Up(F)2.mp4"></video>`;
     advice2.innerHTML = `<h2> <span>1</span>Sit on a bench with back support. Raise the dumbbells to shoulder height with your palms forward.</h2>
                            <h2> <span>2</span>Raise the dumbbells upwards and pause at the contracted position.</h2>
                            <h2> <span>3</span>Lower the weights back to starting position.</h2>` ;
     ex_name3.innerHTML = 'Kettlebell Step Up';
-    video_frames3.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Kettlebell_Step_Up1.MOV"></video>
-                                  <video autoplay playsinline loop muted src="/Videos/Kettlebell_Step_Up2.MOV"></video>`;
+    video_frames3.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Kettlebell_Step_Up(F)1.mp4"></video>
+                                  <video autoplay playsinline loop muted src="/Videos/Kettlebell_Step_Up(F)2.mp4"></video>`;
     advice3.innerHTML = `<h2> <span>1</span>Lay flat on the incline bench with your feet on the ground. Raise the dumbbells until you have straight arms.</h2>
                                                <h2> <span>2</span>Lower the dumbbells to your mid chest.</h2>
                                                <h2> <span>3</span>Raise the dumbbells until you've locked your elbows.</h2>` ;
   } else if (muscle === 'calves-f') {
     ex_name1.innerHTML = 'Barbell Calf Raises';
-    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="../Videos/Barbell_Calf_Raises1.MOV"></video>
-                                 <video autoplay playsinline loop muted src="../Videos/Barbell_Calf_Raises2.MOV"></video>`;
+    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="../Videos/Barbell_Calf_Raises(F)1.mp4"></video>
+                                 <video autoplay playsinline loop muted src="../Videos/Barbell_Calf_Raises(F)2.mp4"></video>`;
     advice1.innerHTML = `<h2> <span>1</span>Take a roughly shoulder width grip. There should be a straight line from your elbow to fist (vertical forearms).</h2>
                            <h2> <span>2</span>Pull your chin back and press the weight toward the ceiling by extending at the elbow joint and flexing at the shoulder joint.</h2>
                            <h2> <span>3</span>Press until your elbows are extended and push your head forward slightly.</h2>` ;
     ex_name2.innerHTML = 'Machine Seated Calf Raises';
-    video_frames2.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Machine_Seated_Calf_Raises1.MOV"></video>
-                                 <video autoplay playsinline loop muted src="/Videos/Machine_Seated_Calf_Raises2.MOV"></video>`;
+    video_frames2.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Machine_Seated_Calf_Raises(F)1.mp4"></video>
+                                 <video autoplay playsinline loop muted src="/Videos/Machine_Seated_Calf_Raises(F)2.mp4"></video>`;
     advice2.innerHTML = `<h2> <span>1</span>Sit on a bench with back support. Raise the dumbbells to shoulder height with your palms forward.</h2>
                            <h2> <span>2</span>Raise the dumbbells upwards and pause at the contracted position.</h2>
                            <h2> <span>3</span>Lower the weights back to starting position.</h2>` ;
-    ex_name3.innerHTML = 'Dumbell Calf Raises';
-    video_frames3.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Dumbell_Calf_Raises1.MOV"></video>
-                                  <video autoplay playsinline loop muted src="/Videos/Dumbell_Calf_Raises1.MOV"></video>`;
+    ex_name3.innerHTML = 'Squat';
+    video_frames3.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Barbell_Squat(F)2.mp4"></video>
+                                  <video autoplay playsinline loop muted src="/Videos/Barbell_Squat(F)2.mp4"></video>`;
     advice3.innerHTML = `<h2> <span>1</span>Lay flat on the incline bench with your feet on the ground. Raise the dumbbells until you have straight arms.</h2>
                                                <h2> <span>2</span>Lower the dumbbells to your mid chest.</h2>
                                                <h2> <span>3</span>Raise the dumbbells until you've locked your elbows.</h2>` ;
   } else if (muscle === 'traps-f') {
-    ex_name1.innerHTML = 'Dumbell Seated Shrugs';
-    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Dumbell_Seated_Shrug1.MOV"></video>
-                                 <video autoplay playsinline loop muted src="/Videos/Dumbell_Seated_Shrug1.MOV"></video>`;
+    ex_name1.innerHTML = 'Dumbell Shrugs';
+    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Dumbell_Shrugs(F)1.mp4"></video>
+                                 <video autoplay playsinline loop muted src="/Videos/Dumbell_Shrugs(F)2.mp4"></video>`;
     advice1.innerHTML = `<h2> <span>1</span>Take a roughly shoulder width grip. There should be a straight line from your elbow to fist (vertical forearms).</h2>
                            <h2> <span>2</span>Pull your chin back and press the weight toward the ceiling by extending at the elbow joint and flexing at the shoulder joint.</h2>
                            <h2> <span>3</span>Press until your elbows are extended and push your head forward slightly.</h2>` ;
-    ex_name2.innerHTML = 'Dumbell Shrugs';
-    video_frames2.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Dumbell_Shrug1.MOV"></video>
-                                 <video autoplay playsinline loop muted src="/Videos/Dumbell_Shrug1.MOV"></video>`;
+    ex_name2.innerHTML = 'Dumbell Seated Shrugs';
+    video_frames2.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Dumbell_Seated_Shrugs(F)1.mp4"></video>
+                                 <video autoplay playsinline loop muted src="/Videos/Dumbell_Seated_Shrugs(F)2.mp4"></video>`;
     advice2.innerHTML = `<h2> <span>1</span>Sit on a bench with back support. Raise the dumbbells to shoulder height with your palms forward.</h2>
                            <h2> <span>2</span>Raise the dumbbells upwards and pause at the contracted position.</h2>
                            <h2> <span>3</span>Lower the weights back to starting position.</h2>` ;
     ex_name3.innerHTML = 'Barbell Silverback Shrugs';
-    video_frames3.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Barbell_Silverback_Shrug.MOV"></video>
-                                  <video autoplay playsinline loop muted src="/Videos/Barbell_Silverback_Shrug1.MOV"></video>`;
+    video_frames3.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Barbell_SilverBack_Shrugs(F)1.mp4"></video>
+                                  <video autoplay playsinline loop muted src="/Videos/Barbell_SilverBack_Shrugs(F)2.mp4"></video>`;
     advice3.innerHTML = `<h2> <span>1</span>Lay flat on the incline bench with your feet on the ground. Raise the dumbbells until you have straight arms.</h2>
                                                <h2> <span>2</span>Lower the dumbbells to your mid chest.</h2>
                                                <h2> <span>3</span>Raise the dumbbells until you've locked your elbows.</h2>` ;
   } else if (muscle === 'lads-f') {
-    ex_name1.innerHTML = 'Chin Ups';
-    video_frames1.innerHTML = `<video autoplay playsinline loop muted src = "/Videos/Chin_Ups1.MOV"></video>
-                                 <video autoplay playsinline loop muted src = "/Videos/Chin_Ups1.MOV"></video>`;
+    ex_name1.innerHTML = 'Dumbell Row Unilateral';
+    video_frames1.innerHTML = `<video autoplay playsinline loop muted src = "/Videos/Dumbell_Row_Unilateral(1)F.mp4"></video>
+                                 <video autoplay playsinline loop muted src = "/Videos/Dumbell_Row_Unilateral(F)2.mp4"></video>`;
     advice1.innerHTML = `<h2> <span>1</span>Take a roughly shoulder width grip. There should be a straight line from your elbow to fist (vertical forearms).</h2>
                            <h2> <span>2</span>Pull your chin back and press the weight toward the ceiling by extending at the elbow joint and flexing at the shoulder joint.</h2>
                            <h2> <span>3</span>Press until your elbows are extended and push your head forward slightly.</h2>` ;
-    ex_name2.innerHTML = 'Dumbell Seated Overhead Press';
-    video_frames2.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-front.mp4#t=0.1"></video>
-                                 <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-seated-overhead-press-side.mp4#t=0.1"></video>`;
+    ex_name2.innerHTML = 'Barbell SilverBack Shrugs';
+    video_frames2.innerHTML = `<video autoplay playsinline loop muted playsinline loop src="/Videos/Barbell_SilverBack_Shrugs(F)1.mp4"></video>
+                                 <video autoplay playsinline loop muted playsinline loop src="/Videos/Barbell_SilverBack_Shrugs(F)2.mp4"></video>`;
     advice2.innerHTML = `<h2> <span>1</span>Sit on a bench with back support. Raise the dumbbells to shoulder height with your palms forward.</h2>
                            <h2> <span>2</span>Raise the dumbbells upwards and pause at the contracted position.</h2>
                            <h2> <span>3</span>Lower the weights back to starting position.</h2>` ;
     ex_name3.innerHTML = 'Cable Low Single Arm Laterlar Raise';
-    video_frames3.innerHTML = `<video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-front.mp4#t=0.1"></video>
-                                  <video loop src="https://media.musclewiki.com/media/uploads/videos/branded/male-Cables-cable-lateral-raise-side.mp4#t=0.1"></video>`;
+    video_frames3.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Cable_Bent_Over_Pullover(F)1.mp4"></video>
+                                  <video autoplay playsinline loop muted src="/Videos/Cable_Bent_Over_Bar_Pullover(F)2.mp4"></video>`;
     advice3.innerHTML = `<h2> <span>1</span>Lay flat on the incline bench with your feet on the ground. Raise the dumbbells until you have straight arms.</h2>
                                                <h2> <span>2</span>Lower the dumbbells to your mid chest.</h2>
                                                <h2> <span>3</span>Raise the dumbbells until you've locked your elbows.</h2>` ;
   } else if (muscle === 'traps-middle-f') {
     ex_name1.innerHTML = 'Deadlift';
-    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Barbell_Deadlift1.MOV"></video>
-                                 <video autoplay playsinline loop muted src="/Videos/Barbell_Deadlift2.MOV"></video>`;
+    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Deadlif(F)1.mp4"></video>
+                                 <video autoplay playsinline loop muted src="/Videos/Deadlift(F)2.mp4"></video>`;
     advice1.innerHTML = `<h2> <span>1</span>Take a roughly shoulder width grip. There should be a straight line from your elbow to fist (vertical forearms).</h2>
                            <h2> <span>2</span>Pull your chin back and press the weight toward the ceiling by extending at the elbow joint and flexing at the shoulder joint.</h2>
                            <h2> <span>3</span>Press until your elbows are extended and push your head forward slightly.</h2>` ;
     ex_name2.innerHTML = 'Barbell Low Bar Good Morning';
-    video_frames2.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Barbell_Low_Good_Morning1.MOV"></video>
-                                 <video autoplay playsinline loop muted src="/Videos/Barbell_Low_Bar_Good_Morning2.MOV"></video>`;
+    video_frames2.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Barbell_Low_Bar_Good_Morning(F)1.mp4"></video>
+                                 <video autoplay playsinline loop muted src="/Videos/Barbell_Low_Bar_Good_Morning(F)2.mp4"></video>`;
     advice2.innerHTML = `<h2> <span>1</span>Sit on a bench with back support. Raise the dumbbells to shoulder height with your palms forward.</h2>
                            <h2> <span>2</span>Raise the dumbbells upwards and pause at the contracted position.</h2>
                            <h2> <span>3</span>Lower the weights back to starting position.</h2>` ;
     ex_name3.innerHTML = 'Silverback shrugs';
-    video_frames3.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Barbell_Silverback_Shrug.MOV"></video>
-                                  <video autoplay playsinline loop muted src="/Videos/Barbell_Silverback_Shrug1.MOV"></video>`;
+    video_frames3.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Barbell_SilverBack_Shrugs(F)1.mp4"></video>
+                                  <video autoplay playsinline loop muted src="/Videos/Barbell_SilverBack_Shrugs(F)2.mp4"></video>`;
     advice3.innerHTML = `<h2> <span>1</span>Lay flat on the incline bench with your feet on the ground. Raise the dumbbells until you have straight arms.</h2>
                                                <h2> <span>2</span>Lower the dumbbells to your mid chest.</h2>
                                                <h2> <span>3</span>Raise the dumbbells until you've locked your elbows.</h2>` ;
   } else if (muscle === 'lowerback-f') {
     ex_name1.innerHTML = 'Deadlift';
-    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Barbell_Deadlift1.MOV"></video>
-                                 <video autoplay playsinline loop muted src="/Videos/Barbell_Deadlift2.MOV"></video>`;
+    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Deadlif(F)1.mp4"></video>
+                                 <video autoplay playsinline loop muted src="/Videos/Deadlift(F)2.mp4"></video>`;
     advice1.innerHTML = `<h2> <span>1</span>Take a roughly shoulder width grip. There should be a straight line from your elbow to fist (vertical forearms).</h2>
                            <h2> <span>2</span>Pull your chin back and press the weight toward the ceiling by extending at the elbow joint and flexing at the shoulder joint.</h2>
                            <h2> <span>3</span>Press until your elbows are extended and push your head forward slightly.</h2>` ;
-    ex_name2.innerHTML = 'Machine 45 Degree Back Extension';
-    video_frames2.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Machine_45_Degree_Back_Extension1.MOV"></video>
-                                 <video autoplay playsinline loop muted src="/Videos/Machine_45_Degree_Extension2.MOV"></video>`;
+    ex_name2.innerHTML = 'Barbell Low Good Morning';
+    video_frames2.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Barbell_Low_Bar_Good_Morning(F)2.mp4"></video>
+                                 <video autoplay playsinline loop muted src="/Videos/Barbell_Low_Bar_Good_Morning(F)1.mp4"></video>`;
     advice2.innerHTML = `<h2> <span>1</span>Sit on a bench with back support. Raise the dumbbells to shoulder height with your palms forward.</h2>
                            <h2> <span>2</span>Raise the dumbbells upwards and pause at the contracted position.</h2>
                            <h2> <span>3</span>Lower the weights back to starting position.</h2>` ;
-    ex_name3.innerHTML = 'Barbell Low Good Morning';
-    video_frames3.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Barbell_Low_Good_Morning1.MOV"></video>
-                                  <video autoplay playsinline loop muted src="/Videos/Barbell_Low_Good_Morning1.MOV"></video>`;
+    ex_name3.innerHTML = 'Barbell Stiff Leg Deadlifts';
+    video_frames3.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Barbell_Stiff_Leg_Deadlifts(F)1.mp4"></video>
+                                  <video autoplay playsinline loop muted src="/Videos/Barbell_Stiff_Leg_Deadlifts(F)2.mp4"></video>`;
     advice3.innerHTML = `<h2> <span>1</span>Lay flat on the incline bench with your feet on the ground. Raise the dumbbells until you have straight arms.</h2>
                                                <h2> <span>2</span>Lower the dumbbells to your mid chest.</h2>
                                                <h2> <span>3</span>Raise the dumbbells until you've locked your elbows.</h2>` ;
   } else if (muscle === 'triceps-f') {
-    ex_name1.innerHTML = 'French Press';
-    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/French_Press1.MOV"></video>
-                                 <video autoplay playsinline loop muted src="/Videos/French_Press2.MOV"></video>`;
+    ex_name1.innerHTML = 'Cable Row Pushdown';
+    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Cable_Rope_Pushdown(F)1.mp4"></video>
+                                 <video autoplay playsinline loop muted src="/Videos/Cable_Rope_Pushdown(F)2.mp4"></video>`;
     advice1.innerHTML = `<h2> <span>1</span>Take a roughly shoulder width grip. There should be a straight line from your elbow to fist (vertical forearms).</h2>
                            <h2> <span>2</span>Pull your chin back and press the weight toward the ceiling by extending at the elbow joint and flexing at the shoulder joint.</h2>
                            <h2> <span>3</span>Press until your elbows are extended and push your head forward slightly.</h2>` ;
-    ex_name2.innerHTML = 'Cable Row Pushdown';
-    video_frames2.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Cable_Rope_Pushdown1.MOV"></video>
-                                 <video autoplay playsinline loop muted src="/Videos/Cable_Row_Pushdown2.MOV"></video>`;
+    ex_name2.innerHTML = 'Push Up';
+    video_frames2.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Push_Up(F)1.MOV"></video>
+                                 <video autoplay playsinline loop muted src="/Videos/Push_UP(F)2.mp4"></video>`;
     advice2.innerHTML = `<h2> <span>1</span>Sit on a bench with back support. Raise the dumbbells to shoulder height with your palms forward.</h2>
                            <h2> <span>2</span>Raise the dumbbells upwards and pause at the contracted position.</h2>
                            <h2> <span>3</span>Lower the weights back to starting position.</h2>` ;
     ex_name3.innerHTML = 'Dumbell Skullcrushers';
-    video_frames3.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Dumbell_Skulcrusher1.MOV"></video>
-                                  <video autoplay playsinline loop muted src="/Videos/Dumbell_Skulcrusher1.MOV"></video>`;
+    video_frames3.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Dumbell_Skullcrushers(F)1.mp4"></video>
+                                  <video autoplay playsinline loop muted src="/Videos/Dumbell_Skullcrushers(F)2.mp4"></video>`;
     advice3.innerHTML = `<h2> <span>1</span>Lay flat on the incline bench with your feet on the ground. Raise the dumbbells until you have straight arms.</h2>
                                                <h2> <span>2</span>Lower the dumbbells to your mid chest.</h2>
                                                <h2> <span>3</span>Raise the dumbbells until you've locked your elbows.</h2>` ;
   } else if (muscle === 'glutes-f') {
     ex_name1.innerHTML = 'Squat';
-    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Barbell_Squat1.MOV"></video>
-                                 <video autoplay playsinline loop muted src="/Videos/Barbell_Squat2.MOV"></video>`;
+    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Barbell_Squat(F)1.mp4"></video>
+                                 <video autoplay playsinline loop muted src="/Videos/Barbell_Squat(F)2.mp4"></video>`;
     advice1.innerHTML = `<h2> <span>1</span>Take a roughly shoulder width grip. There should be a straight line from your elbow to fist (vertical forearms).</h2>
                            <h2> <span>2</span>Pull your chin back and press the weight toward the ceiling by extending at the elbow joint and flexing at the shoulder joint.</h2>
                            <h2> <span>3</span>Press until your elbows are extended and push your head forward slightly.</h2>` ;
     ex_name2.innerHTML = 'Hip Thrust';
-    video_frames2.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Barbell_Hip_Thrust1.MOV""></video>
-                                 <video autoplay playsinline loop muted src="/Videos/Barbell_Hip_Thrust2.MOV""></video>`;
+    video_frames2.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Barbell_Hip_Thrust(F)1.mp4"></video>
+                                 <video autoplay playsinline loop muted src="/Videos/Barbell_Hip_Thrust(F)2.mp4"></video>`;
     advice2.innerHTML = `<h2> <span>1</span>Sit on a bench with back support. Raise the dumbbells to shoulder height with your palms forward.</h2>
                            <h2> <span>2</span>Raise the dumbbells upwards and pause at the contracted position.</h2>
                            <h2> <span>3</span>Lower the weights back to starting position.</h2>` ;
     ex_name3.innerHTML = 'Barbell Low Bar Good Morning';
-    video_frames3.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Barbell_Low_Good_Morning1.MOV"></video>
-                                  <video autoplay playsinline loop muted src="/Videos/Barbell_Low_Bar_Good_Morning2.MOV"></video>`;
+    video_frames3.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Barbell_Low_Bar_Good_Morning(F)2.mp4"></video>
+                                  <video autoplay playsinline loop muted src="/Videos/Barbell_Low_Bar_Good_Morning(F)1.mp4"></video>`;
     advice3.innerHTML = `<h2> <span>1</span>Lay flat on the incline bench with your feet on the ground. Raise the dumbbells until you have straight arms.</h2>
                                                <h2> <span>2</span>Lower the dumbbells to your mid chest.</h2>
                                                <h2> <span>3</span>Raise the dumbbells until you've locked your elbows.</h2>` ;
   } else if (muscle === 'hamstrings-f') {
     ex_name1.innerHTML = 'Machine Hamstring curls';
-    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Machine_Hamstring_Curl1.MOV"></video>
-                                 <video autoplay playsinline loop muted src="/Videos/Machine_Hamstring_Curl2.MOV"></video>`;
+    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Machine_Hamstring_Curl(F)1.mp4"></video>
+                                 <video autoplay playsinline loop muted src="/Videos/Machine_Hamstrings_Curls(F)2.mp4"></video>`;
     advice1.innerHTML = `<h2> <span>1</span>Take a roughly shoulder width grip. There should be a straight line from your elbow to fist (vertical forearms).</h2>
                            <h2> <span>2</span>Pull your chin back and press the weight toward the ceiling by extending at the elbow joint and flexing at the shoulder joint.</h2>
                            <h2> <span>3</span>Press until your elbows are extended and push your head forward slightly.</h2>` ;
     ex_name2.innerHTML = 'Barbell Low Bar Good Morning';
-    video_frames2.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Barbell_Low_Good_Morning1.MOV"></video>
-                                 <video autoplay playsinline loop muted src="/Videos/Barbell_Low_Good_Morning1.MOV"></video>`;
+    video_frames2.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Barbell_Low_Bar_Good_Morning(F)1.mp4"></video>
+                                 <video autoplay playsinline loop muted src="/Videos/Barbell_Low_Bar_Good_Morning(F)2.mp4"></video>`;
     advice2.innerHTML = `<h2> <span>1</span>Sit on a bench with back support. Raise the dumbbells to shoulder height with your palms forward.</h2>
                            <h2> <span>2</span>Raise the dumbbells upwards and pause at the contracted position.</h2>
                            <h2> <span>3</span>Lower the weights back to starting position.</h2>` ;
     ex_name3.innerHTML = 'Deadlift';
-    video_frames3.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Barbell_Deadlift1.MOV"></video>
-                                  <video autoplay playsinline loop muted src="/Videos/Barbell_Deadlift2.MOV"></video>`;
+    video_frames3.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Deadlif(F)1.mp4"></video>
+                                  <video autoplay playsinline loop muted src="/Videos/Deadlift(F)2.mp4"></video>`;
     advice3.innerHTML = `<h2> <span>1</span>Lay flat on the incline bench with your feet on the ground. Raise the dumbbells until you have straight arms.</h2>
                                                <h2> <span>2</span>Lower the dumbbells to your mid chest.</h2>
                                                <h2> <span>3</span>Raise the dumbbells until you've locked your elbows.</h2>` ;
   }
 
 
-
+  if (buttonElement.innerHTML ==='<i class="bx bx-male-sign"></i>' ){
+    indicator = 0;
+  } else {
+    indicator = 1;
+  }
+  console.log(indicator);
   instructions.style.display = 'inline';
   SVG_male_frontElement.style.display = 'none';
   SVG_male_backElement.style.display = 'none';
@@ -632,8 +638,14 @@ function Show_exercise(muscle) {
 }
 function get_back() {
   instructions.style.display = 'none';
-  SVG_male_frontElement.style.display = 'inline';
-  SVG_male_backElement.style.display = 'inline';
+  if (indicator === 0){
+    SVG_male_frontElement.style.display = 'inline';
+    SVG_male_backElement.style.display = 'inline';
+  } else if(indicator === 1){
+    SVG_female_frontElement.style.display = 'inline';
+    SVG_female_backElement.style.display = 'inline';
+  }
+ 
   buttonElement_nd.style.display = 'none';
   buttonElement.style.display = 'inline';
 }

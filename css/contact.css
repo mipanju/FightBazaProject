@@ -198,6 +198,10 @@ body {
     animation: glow2 2s infinite;
 }
 
+.inputBox input{
+    color: #fff;
+}
+
 .bxs-phone {
     background-color: #fcf006;
     color: #12171e;
