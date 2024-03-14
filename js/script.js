@@ -889,7 +889,7 @@ function corectHeightInput() {
 }
 
 
-let x;
+// let x;
 let finalResult;
 let objectiveList = Array.from(document.querySelectorAll('.weight_list input[type = "radio"]'));
 // let intensityList = Array.from(document.querySelectorAll('.intensity_list input[type = "radio"]'))
@@ -904,15 +904,20 @@ let objectiveList = Array.from(document.querySelectorAll('.weight_list input[typ
 // function rezultat() {
 //   console.log(x)
 // }
+
+var y = 0;
 function calculateResult() {
 
   objectiveList.forEach(function (objectiveItem) {
     objectiveItem.addEventListener('click', function checkObjective(event) {
       x = event.target.value;
-      console.log(parseInt(x))
-      return parseInt(x)
+      console.log(parseInt(x) + 1)
+      // return parseInt(x)
     })
   })
+  // y = checkObjective();
+  // console.log(y)
+
 }
 
 calculateResult();
