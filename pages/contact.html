@@ -13,6 +13,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="../Images/Logo2.png">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "ZZLaixjjQsji6rDuH",
+            });
+        })();
+        </script>
 </head>
 
 <body>
@@ -121,8 +131,7 @@
                 </div>
                 </div>
                 <div class="contactForm">
-                <form action="https://api.web3forms.com/submit" method="POST">
-                    <input type="hidden" name="access_key" value="181082bf-0d43-46d1-a33d-661d65b019f0">
+                <form>
                     <h2>Send Message</h2>
                     <div class="inputBox">
                     <input type="text" name="name" required id="name">
@@ -133,11 +142,11 @@
                     <span>Email</span>
                     </div>
                     <div class="inputBox">
-                    <textarea name="message" required></textarea>
+                    <textarea name="message" required id="message"></textarea>
                     <span>Type your Message...</span>
                     </div>
                     <div class="inputBox">
-                    <input type="submit">
+                    <input type="submit" onclick="sendMail()">
                     </div>
                 </form>
                 </div>
