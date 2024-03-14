@@ -889,6 +889,70 @@ function corectHeightInput() {
 }
 
 
+let x;
+let finalResult;
+let objectiveList = Array.from(document.querySelectorAll('.weight_list input[type = "radio"]'));
+// let intensityList = Array.from(document.querySelectorAll('.intensity_list input[type = "radio"]'))
+
+
+
+// function checkObjective(event) {
+//   x = event.target.value;
+//   rezultat();
+// }
+
+// function rezultat() {
+//   console.log(x)
+// }
+function calculateResult() {
+
+  objectiveList.forEach(function (objectiveItem) {
+    objectiveItem.addEventListener('click', function checkObjective(event) {
+      x = event.target.value;
+      console.log(parseInt(x))
+      return parseInt(x)
+    })
+  })
+}
+
+calculateResult();
+
+
+// aurel();
+
+
+// function aurel() {
+//   var y = 0;
+//   x = checkObjective()
+//   y = x;
+//   console.log(y)
+// }
+
+// aurel()
+
+
+
+
+// function aurel() {
+//   checkObjective()
+// }
+// aurel()
+
+
+
+// function checkIntensity(e) {
+//   y = e.target.value;
+//   console.log(y)
+// }
+
+// intensityList.forEach(function (intensityItem) {
+//   intensityItem.addEventListener('click', checkIntensity)
+// })
+
+
+
+
+
 
 
 
