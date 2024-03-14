@@ -677,6 +677,15 @@ btn.onclick = sidebar_toggle;
 
 
 
+
+
+
+
+//calories js
+
+
+
+
 var interior_1 = document.querySelector('.interior_1');
 var circle_1 = document.querySelector('.circle_1');
 var pointer_1 = document.querySelector('.pointer_1');
@@ -692,6 +701,9 @@ var height = document.querySelector('.height');
 var currentAge = parseInt(age.textContent);
 var currentWeight = parseInt(weight.textContent);
 var currentHeight = parseInt(height.textContent)
+var currentAgeCal = currentAge;
+var currentWeightCal = currentWeight;
+var currentHeightCal = currentHeight;
 
 let isRotating = false;
 let lastAngle_1 = 0;
@@ -737,6 +749,7 @@ document.addEventListener('mousedown', function (e) {
 //age
 const rotateInterior_1 = function (e) {
   if (isRotating === true) {
+    // function ageCalculator() {
     let interiorX = interior_1.getBoundingClientRect().left + interior_1.clientWidth / 2;
     let interiorY = interior_1.getBoundingClientRect().top + interior_1.clientHeight / 2;
 
@@ -756,8 +769,8 @@ const rotateInterior_1 = function (e) {
     circle_1.style.strokeDashoffset = `${880 - (880 * (progressPercent))}`;
 
     let currentAge = Math.round(progressPercent * 100);
-    age.innerHTML = `${currentAge}`;
 
+    age.innerHTML = `${currentAge}`;
 
   }
   corectAgeInput()
@@ -786,6 +799,7 @@ const rotateInterior_2 = function (e) {
     pointer_2.style.transform = `rotate(${rotationAngle}deg)`;
 
     let progressPercent = rotationAngle / 360;
+
     circle_2.style.strokeDashoffset = `${880 - (880 * progressPercent)}`;
 
     let currentWeight = Math.round((progressPercent * 2) * 100) + 40;
@@ -838,19 +852,27 @@ document.addEventListener('mouseup', function () {
 
 //age
 function corectAgeInput() {
-  if (age.textContent <= 100 && age.textContent >= 0) {
+  var maxA = 100;
+  var minA = 0
+  if (age.textContent <= maxA && age.textContent >= minA) {
     progressPercent = age.textContent / 100;
     circle_1.style.strokeDashoffset = `${880 - (880 * (progressPercent))}`
     rotationAngle = progressPercent * 360;
     pointer_1.style.transform = `rotate(${rotationAngle}deg)`
+
   } else
-    if (age.textContent < 0) {
-      age.textContent = 17;
+    if (age.textContent < minA) {
+      age.textContent = 10;
     } else
-      if (age.textContent > 100) {
-        age.textContent = 100
+      if (age.textContent > maxA) {
+        age.textContent = maxA
       }
+
+  currentAgeCal = parseInt(age.textContent);
+  finalResultCalories()
 }
+
+
 //weight
 function corectWeightInput() {
   var maxW = 240;
@@ -867,6 +889,8 @@ function corectWeightInput() {
       if (weight.textContent > maxW) {
         weight.textContent = maxW;
       }
+  currentWeightCal = parseInt(weight.textContent);
+  finalResultCalories()
 }
 
 //height
@@ -886,73 +910,58 @@ function corectHeightInput() {
       if (height.textContent > maxH) {
         height.textContent = maxH;
       }
+  currentHeightCal = parseInt(height.textContent);
+  finalResultCalories()
 }
 
 
-// let x;
+
+
+
+
+//functions for square container
+
+let rmb;
+let objective;
+let intensity;
 let finalResult;
 let objectiveList = Array.from(document.querySelectorAll('.weight_list input[type = "radio"]'));
-// let intensityList = Array.from(document.querySelectorAll('.intensity_list input[type = "radio"]'))
+let intensityList = Array.from(document.querySelectorAll('.intensity_list input[type = "radio"]'))
 
 
-
-// function checkObjective(event) {
-//   x = event.target.value;
-//   rezultat();
-// }
-
-// function rezultat() {
-//   console.log(x)
-// }
-
-var y = 0;
-function calculateResult() {
-
-  objectiveList.forEach(function (objectiveItem) {
-    objectiveItem.addEventListener('click', function checkObjective(event) {
-      x = event.target.value;
-      console.log(parseInt(x) + 1)
-      // return parseInt(x)
-    })
-  })
-  // y = checkObjective();
-  // console.log(y)
-
+function checkObjective(event) {
+  objective = parseFloat(event.target.value);
+  finalResultCalories()
 }
 
-calculateResult();
+function checkIntensity(e) {
+  intensity = parseFloat(e.target.value);
+  finalResultCalories()
+}
+
+objectiveList.forEach(function (objectiveItem) {
+  objectiveItem.addEventListener('click', checkObjective)
+})
 
 
-// aurel();
-
-
-// function aurel() {
-//   var y = 0;
-//   x = checkObjective()
-//   y = x;
-//   console.log(y)
-// }
-
-// aurel()
-
-
-
-
-// function aurel() {
-//   checkObjective()
-// }
-// aurel()
+intensityList.forEach(function (intensityItem) {
+  intensityItem.addEventListener('click', checkIntensity)
+})
 
 
 
-// function checkIntensity(e) {
-//   y = e.target.value;
-//   console.log(y)
-// }
 
-// intensityList.forEach(function (intensityItem) {
-//   intensityItem.addEventListener('click', checkIntensity)
-// })
+//function to calaculate final number of calories
+
+function finalResultCalories() {
+  rmb = 10 * currentWeightCal + 6.25 * currentHeightCal - 5 * currentAgeCal;
+  finalResultOfCalories = intensity * rmb + objective;
+  // console.log(finalResultOfCalories);
+  console.log(parseInt(finalResultOfCalories))
+}
+
+
+
 
 
 
