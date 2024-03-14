@@ -627,7 +627,7 @@ p {
     justify-content: center;
     align-items: flex-start;
     transform-origin: 10px 150px;
-    transform: rotate(61deg);
+    transform: rotate(36deg);
     z-index: 3;
 }
 
@@ -641,7 +641,7 @@ p {
     justify-content: center;
     align-items: flex-start;
     transform-origin: 10px 150px;
-    transform: rotate(63deg);
+    transform: rotate(54deg);
     z-index: 3;
 }
 
@@ -655,7 +655,7 @@ p {
     justify-content: center;
     align-items: flex-start;
     transform-origin: 10px 150px;
-    transform: rotate(70deg);
+    transform: rotate(72deg);
     z-index: 3;
 }
 
@@ -665,7 +665,7 @@ circle.circle_1 {
     stroke: #fcf006;
     stroke-width: 20px;
     stroke-dasharray: 880;
-    stroke-dashoffset: calc(880 - (880 * 17)/100);
+    stroke-dashoffset: calc(880 - (880 * 10)/100);
     transform-origin: center;
     transform: rotate(-90deg);
     z-index: 2;
@@ -676,7 +676,7 @@ circle.circle_2 {
     stroke: #fcf006;
     stroke-width: 20px;
     stroke-dasharray: 880;
-    stroke-dashoffset: calc(880 - (880 * 70)/400);
+    stroke-dashoffset: calc(880 - (880 * 0.15));
     transform-origin: center;
     transform: rotate(-90deg);
     z-index: 2;
@@ -687,7 +687,7 @@ circle.circle_3 {
     stroke: #fcf006;
     stroke-width: 20px;
     stroke-dasharray: 880;
-    stroke-dashoffset: calc(880 - (880 * 140)/720);
+    stroke-dashoffset: calc(880 - (880 * 0.2));
     transform-origin: center;
     transform: rotate(-90deg);
     z-index: 2;
