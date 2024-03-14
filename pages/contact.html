@@ -42,13 +42,13 @@
                 </a>
                 <span class="tooltip">Workouts</span>
             </li>
-            <li>
+            <!-- <li>
                 <a href="../pages/calories.html">
                     <i class='bx bxs-bowl-hot'></i>
                     <span class="nav-item">Calories</span>
                 </a>
                 <span class="tooltip">Calories</span>
-            </li>
+            </li> -->
             <li>
                 <a href="../pages/contact.html">
                     <i class='bx bxs-phone'></i>
@@ -121,22 +121,23 @@
                 </div>
                 </div>
                 <div class="contactForm">
-                <form>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="181082bf-0d43-46d1-a33d-661d65b019f0">
                     <h2>Send Message</h2>
                     <div class="inputBox">
-                    <input type="text" required="required" id="name">
+                    <input type="text" name="name" required id="name">
                     <span>Full Name</span>
                     </div>
                     <div class="inputBox">
-                    <input type="text" id="email" required="required">
+                    <input  type="email" name="email" required id="email">
                     <span>Email</span>
                     </div>
                     <div class="inputBox">
-                    <textarea required="required" id="message"></textarea>
+                    <textarea name="message" required></textarea>
                     <span>Type your Message...</span>
                     </div>
                     <div class="inputBox">
-                    <input onsubmit="sendEmail()" type="submit" value="Send">
+                    <input type="submit">
                     </div>
                 </form>
                 </div>
