@@ -49,20 +49,20 @@ let indicator;
 function Show_exercise(muscle) {
   if (muscle === 'chest') {
     ex_name1.innerHTML = 'Barbell Bench Press';
-    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="/Videos/BenchPress1.MOV"></video>
-                                 <video autoplay playsinline loop  muted src="/Videos/BenchPress1.MOV"></video>`;
+    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="../Videos/BenchPress1.MOV"></video>
+                                 <video autoplay playsinline loop  muted src="../Videos/BenchPress1.MOV"></video>`;
     advice1.innerHTML = `<h2> <span>1</span>Lay flat on the bench with your feet on the ground. With straight arms unrack the bar.</h2>
                            <h2> <span>2</span>Lower the bar to your mid chest.</h2>
                            <h2> <span>3</span>Raise the bar until you've locked your elbows.</h2>` ;
     ex_name2.innerHTML = 'Push Up';
-    video_frames2.innerHTML = `<video autoplay playsinline loop muted src="/Videos/Push_Up1.MOV"></video>
-                                 <video autoplay playsinline loop muted src="/Videos/Push_Up2.MOV"></video>`;
+    video_frames2.innerHTML = `<video autoplay playsinline loop muted src="../Videos/Push_Up1.MOV"></video>
+                                 <video autoplay playsinline loop muted src="../Videos/Push_Up2.MOV"></video>`;
     advice2.innerHTML = `<h2> <span>1</span>Lay Place your hands firmly on the ground, directly under shoulders.</h2>
                            <h2> <span>2</span>Flatten your back so your entire body is straight and slowly lower your body.</h2>
                            <h2> <span>3</span>Exhale as you push back to the starting position.</h2>` ;
     ex_name3.innerHTML = 'Dumbell Incline Bench Press';
-    video_frames3.innerHTML = `<video  autoplay playsinline loop muted src="/Videos/Dumbell_Incline_BenchPress1.MOV"></video>
-                                  <video  autoplay playsinline loop muted src="/Videos/Dumbell_Incline_BenchPress2.MOV"></video>`;
+    video_frames3.innerHTML = `<video  autoplay playsinline loop muted src="../Videos/Dumbell_Incline_BenchPress1.MOV"></video>
+                                  <video  autoplay playsinline loop muted src="../Videos/Dumbell_Incline_BenchPress2.MOV"></video>`;
     advice3.innerHTML = `<h2> <span>1</span>Lay flat on the incline bench with your feet on the ground. Raise the dumbbells until you have straight arms.</h2>
                                                <h2> <span>2</span>Lower the dumbbells to your mid chest.</h2>
                                                <h2> <span>3</span>Raise the dumbbells until you've locked your elbows.</h2>` ;
