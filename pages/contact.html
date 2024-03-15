@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="../Images/Logo2.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
         </script>
@@ -23,6 +24,7 @@
             });
         })();
         </script>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </head>
 
 <body>
@@ -131,27 +133,34 @@
                 </div>
                 </div>
                 <div class="contactForm">
-                <form>
+                <form id="contactForm">
                     <h2>Send Message</h2>
                     <div class="inputBox">
-                    <input type="text" name="name" required id="name">
+                    <input type="text" required id="name">
                     <span>Full Name</span>
                     </div>
                     <div class="inputBox">
-                    <input  type="email" name="email" required id="email">
+                    <input  type="email" required id="email_id">
                     <span>Email</span>
                     </div>
                     <div class="inputBox">
-                    <textarea name="message" required id="message"></textarea>
+                    <textarea required id="message"></textarea>
                     <span>Type your Message...</span>
                     </div>
                     <div class="inputBox">
-                    <input type="submit" onclick="sendMail()">
+                    <input id="js-input" type="submit" onclick="Alert()" onclick="sendMail()">
                     </div>
                 </form>
                 </div>
             </div>
         </div>
+        <div class="alert hide">
+            <span class="fas fa-exclamation-circle"></span>
+            <span class="msg">Message was succsesfully sent. Thank you!</span>
+            <div class="close-btn">
+               <span class="fas fa-times"></span>
+            </div>
+         </div>
     </div>
 
     <script src="../js/contact.js"></script>
