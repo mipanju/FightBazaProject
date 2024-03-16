@@ -711,12 +711,12 @@ let lastAngle_2 = 0;
 let lastAngle_3 = 0;
 
 
-//age
-document.addEventListener('mousedown', function (e) {
+age
+document.addEventListener('mousedown', function rotateAge(e) {
   if (e.target.closest('.interior_1')) {
     isRotating = true;
 
-    let interiorX = interior_1.getBoundingClientRect().left + interior_1.clientWidth / 2;
+    let interiorX = e.clientX - interior_1.clientWidth / 2;
     let interiorY = interior_1.getBoundingClientRect().top + interior_1.clientHeight / 2;
     let deltaX = e.clientX - interiorX;
     let deltaY = e.clientY - interiorY;
@@ -746,12 +746,14 @@ document.addEventListener('mousedown', function (e) {
 
 
 
+
+
 //age
 const rotateInterior_1 = function (e) {
   if (isRotating === true) {
     // function ageCalculator() {
-    let interiorX = interior_1.getBoundingClientRect().left + interior_1.clientWidth / 2;
-    let interiorY = interior_1.getBoundingClientRect().top + interior_1.clientHeight / 2;
+    interiorX = interior_1.getBoundingClientRect().left + interior_1.clientWidth / 2;
+    interiorY = interior_1.getBoundingClientRect().top + interior_1.clientHeight / 2;
 
     let deltaX = e.clientX - interiorX;
     let deltaY = e.clientY - interiorY;
@@ -770,7 +772,13 @@ const rotateInterior_1 = function (e) {
 
     let currentAge = Math.round(progressPercent * 100);
 
+    // age.textContent = `${currentAge}`;
+
     age.innerHTML = `${currentAge}`;
+
+    // currentAgeCal = currentAge;
+
+    finalResultCalories()
 
   }
   corectAgeInput()
@@ -780,11 +788,13 @@ const rotateInterior_1 = function (e) {
 interior_1.addEventListener('mousemove', rotateInterior_1);
 
 
+
+
 //weight
 const rotateInterior_2 = function (e) {
   if (isRotating === true) {
-    let interiorX = interior_2.getBoundingClientRect().left + interior_2.clientWidth / 2;
-    let interiorY = interior_2.getBoundingClientRect().top + interior_2.clientHeight / 2;
+    interiorX = interior_2.getBoundingClientRect().left + interior_2.clientWidth / 2;
+    interiorY = interior_2.getBoundingClientRect().top + interior_2.clientHeight / 2;
 
     let deltaX = e.clientX - interiorX;
     let deltaY = e.clientY - interiorY;
@@ -803,7 +813,10 @@ const rotateInterior_2 = function (e) {
     circle_2.style.strokeDashoffset = `${880 - (880 * progressPercent)}`;
 
     let currentWeight = Math.round((progressPercent * 2) * 100) + 40;
+
     weight.innerHTML = `${currentWeight}`;
+
+    currentWeightCal = currentWeight;
 
 
   }
@@ -816,8 +829,8 @@ interior_2.addEventListener('mousemove', rotateInterior_2);
 //height
 const rotateInterior_3 = function (e) {
   if (isRotating === true) {
-    let interiorX = interior_3.getBoundingClientRect().left + interior_3.clientWidth / 2;
-    let interiorY = interior_3.getBoundingClientRect().top + interior_3.clientHeight / 2;
+    interiorX = interior_3.getBoundingClientRect().left + interior_3.clientWidth / 2;
+    interiorY = interior_3.getBoundingClientRect().top + interior_3.clientHeight / 2;
 
     let deltaX = e.clientX - interiorX;
     let deltaY = e.clientY - interiorY;
@@ -835,7 +848,10 @@ const rotateInterior_3 = function (e) {
     circle_3.style.strokeDashoffset = `${880 - (880 * progressPercent)}`;
 
     let currentHeight = Math.round(progressPercent * 100) + 120;
+
     height.innerHTML = `${currentHeight}`;
+
+    currentHeightCal = currentHeight;
 
   }
   corectHeightInput()
@@ -846,6 +862,9 @@ interior_3.addEventListener('mousemove', rotateInterior_3);
 document.addEventListener('mouseup', function () {
   isRotating = false;
 });
+document.addEventListener('touchend', function () {
+  isRotating = false;
+});
 
 
 
@@ -854,19 +873,23 @@ document.addEventListener('mouseup', function () {
 function corectAgeInput() {
   var maxA = 100;
   var minA = 0
-  if (age.textContent <= maxA && age.textContent >= minA) {
-    progressPercent = age.textContent / 100;
-    circle_1.style.strokeDashoffset = `${880 - (880 * (progressPercent))}`
-    rotationAngle = progressPercent * 360;
-    pointer_1.style.transform = `rotate(${rotationAngle}deg)`
+  if (isNaN(age.textContent)) {
+    age.textContent = minA
+  } else {
+    if (age.textContent <= maxA && age.textContent >= minA) {
+      progressPercent = age.textContent / 100;
+      circle_1.style.strokeDashoffset = `${880 - (880 * (progressPercent))}`
+      rotationAngle = progressPercent * 360;
+      pointer_1.style.transform = `rotate(${rotationAngle}deg)`
 
-  } else
-    if (age.textContent < minA) {
-      age.textContent = 10;
     } else
-      if (age.textContent > maxA) {
-        age.textContent = maxA
-      }
+      if (age.textContent < minA) {
+        age.textContent = 10;
+      } else
+        if (age.textContent > maxA) {
+          age.textContent = maxA
+        }
+  }
 
   currentAgeCal = parseInt(age.textContent);
   finalResultCalories()
@@ -877,18 +900,23 @@ function corectAgeInput() {
 function corectWeightInput() {
   var maxW = 240;
   var minW = 40;
-  if (weight.textContent <= maxW && weight.textContent >= minW) {
-    progressPercent = (weight.textContent - 40) / 200;
-    circle_2.style.strokeDashoffset = `${880 - (880 * progressPercent)}`;
-    rotationAngle = progressPercent * 360;
-    pointer_2.style.transform = `rotate(${rotationAngle}deg)`;
-  } else
-    if (weight.textContent < minW) {
-      weight.textContent = minW;
+  if (isNaN(weight.textContent)) {
+    weight.textContent = minW
+  } else {
+    if (weight.textContent <= maxW && weight.textContent >= minW) {
+      progressPercent = (weight.textContent - 40) / 200;
+      circle_2.style.strokeDashoffset = `${880 - (880 * progressPercent)}`;
+      rotationAngle = progressPercent * 360;
+      pointer_2.style.transform = `rotate(${rotationAngle}deg)`;
     } else
-      if (weight.textContent > maxW) {
-        weight.textContent = maxW;
-      }
+      if (weight.textContent < minW) {
+        weight.textContent = minW;
+      } else
+        if (weight.textContent > maxW) {
+          weight.textContent = maxW;
+        }
+  }
+
   currentWeightCal = parseInt(weight.textContent);
   finalResultCalories()
 }
@@ -897,19 +925,24 @@ function corectWeightInput() {
 function corectHeightInput() {
   var maxH = 220;
   var minH = 120;
-  if (height.textContent <= maxH && height.textContent >= minH) {
-    progressPercent = (height.textContent - 120) / 100;
-    circle_3.style.strokeDashoffset = `${880 - (880 * progressPercent)}`;
-    rotationAngle = progressPercent * 360;
-    pointer_3.style.transform = `rotate(${rotationAngle}deg)`;
-  } else
-    if (height.textContent < minH) {
-      height.textContent = minH;
-      console.log(rotationAngle)
+  if (isNaN(height.textContent)) {
+    height.textContent = minH
+  } else {
+    if (height.textContent <= maxH && height.textContent >= minH) {
+      progressPercent = (height.textContent - 120) / 100;
+      circle_3.style.strokeDashoffset = `${880 - (880 * progressPercent)}`;
+      rotationAngle = progressPercent * 360;
+      pointer_3.style.transform = `rotate(${rotationAngle}deg)`;
     } else
-      if (height.textContent > maxH) {
-        height.textContent = maxH;
-      }
+      if (height.textContent < minH) {
+        height.textContent = minH;
+        console.log(rotationAngle)
+      } else
+        if (height.textContent > maxH) {
+          height.textContent = maxH;
+        }
+  }
+
   currentHeightCal = parseInt(height.textContent);
   finalResultCalories()
 }
@@ -923,7 +956,9 @@ function corectHeightInput() {
 
 let rmb;
 let objective;
+let objectiveCal;
 let intensity;
+let intensityCal;
 let finalResult;
 let objectiveList = Array.from(document.querySelectorAll('.weight_list input[type = "radio"]'));
 let intensityList = Array.from(document.querySelectorAll('.intensity_list input[type = "radio"]'))
@@ -932,11 +967,15 @@ let intensityList = Array.from(document.querySelectorAll('.intensity_list input[
 function checkObjective(event) {
   objective = parseFloat(event.target.value);
   finalResultCalories()
+
+  objectiveCal = objective;
 }
 
 function checkIntensity(e) {
   intensity = parseFloat(e.target.value);
   finalResultCalories()
+
+  intensityCal = intensity;
 }
 
 objectiveList.forEach(function (objectiveItem) {
@@ -951,15 +990,55 @@ intensityList.forEach(function (intensityItem) {
 
 
 
+
+
+
+
 //function to calaculate final number of calories
+
+
+var calories = document.querySelector('.calories_number');
+var finalResultOfCalories;
 
 function finalResultCalories() {
   rmb = 10 * currentWeightCal + 6.25 * currentHeightCal - 5 * currentAgeCal;
-  finalResultOfCalories = intensity * rmb + objective;
-  // console.log(finalResultOfCalories);
-  console.log(parseInt(finalResultOfCalories))
+  finalResultOfCalories = parseInt(intensity * rmb + objective);
+  nan()
 }
 
+function nan() {
+  if (isNaN(finalResultOfCalories)) {
+    calories.innerHTML = `0`
+  } else {
+    calories.innerHTML = `${finalResultOfCalories}`
+  }
+}
+
+// function storageCal() {
+//   if (localStorage.length >= 1) {
+//     var localUserInfo = JSON.parse(localStorage.getItem('userInfo'));
+//     // console.log(JSON.parse(localStorage.getItem('userInfo')))
+//     storageCalories = localUserInfo[11];
+//     storageAge = localUserInfo[1];
+//     storageWeight = localUserInfo[3];
+//     storageHeight = localUserInfo[5];
+//     storageObjective = localUserInfo[7];
+//     storageIntensity = localUserInfo[9];
+//     console.log(storageCalories)
+//     console.log(storageAge)
+//     calories.textContent = storageCalories;
+//     ags.textContent = storageAge;
+//     rmb = 10 * currentWeightCal + 6.25 * currentHeightCal - 5 * currentAgeCal;
+//     finalResultOfCalories = parseInt(intensity * rmb + objective)
+//   } else {
+//     console.log('nothing')
+//     calories.textContent = 0;
+//     rmb = 10 * currentWeightCal + 6.25 * currentHeightCal - 5 * currentAgeCal;
+//     finalResultOfCalories = parseInt(intensity * rmb + objective);
+//     // console.log(JSON.parse(localStorage.getItem('userInfo')))
+//   }
+// }
+// storageCal()
 
 
 
@@ -967,18 +1046,36 @@ function finalResultCalories() {
 
 
 
+//saveing in the locaStorage
+
+
+// var ags = document.querySelector('.age')
+// var saveButton = document.querySelector('.result_container button')
+// var storageCalories;
+// var storageAge;
+// var storageWeight;
+// var storageHeight;
+// var storageObjective;
+// var storageIntensity;
+// var userInfo;
 
 
 
+// function localStrg() {
+//   var userInfo = [
+//     "Age", currentAgeCal,
+//     "Weight", currentWeightCal,
+//     "Height", currentHeightCal,
+//     "Objective", objective,
+//     "Intensity", intensity,
+//     "Daily Calories", finalResultOfCalories
+//   ]
 
-
-// function sidebar_active() {
-//   sidebar.classList.add('active');
-//   cal_container.classList.add('active');
+//   localStorage.clear();
+//   localStorage.setItem('userInfo', JSON.stringify(userInfo))
+//   // console.log(JSON.parse(localStorage.getItem('userInfo')))
 // }
 
-// function sidebar_pasive() {
-//   sidebar.classList.remove('active');
-//   cal_container.classList.remove('active')
-// }
-// btn.onclick = sidebar_toggle;
+// saveButton.addEventListener('click', localStrg)
+
+
