@@ -16,7 +16,7 @@ body {
     background-size: cover;
     background-position: 70%;
     height: 100svh;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .Body_map {
@@ -447,14 +447,58 @@ margin: 4px 4px;
 
 ::-webkit-scrollbar-track {
     background: rgb(229, 229, 33);
-    border-radius: 50vw;
+    /* border-radius: 50vw; */
 }
 
 ::-webkit-scrollbar-thumb {
     background: #24262b;
-    border-radius: 100vw;
+    /* border-radius: 100vw; */
 
 }
+
+
+
+/* Footer */
+
+footer{
+    height: 300px;
+    background: #12171e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 180px;
+    padding-right: 100px;
+    color: #fff;
+}
+
+.info h2{
+    font-size: 1rem;
+    animation: glow 2s infinite;
+}
+.info a{
+    font-size: 1rem;
+    color: #fff;
+    font-weight: bold;
+    animation: glow 2s infinite;
+}
+.social_icons{
+    font-size: 2.8rem;
+    color: #fcf006;
+    animation: glow2 4s infinite;
+}
+.socials{
+    display: flex;
+    flex-direction: column;
+}
+.socials img{
+    width: 60%;
+    animation: glow2 4s infinite;
+}
+.author h2{
+    font-size: 1.1rem;
+    animation: glow 2s infinite;
+}
+
 
 @media(max-width:670px) {
     .sidebar.active~.main-content {
@@ -513,12 +557,10 @@ margin: 4px 4px;
   
   ::-webkit-scrollbar-track{
    background: rgb(229, 229, 33);
-   border-radius: 50vw;
   }
   
   ::-webkit-scrollbar-thumb{
     background: #24262b;
-    border-radius: 100vw;
   
   }
 
