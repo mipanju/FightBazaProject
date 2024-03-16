@@ -58,7 +58,7 @@ function Alert(){
     $('.alert').addClass("hide");
   },5000);
 };
-$('.close-btn').click(function(){
+function close(){
   $('.alert').removeClass("show");
   $('.alert').addClass("hide");
-});
+};
