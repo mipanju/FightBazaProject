@@ -78,12 +78,14 @@ body {
     transition: all 0.3s ease;
     background-color: #12171e;
     color: #fcf006;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
+    z-index: 100;
 }
 
 .js-swap_btn{
+    position: absolute;
 z-index: 100;
 }
 
@@ -969,7 +971,38 @@ body {
 
 
     }
-@media(min-width:780px) {
+
+    @media(max-width:660px){
+        
+        .Female-Front,
+        .Female-Back,
+        .Male-Front,
+        .Male-Back {
+            height: calc(100vh - 215px);
+            margin-top: 50px;
+            z-index: 0;
+        }
+        .svg-male-container,
+        .svg-female-container{
+            z-index: 0;
+        }
+        .js-swap_btn,
+        .js-swap_btn2 {
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    transition: all 0.3s ease;
+    background-color: #12171e;
+    color: #fcf006;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+    }
+    @media(min-width:780px) {
 
     .svg-male-container,
     .svg-female-container {
