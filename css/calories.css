@@ -470,17 +470,21 @@ workout .main-content {
 
 ::-webkit-scrollbar-track {
     background: rgb(229, 229, 33);
-    border-radius: 50vw;
+    /* border-radius: 50vw; */
 }
 
 ::-webkit-scrollbar-thumb {
     background: #24262b;
-    border-radius: 100vw;
+    /* border-radius: 100vw; */
 
 }
 
 
-
+@media(max-width:825px){
+    ::-webkit-scrollbar{
+        display: none;
+    }
+}
 /* pagina de calculare a caloriilor */
 
 
@@ -999,10 +1003,6 @@ body {
 body {
     background-position-x: 60%;
     overflow-y: scroll;
-}
-
-::-webkit-scrollbar {
-    display: none;
 }
 
 
