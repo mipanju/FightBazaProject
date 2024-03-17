@@ -574,6 +574,16 @@ button {
   line-height: 40px;
 }
 
+
+/* maps*/
+
+.maps_container {
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+}
+
+
 /* Footer */
 
 footer {
@@ -828,6 +838,14 @@ footer {
   border-radius: 100vw;
 
 }
+
+@media(max-width:728px) {
+  .map {
+    height: 400px;
+  }
+}
+
+
 
 @media(max-width:670px) {
   .sidebar.active~.main-content {

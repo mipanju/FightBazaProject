@@ -552,27 +552,9 @@ footer {
 /* maps styling */
 
 
-.maps_container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-left: calc(50% - 400px);
-    margin-top: calc(250px);
-    position: fixed;
-    display: none;
-}
 
 
-.maps_button {
-    padding: 1px 10px;
-    padding-top: 0;
-    padding-bottom: 2px;
-    background-color: #fcf006;
-    text-align: center;
-    position: absolute;
-    border-radius: 50%;
-    margin-left: 10px;
-}
+
 
 
 

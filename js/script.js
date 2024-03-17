@@ -723,7 +723,8 @@ let lastAngle_2 = 0;
 let lastAngle_3 = 0;
 
 
-age
+//age
+
 document.addEventListener('mousedown', function rotateAge(e) {
   if (e.target.closest('.interior_1')) {
     isRotating = true;
@@ -1029,21 +1030,6 @@ function nan() {
 
 
 
-
-
-//script for modal map
-
-var mapButton = document.querySelector('.maps_button');
-var footerLink = document.querySelector('.show_map');
-var map = document.querySelector('.maps_container');
-
-function showMap(event) {
-  event.preventDefault();
-  map.style.display = 'block';
-  console.log("yaaa")
-}
-
-// footerLInk.addEventListener('click', showMap)
 
 
 
