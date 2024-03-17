@@ -18,13 +18,14 @@ html {
 }
 
 body {
-    background-image: linear-gradient(rgba(19, 20, 20, 0.7), rgba(23, 23, 24, 0.7)), url(../Images/BestBackground.JPG);
+    background-image: linear-gradient(rgba(19, 20, 20, 0.7), rgba(23, 23, 24, 0.7)), url(../Images/BestBackground.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 70%;
     background-attachment: fixed;
-    height: 100svh;
-    overflow: hidden;
+    height: auto;
+    /* overflow: hidden; */
+    overflow-y: scroll;
     margin-left: 80px;
 }
 
@@ -497,9 +498,10 @@ workout .main-content {
 
 
 .topic_c {
-    font-size: 70px;
+    font-size: 50px;
     text-align: center;
-    color: #fcf006;
+    color: #fff;
+    animation: glow 4s infinite;
     /* margin-left: 80px; */
 }
 
@@ -759,9 +761,10 @@ button:hover {
 
 footer {
     height: 300px;
-    width: calc(100% - 80px);
+    /* width: calc(100% - 80px); */
     background: #12171e;
     display: flex;
+    /* margin-left: 80px; */
     justify-content: space-evenly;
     align-items: center;
     padding-left: 115px;
@@ -852,6 +855,26 @@ footer {
 
 @media(max-width:590px) {
     footer {
+       flex-wrap: wrap;
+       height: auto;
+       padding: 10px 50px ;
+      }
+  .socials{
+    margin-left: 240px;
+    margin-right: 0;
+  }
+  .author{
+    flex-grow: 1;
+    margin-top: 30px;
+  }
+  .main-content-calories{
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+  }
+  }
+  @media(max-width:590px){
+    footer{
         padding: 40px 2px;
     }
 }
@@ -881,8 +904,11 @@ footer {
     }
 }
 
-
-
+@media(max-width:1199px){
+    .main-content-calories{
+        height: auto;
+    }
+}
 
 
 
