@@ -335,6 +335,10 @@ body {
   display: flex;
 }
 
+.box-contacts a {
+  text-decoration: none;
+}
+
 .container-contacts .contactInfo .box-contacts .icon-contacts {
   min-width: 60px;
   height: 60px;
