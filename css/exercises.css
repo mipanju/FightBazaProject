@@ -536,10 +536,10 @@ z-index: 100;
 
 }
 
-.topic_c {
-    font-size: 70px;
+h1.topic_c {
+    font-size: 50px;
     text-align: center;
-    color: #fcf006;
+    color: #fff;
 }
 
 .square_container {
