@@ -622,7 +622,7 @@ function Show_exercise(muscle) {
   }
 
 
-  if (buttonElement.innerHTML ==='<i class="bx bx-male-sign"></i>' ){
+  if (buttonElement.innerHTML === '<i class="bx bx-male-sign"></i>') {
     indicator = 0;
   } else {
     indicator = 1;
@@ -638,14 +638,14 @@ function Show_exercise(muscle) {
 }
 function get_back() {
   instructions.style.display = 'none';
-  if (indicator === 0){
+  if (indicator === 0) {
     SVG_male_frontElement.style.display = 'inline';
     SVG_male_backElement.style.display = 'inline';
-  } else if(indicator === 1){
+  } else if (indicator === 1) {
     SVG_female_frontElement.style.display = 'inline';
     SVG_female_backElement.style.display = 'inline';
   }
- 
+
   buttonElement_nd.style.display = 'none';
   buttonElement.style.display = 'inline';
 }
@@ -1025,6 +1025,28 @@ function nan() {
     calories.innerHTML = `${finalResultOfCalories}`
   }
 }
+
+
+
+
+
+
+//script for modal map
+
+var mapButton = document.querySelector('.maps_button');
+var footerLink = document.querySelector('.show_map');
+var map = document.querySelector('.maps_container');
+
+function showMap(event) {
+  event.preventDefault();
+  map.style.display = 'block';
+  console.log("yaaa")
+}
+
+// footerLInk.addEventListener('click', showMap)
+
+
+
 
 // function storageCal() {
 //   if (localStorage.length >= 1) {
