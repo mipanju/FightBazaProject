@@ -1176,3 +1176,11 @@ body {
     }
 
 }
+
+@media(max-width:430px) {
+    .author p {
+        font-size: 0.9rem;
+        text-align: center;
+
+    }
+}
