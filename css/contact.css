@@ -1058,17 +1058,18 @@ body {
 
 @media(max-width:570px) {
   .sidebar.active {
-    width: 100%;
+    width: 100vw;
     position: relative;
     position: fixed;
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
-  .sidebar.active ul li a,
+  /* .sidebar.active ul li a,
   .sidebar.active .user {
     justify-content: center;
-  }
+  } */
 
   .sidebar.active .logo img {
     right: 38%;
