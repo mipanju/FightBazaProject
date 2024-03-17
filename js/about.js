@@ -1,11 +1,11 @@
 let image = document.querySelector('#image-slideshow');
 let images = [
-    '../Images/IMG_9921.JPG',
-    '../Images/IMG_9922.JPG',
-    '../Images/IMG_9923.JPG',
-    '../Images/IMG_9924.JPG',
-    '../Images/IMG_9925.JPG',
-    '../Images/IMG_9930.JPG',
+    '../Images/IMG_9921.png',
+    '../Images/IMG_9922.png',
+    '../Images/IMG_9923.png',
+    '../Images/IMG_9924.png',
+    '../Images/IMG_9925.png',
+    '../Images/IMG_9930.png',
 
 
 ];
