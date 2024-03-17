@@ -24,7 +24,6 @@ body {
     background-attachment: fixed;
     height: 100svh;
     overflow: visible;
-    overflow-y: scroll;
 }
 
 .Body_map {
@@ -499,8 +498,8 @@ footer {
     margin-left: -35vw;
     /* transform: translate(-50%, -50%); */
     border: solid 2px #fcf006;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+    /* border-top-right-radius: 10px;
+    border-top-left-radius: 10px; */
     height: 80vh;
     width: 70vw;
     background-color: #12171e;
@@ -644,12 +643,12 @@ footer {
 
 ::-webkit-scrollbar-track {
     background: rgb(229, 229, 33);
-    border-radius: 50vw;
+    /* border-radius: 50vw; */
 }
 
 ::-webkit-scrollbar-thumb {
     background: #24262b;
-    border-radius: 100vw;
+    /* border-radius: 100vw; */
 
 }
 
@@ -956,9 +955,7 @@ body {
     overflow-y: scroll;
 }
 
-::-webkit-scrollbar {
-    display: none;
-}
+
 
 
 
@@ -1086,7 +1083,11 @@ body {
 
 
 }
-
+@media(max-width:700px){
+    body::-webkit-scrollbar {
+        display: none;
+    }
+}
 @media(max-width:660px) {
 
     .Female-Front,
@@ -1097,7 +1098,7 @@ body {
         margin-top: 50px;
         z-index: 0;
     }
-
+  
     .svg-male-container,
     .svg-female-container {
         z-index: 0;
