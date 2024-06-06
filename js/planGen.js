@@ -296,12 +296,15 @@ document.addEventListener("keydown", function (event) {
 
 popupBox.addEventListener("click", e => {
     if (e.target.tagName === "I") {
+        if(createBtn.innerHTML === "View Plan"){
+            popupBox.classList.remove("show");
+            planDisplay.classList.add('active');
+        }
         confirmCard.classList.add("active");
         document.querySelector('.card.active').style.display = "none";
         confirmCard.addEventListener("click", e => {
             if(e.target.classList.contains("y_btn")){
                 popupBox.classList.remove("show");
-                planDisplay.style.display = "none";
                 document.querySelector("body").style.overflow = "visible";
                 progress(0);
                 logo.style.display = "block";
@@ -369,6 +372,11 @@ changePlanBtn.addEventListener("click", ()=>{
     popupBox.classList.add("show");
     progressBar.classList.add("active");
     confirmCard.classList.remove("active");
+    document.querySelectorAll('.card').forEach((card)=>{
+        if(card.classList.contains('active')){
+            document.querySelector('.card').style.display = 'block';
+        }
+    })
     progressBar.style.transform = 'none';
     currentStep = 0;
     counter = 0;
@@ -383,6 +391,7 @@ generateBtn.addEventListener("click", () => {
     const loader = document.querySelector('.load');
     const planDisplay = document.querySelector('.plan-display')
     currentCard.classList.remove('active');
+    createBtn.innerHTML = "View Plan";
     progressBar.style.transform = 'translateY(110px)'
     progress(0);
     disclaimer.classList.add('active');
@@ -662,7 +671,7 @@ generateBtn.addEventListener("click", () => {
             if(container.id === weekDay[currentDay]){
                 container.classList.add('current');
                 container.querySelector('.check-logo').innerHTML=
-                `<img src="LogoFRCpng.png">`;
+                `<img src="/Images/LogoFRCpng.png">`;
                 if(container.querySelector('h2').innerHTML === 'Push Workout'){
                     workoutWindow.style.backgroundImage = 'url(/Images/Push_Workout.png)';
                     workoutWindow.querySelector('.wk-name').innerHTML = 'Push Workout';
@@ -1415,7 +1424,6 @@ generateBtn.addEventListener("click", () => {
         planDisplay.classList.remove('active');
         logo.style.display = "block";
         createBtn.style.display = "block";
-        createBtn.innerHTML = "View Plan";
         logoContainer.style.display = "flex";
         Footer.classList.remove('changed');
         Footer.classList.remove('changed1');
