@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FightBaza</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="/css/planGen.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="../Images/Logo2.png">
+    <link rel="shortcut icon" type="image/png" href="/Images/Logo2.png">
 </head>
 
 <body>
@@ -123,13 +125,399 @@
                 C443.5,793.6,425.9,793.6,410.8,793.6z" />
                 </g>
             </svg>
-            <a href="../pages/about.html" class="main_btn">Find More</a>
+            <a class="main_btn">Create Plan</a>
         </div>
-
+        <div class="popup-box">
+            <div class="popup">
+                <div class="progress-bar"></div>
+                <div data-multi-step class="content">
+                    <div class="card" data-step>
+                        <header>
+                            <p>Gender</p>
+                            <i class='bx bx-x'></i>
+                        </header>
+                        <form class="diff_form" action="#">
+                           <div class="inp-container">
+                                <p>Male</p>
+                                <input id="male" class="male" type="checkbox">
+                           </div>
+                           <div class="inp-container">
+                                <p>Female</p>
+                                <input id="female" class="female" type="checkbox">
+                           </div>
+                            <button class="next_btn" data-next>Next</button>
+                        </form>
+                      </div>
+                      <div class="card" data-step>
+                        <header>
+                            <p>Workout Type</p>
+                            <i class='bx bx-x'></i>
+                        </header>
+                        <form class="diff_form" action="#">
+                           <div class="inp-container">
+                                <p>Weighted</p>
+                                <input id="weighted" type="checkbox">
+                           </div>
+                           <div class="inp-container">
+                                <p>Bodyweight</p>
+                                <input id="bodyweight" type="checkbox">
+                           </div>
+                            <button class="next_btn" data-next>Next</button>
+                            <button class="back_btn" data-previous>Back</button>
+                        </form>
+                      </div>
+                    <div class="card" data-step>
+                        <header>
+                            <p>Goal</p>
+                            <i class='bx bx-x'></i>
+                        </header>
+                        <form class="diff_form" action="#">
+                           <div class="inp-container">
+                                <p>Lose Fat</p>
+                                <input id="goal1" type="checkbox">
+                           </div>
+                           <div class="inp-container">
+                                <p>Maintain</p>
+                                <input id="goal2" type="checkbox">
+                           </div>
+                           <div class="inp-container">
+                                <p>Gain Weight</p>
+                                <input id="goal3" type="checkbox">
+                            </div>
+                            <button class="next_btn" data-next>Next</button>
+                            <button class="back_btn" data-previous>Back</button>
+                        </form>
+                    </div>
+                    <div class="card" data-step>
+                        <header>
+                            <p>Routine focus</p>
+                            <i class='bx bx-x'></i>
+                        </header>
+                        <form class="diff_form" action="#">
+                           <div class="inp-container">
+                                <p>Aesthetics</p>
+                                <input id="aesthetics" type="checkbox">
+                           </div>
+                           <div class="inp-container">
+                                <p>Strength</p>
+                                <input id="strength" type="checkbox">
+                           </div>
+                            <button class="next_btn" data-next>Next</button>
+                            <button class="back_btn" data-previous>Back</button>
+                        </form>
+                    </div>
+                    <div class="card" data-step>
+                        <header>
+                            <p>Goal</p>
+                            <i class='bx bx-x'></i>
+                        </header>
+                        <form class="diff_form" action="#">
+                           <div class="inp-container">
+                                <p>Beginner</p>
+                                <input id="beginner" type="checkbox">
+                           </div>
+                           <div class="inp-container">
+                                <p>Intermediate</p>
+                                <input id="intermediate" type="checkbox">
+                           </div>
+                           <div class="inp-container">
+                                <p>Advanced</p>
+                                <input id="advanced" type="checkbox">
+                            </div>
+                            <button class="next_btn" data-next>Next</button>
+                            <button class="back_btn" data-previous>Back</button>
+                        </form>
+                    </div>
+                    <div class="card" data-step>
+                        <header>
+                            <p>Training Days</p>
+                            <i class='bx bx-x'></i>
+                        </header>
+                        <form class="diff_form weekDays" action="#">
+                            <div class="column1">
+                                <div  class="inp-container">
+                                    <p>Monday</p>
+                                    <input id="MonCh" type="checkbox">
+                               </div>
+                               <div  class="inp-container">
+                                    <p>Tuesday</p>
+                                    <input id="TueCh"  type="checkbox">
+                               </div>
+                               <div  class="inp-container">
+                                    <p>Wendesday</p>
+                                    <input id="WenCh" type="checkbox">
+                                </div>
+                                <div class="inp-container">
+                                    <p>Thursday</p>
+                                    <input id="ThuCh"  type="checkbox">
+                               </div>
+                            </div>
+                            <div class="column2">
+                                <div class="inp-container">
+                                    <p>Friday</p>
+                                    <input id="FriCh" type="checkbox">
+                               </div>
+                               <div class="inp-container">
+                                    <p>Saturday</p>
+                                    <input id="SatCh" type="checkbox">
+                               </div>
+                               <div class="inp-container">
+                                    <p>Sunday</p>
+                                    <input id="SunCh" type="checkbox">
+                                </div>
+                            </div>
+                            <button class="next_btn" data-next>Next</button>
+                            <button class="back_btn" data-previous>Back</button>
+                        </form>
+                    </div>
+                    <div class="card" data-step>
+                        <header>
+                            <p>Workout time per day</p>
+                            <i class='bx bx-x'></i>
+                        </header>
+                        <form class="diff_form time" action="#">
+                            <div class="column1">
+                                <div class="inp-container">
+                                    <p>15 min</p>
+                                    <input id="time1" type="checkbox">
+                               </div>
+                               <div class="inp-container">
+                                    <p>30 min</p>
+                                    <input id="time2" type="checkbox">
+                               </div>
+                               <div class="inp-container">
+                                    <p>45 min</p>
+                                    <input id="time3" type="checkbox">
+                                </div>
+                            </div>
+                            <div class="column2 mins">
+                                <div class="inp-container">
+                                    <p>60 min</p>
+                                    <input id="time4" type="checkbox">
+                               </div>
+                               <div class="inp-container">
+                                    <p>75 min</p>
+                                    <input id="time5" type="checkbox">
+                               </div>
+                               <div class="inp-container">
+                                    <p>90 min</p>
+                                    <input id="time6" type="checkbox">
+                                </div>
+                            </div>
+                            <button class="next_btn" data-next>Next</button>
+                            <button class="back_btn" data-previous>Back</button>
+                        </form>
+                    </div>
+                    <div class="card btn" data-step>
+                       <header>
+                            <p>Finish creating plan</p>
+                            <i class='bx bx-x'></i>
+                       </header>
+                       <form action="#">
+                        <button class="generate_btn">Generate plan</button>
+                        <button class="back_btn" data-previous>Back</button>
+                       </form>
+                    </div>
+                </div>
+            </div>
+            <div class="confirm_card">
+                <header>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                </header>
+                <form action="#">
+                    <p class="bold">Are you sure you want to quit creating this plan?</p>
+                    <p class="small"> All the info you provided will be deleted</p>
+                    <div>
+                        <button class="y_btn" data-next>Yes</button>
+                        <button class="n_btn" data-next>No</button>
+                    </div>
+                </form>
+            </div>
+            <div class="load"></div>
+            <div class="disclaimer">
+                <p> <b>! &nbsp Disclaimer &nbsp !</b> <br>
+                This plan does not guarantee the 
+                achievment of your goale. 
+                Everything depends on you
+                </p>
+            </div>
+        </div>
+        <div class="plan-display">
+            <div class="first-column">
+                <div class="wk-display">
+                    <h1 class="title-non-imp">Today's Workout</h1>
+                    <div class="img-container">
+                        <h1 class="wk-name">Pull Workout</h1>
+                        <div class="wk-time">
+                            <i class='bx bx-time-five'></i>
+                            <p class="time-wk">50-65 mins</p>
+                        </div>
+                        <i class='bx bx-play-circle'></i>
+                    </div>
+                </div>
+                <div class="plan-info">
+                    <h1>
+                        Plan Info
+                    </h1>
+                     <div class="plan-info-container">
+                        <div class="plan-name">
+                            <h2>Metallicadpa PPL</h2>
+                        </div>
+                        <div class="plan-specs">
+                            <div class="time-specs">
+                                <h2>6</h2>
+                                <p>days per week</p>
+                            </div>
+                            <div class="time-specs">
+                                <h2>55-70</h2> 
+                                <p>minutes per workout</p>
+                            </div>
+                        </div>
+                        <div class="plan-desc">
+                            <p> 
+                                A beginner routine with six days a week of
+                                lifting and a focus on barbell lifts. 
+                                Two lower body workouts, two pull workouts,
+                                and two push workouts per week. The routine is 
+                                very popular on reddit's 6 million member fitness 
+                                community and many people there have 
+                                seen excellent progress with it.
+                            </p>
+                        </div>
+                        <div class="logo-bottom">
+                            <img src="../Images/LogoF.png">
+                        </div>
+                     </div>
+                </div>
+            </div>
+            <div class="second-column">
+                <h1>Workout Schedule</h1>
+                <div id="Mon" class="day-container">
+                    <div class="day-wk">
+                        <div class="day-index"><p>Mon</p></div>
+                        <h2>Pull Workout</h2>
+                    </div>
+                    <div class="check-logo">
+                        <img src="/Images/LogoFRpng.png">
+                    </div>
+                </div>
+                <div id="Tue" class="day-container">
+                    <div class="day-wk">
+                        <div class="day-index"><p>Tue</p></div>
+                        <h2>Push Workout</h2>
+                    </div>
+                    <div class="check-logo">
+                        <img src="/Images/LogoFRpng.png">
+                    </div>
+                </div>
+                <div id="Wen" class="day-container">
+                    <div class="day-wk">
+                        <div class="day-index"><p>Wen</p></div>
+                        <h2>Full Body</h2>
+                    </div>
+                    <div class="check-logo">
+                        <img src="/Images/LogoFRpng.png">
+                    </div>
+                </div>
+                <div id="Thu" class="day-container">
+                    <div class="day-wk">
+                        <div class="day-index"><p>Thu</p></div>
+                        <h2>Pull Workout</h2>
+                    </div>
+                    <div class="check-logo">
+                        <img src="/Images/LogoFRpng.png">
+                    </div>
+                </div>
+                <div id="Fri" class="day-container">
+                    <div class="day-wk">
+                        <div class="day-index"><p>Fri</p></div>
+                        <h2>Push Workout</h2>
+                    </div>
+                    <div class="check-logo">
+                        <img src="/Images/LogoFRpng.png">
+                    </div>
+                </div>
+                <div id="Sat" class="day-container rest-day">
+                    <div class="day-wk">
+                        <div class="day-index"><p>Sat</p></div>
+                        <h2>Cardio</h2>
+                    </div>
+                    <div class="check-logo">
+                        <img src="/Images/LogoFRpng.png">
+                    </div>
+                </div>
+                <div id="Sun" class="day-container">
+                    <div class="day-wk">
+                        <div class="day-index"><p>Sun</p></div>
+                        <h2>Pull Workout</h2>
+                    </div>
+                    <div class="check-logo">
+                        <img src="/Images/LogoFRpng.png">
+                    </div>
+                </div>
+                <div class="plan_btns">
+                    <button class="back_to_main_btn">Back to main</button>
+                    <button class="change_plan_btn">Change plan</button>
+                </div>
+            </div>
+        </div>
+        <div class="grid-container">
+            <button class="go_back"><i class='bx bx-arrow-back'></i></button>
+            <h1 class="wk-name">Bodyweight Leg Workout</h1>
+                        <div class="wk-time">
+                            <i class='bx bx-time-five'></i>
+                            <p class="time-wk">50-65 mins</p>
+                        </div>
+                <div class="exercise-grid">
+                    <div class="exercise-container">
+                        <div class="vid-info-contianer">
+                            <video src="https://d2jbk7d41q2u2w.cloudfront.net/uploads/exercise/image/233/83ba9466141658366bbdfd18cfb3a83c-1508215620.mp4" autoplay="" playsinline="" loop="" poster="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAJOgAACToAYJjBRwAAAAMSURBVBhXY2BgYAAAAAQAAVzN/2kAAAAASUVORK5CYII=" muted="true"></video>
+                            <div class="exercise-info">     
+                                <h2>One leg squat</h2>
+                                <p> 5x10 reps </p>
+                                <p> 9-10 min </p>
+                                <p> Intermediate </p>
+                                <p><img src="Bodyweight.png" alt=""> &nbsp Bodyweight</p>
+                            </div>
+                        </div>
+                        <div class="muscle-img-container">
+                            <img src="Male-front4.png">
+                        </div>
+                    </div>
+                    <div class="exercise-container">
+                        <div class="vid-info-contianer">
+                            <video src="https://d2jbk7d41q2u2w.cloudfront.net/uploads/exercise/image/137/421fb74dff43df1d19a9edd8d30e56ff-1508215500.mp4" autoplay="" playsinline="" loop="" poster="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAJOgAACToAYJjBRwAAAAMSURBVBhXY2BgYAAAAAQAAVzN/2kAAAAASUVORK5CYII=" muted="true"></video>
+                            <div class="exercise-info">     
+                                <h2>Russian Curl</h2>
+                                <p> 3x12 reps </p>
+                                <p> 9-10 min </p>
+                                <p> Intermediate </p>
+                                <p><img src="Bodyweight.png" alt=""> &nbsp Bodyweight</p>
+                            </div>
+                        </div>
+                        <div class="muscle-img-container">
+                            <img src="Male-back6.png">
+                        </div>
+                    </div>
+                    <div class="exercise-container">
+                        <div class="vid-info-contianer">
+                            <video src="https://d2jbk7d41q2u2w.cloudfront.net/uploads/exercise/image/160/086da34abe0759ec8b7365326707c105-1508215620.mp4" autoplay="" playsinline="" loop="" poster="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAJOgAACToAYJjBRwAAAAMSURBVBhXY2BgYAAAAAQAAVzN/2kAAAAASUVORK5CYII=" muted="true"></video>
+                            <div class="exercise-info">     
+                                <h2>Claf Raise</h2>
+                                <p> 3x10 reps </p>
+                                <p> 9-10 min </p>
+                                <p> Beginner </p>
+                                <p><img src="Bodyweight.png" alt=""> &nbsp Bodyweight</p>
+                            </div>
+                        </div>
+                        <div class="muscle-img-container">
+                            <img src="Male-back8.png">
+                        </div>
+                    </div>
+                </div>
+        </div>
     </div>
-    </div>
-
-
+    
     <footer>
         <div class="info">
             <p>
@@ -157,7 +545,8 @@
         </div>
 
     </footer>
-    <script src="../js/script.js"></script>
+    <script src="/js/planGen.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 
 </html>
