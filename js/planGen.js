@@ -685,25 +685,39 @@ generateBtn.addEventListener("click", () => {
                     workoutWindow.querySelector('.wk-time').style.display = 'none';
                     workoutWindow.querySelector('.bx-play-circle').style.display = 'none';
                 } else if(container.querySelector('h2').innerHTML === 'Pull Workout'){
-                    workoutWindow.style.backgroundImage = 'url(/Images/Pull_Workout.png)';
+                    if(maleCheck.checked){
+                        workoutWindow.style.backgroundImage = 'url(/Images/Pull_Workout.png)';
+                    } else {workoutWindow.style.backgroundImage = 'url(/Images/Pull_WorkoutF.png)';}
                     workoutWindow.querySelector('.wk-name').innerHTML = 'Pull Workout';
                 } else if(container.querySelector('h2').innerHTML === 'Leg Workout'){
-                    workoutWindow.style.backgroundImage = 'url(/Images/Leg_Workout.png)';
+                    if(maleCheck.checked){
+                        workoutWindow.style.backgroundImage = 'url(/Images/Leg_Workout.png)';
+                    } else {workoutWindow.style.backgroundImage = 'url(/Images/Leg_WorkoutF.png)';}
                     workoutWindow.querySelector('.wk-name').innerHTML = 'Leg Workout';
                 } else if(container.querySelector('h2').innerHTML === 'Full Body'){
-                    workoutWindow.style.backgroundImage = 'url(/Images/FullBody_Workout.png)';
+                    if(maleCheck.checked){
+                        workoutWindow.style.backgroundImage = 'url(/Images/FullBody_Workout.png)';
+                    } else {workoutWindow.style.backgroundImage = 'url(/Images/FullBodyF.png)';};
                     workoutWindow.querySelector('.wk-name').innerHTML = 'Full Body';
                 } else if(container.querySelector('h2').innerHTML === 'Bodyweight Push Workout'){
-                    workoutWindow.style.backgroundImage = 'url(/Images/Bodyweght_Push.png)';
+                    if(maleCheck.checked){
+                        workoutWindow.style.backgroundImage = 'url(/Images/Bodyweght_Push.png)';
+                    } else {workoutWindow.style.backgroundImage = 'url(/Images/Bodyweght_PushF.png)';};
                     workoutWindow.querySelector('.wk-name').innerHTML = 'BodyweightPush';
                 } else if(container.querySelector('h2').innerHTML === 'Bodyweight Pull Workout'){
-                    workoutWindow.style.backgroundImage = 'url(/Images/Bodyweght_Pull.png)';
+                    if(maleCheck.checked){
+                        workoutWindow.style.backgroundImage = 'url(/Images/Bodyweght_Pull.png)';
+                    } else {workoutWindow.style.backgroundImage = 'url(/Images/Bodyweght_PullF.png)';};
                     workoutWindow.querySelector('.wk-name').innerHTML = 'Bodyweight Pull';
                 } else if(container.querySelector('h2').innerHTML === 'Full Bodyweight Workout'){
-                    workoutWindow.style.backgroundImage = 'url(/Images/FullBody_Workout.png)';
+                    if(maleCheck.checked){
+                        workoutWindow.style.backgroundImage = 'url(/Images/FullBody_Workout.png)';
+                    } else {workoutWindow.style.backgroundImage = 'url(/Images/FullBodyF.png)';};
                     workoutWindow.querySelector('.wk-name').innerHTML = 'Full Bodyweight';
                 } else if(container.querySelector('h2').innerHTML === 'Bodyweight Legs Workout'){
-                    workoutWindow.style.backgroundImage = 'url(/Images/Leg_Workout.png)';
+                    if(maleCheck.checked){
+                        workoutWindow.style.backgroundImage = 'url(/Images/Leg_Workout.png)';
+                    } else {workoutWindow.style.backgroundImage = 'url(/Images/Bodyweight_LegF.png)';};
                     workoutWindow.querySelector('.wk-name').innerHTML = 'Bodyweight Legs';
                 }
             } 
