@@ -49,7 +49,10 @@ let indicator;
 function Show_exercise(muscle) {
   if (muscle === 'chest') {
     ex_name1.innerHTML = 'Barbell Bench Press';
-    video_frames1.innerHTML = `<video autoplay playsinline loop muted src="../Videos/BenchPress1.MOV"></video>
+    video_frames1.innerHTML = `<iframe  src="https://www.youtube.com/embed/pnvvm-DlIE4?si=TtmWUkiCZ_PzK22K&showinfo=0"
+    title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                  <video autoplay playsinline loop  muted src="../Videos/BenchPress1.MOV"></video>`;
     advice1.innerHTML = `<h2> <span>1</span>Lay flat on the bench with your feet on the ground. With straight arms unrack the bar.</h2>
                            <h2> <span>2</span>Lower the bar to your mid chest.</h2>

@@ -541,10 +541,20 @@ footer {
 }
 
 .video_container video {
-    width: 100%;
+    width: 700px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
 }
+
+.video_container iframe {
+    width: 500px;
+}
+
+/* .video_container iframe {
+    width: 100%;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+} */
 
 .instructions h2 {
     margin: 40px;
@@ -1091,11 +1101,13 @@ body {
 
 
 }
-@media(max-width:700px){
+
+@media(max-width:700px) {
     body::-webkit-scrollbar {
         display: none;
     }
 }
+
 @media(max-width:660px) {
 
     .Female-Front,
@@ -1106,7 +1118,7 @@ body {
         margin-top: 50px;
         z-index: 0;
     }
-  
+
     .svg-male-container,
     .svg-female-container {
         z-index: 0;
