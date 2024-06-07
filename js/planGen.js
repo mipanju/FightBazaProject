@@ -299,36 +299,37 @@ popupBox.addEventListener("click", e => {
         if(createBtn.innerHTML === "View Plan"){
             popupBox.classList.remove("show");
             planDisplay.classList.add('active');
+            document.querySelector("body").style.overflow = "visible";
+        } else{
+            confirmCard.classList.add("active");
+            document.querySelector('.card.active').style.display = "none";
+            confirmCard.addEventListener("click", e => {
+                if(e.target.classList.contains("y_btn")){
+                    popupBox.classList.remove("show");
+                    document.querySelector("body").style.overflow = "visible";
+                    progress(0);
+                    logo.style.display = "block";
+                    createBtn.style.display = "block";
+                    logoContainer.style.display = "flex";
+                    document.querySelector('.card.active').style.display = "block";
+                    confirmCard.classList.remove("active");
+                    inputFields.forEach(function (input) {
+                        if (input.type === 'text') {
+                            input.value = ''; 
+                        } else if (input.type === 'checkbox') {
+                            input.checked = false;
+                        }
+                    });
+                    checkInputs();
+                    formSteps.forEach((card) => {
+                        card.querySelector(".next_btn").classList.remove("active");
+                    });
+                } else{
+                    confirmCard.classList.remove("active");
+                    document.querySelector('.card.active').style.display = "block";
+                }
+            })
         }
-        confirmCard.classList.add("active");
-        document.querySelector('.card.active').style.display = "none";
-        confirmCard.addEventListener("click", e => {
-            if(e.target.classList.contains("y_btn")){
-                popupBox.classList.remove("show");
-                document.querySelector("body").style.overflow = "visible";
-                progress(0);
-                logo.style.display = "block";
-                createBtn.style.display = "block";
-                logoContainer.style.display = "flex";
-                document.querySelector('.card.active').style.display = "block";
-                confirmCard.classList.remove("active");
-                inputFields.forEach(function (input) {
-                    if (input.type === 'text') {
-                        input.value = ''; 
-                    } else if (input.type === 'checkbox') {
-                        input.checked = false;
-                    }
-                });
-                checkInputs();
-                formSteps.forEach((card) => {
-                    card.querySelector(".next_btn").classList.remove("active");
-                });
-            } else{
-                confirmCard.classList.remove("active");
-                document.querySelector('.card.active').style.display = "block";
-            }
-        })
-        
     }
 });
 multiStepForm.addEventListener("click", e => {
@@ -447,7 +448,6 @@ generateBtn.addEventListener("click", () => {
             });
         }
     });
-
 
     const dayContainers = document.querySelectorAll('.day-container');
     dayContainers.forEach((dayContainer)=>{
@@ -666,17 +666,21 @@ generateBtn.addEventListener("click", () => {
        }
        
 
-
+       const maleCheck = document.querySelector('.male');
         dayContainers.forEach((container)=>{
             if(container.id === weekDay[currentDay]){
                 container.classList.add('current');
                 container.querySelector('.check-logo').innerHTML=
                 `<img src="/Images/LogoFRCpng.png">`;
                 if(container.querySelector('h2').innerHTML === 'Push Workout'){
-                    workoutWindow.style.backgroundImage = 'url(/Images/Push_Workout.png)';
+                    if(maleCheck.checked){
+                        workoutWindow.style.backgroundImage = 'url(/Images/Push_Workout.png)';
+                    } else {workoutWindow.style.backgroundImage = 'url(/Images/Push_WorkoutF.png)';}
                     workoutWindow.querySelector('.wk-name').innerHTML = 'Push Workout';
                 } else if(container.querySelector('h2').innerHTML === 'Rest Day'){
-                    workoutWindow.style.backgroundImage = 'url(/Images/Rest_DayM.png)';
+                    if(maleCheck.checked){
+                        workoutWindow.style.backgroundImage = 'url(/Images/Rest_DayM.png)';
+                    } else {workoutWindow.style.backgroundImage = 'url(/Images/Rest_DayF.png)';}
                     workoutWindow.querySelector('.wk-name').innerHTML = 'Rest Day';
                     workoutWindow.querySelector('.wk-time').style.display = 'none';
                     workoutWindow.querySelector('.bx-play-circle').style.display = 'none';
