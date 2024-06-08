@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    background-image: linear-gradient(rgba(19, 20, 20, 0.7), rgba(23, 23, 24, 0.7)), url(../Images/BestBackground.png);
+    background-image: linear-gradient(rgba(19, 20, 20, 0.7), rgba(23, 23, 24, 0.7)), url(Images/BestBackground.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 70%;
@@ -1007,7 +1007,7 @@ body {
     }
 
     body {
-        background-image: linear-gradient(rgba(19, 20, 20, 0.7), rgba(23, 23, 24, 0.7)), url(/Images/BestBackground.png);
+        background-image: linear-gradient(rgba(19, 20, 20, 0.7), rgba(23, 23, 24, 0.7)), url(../Images/BestBackground.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 70%;
@@ -2840,11 +2840,12 @@ input::-webkit-inner-spin-button {
 
     .confirm_card {
         max-width: 280px;
-      }
- }
- @media(max-width:415px){
-    
-    .popup-box .popup{
+    }
+}
+
+@media(max-width:415px) {
+
+    .popup-box .popup {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -2855,77 +2856,95 @@ input::-webkit-inner-spin-button {
         transform-origin: right;
         transform: translate(-50%, -50%) scale(0.95);
         transition: 0.8s;
-      }
-      .popup-box .popup .progress-bar{
+    }
+
+    .popup-box .popup .progress-bar {
         top: -310px;
-      }
-      .diff_form{
+    }
+
+    .diff_form {
         display: flex;
         flex-direction: column;
         padding-bottom: 55px;
         padding-top: 10px;
-      }
-      .disclaimer{
+    }
+
+    .disclaimer {
         width: 300px;
-      }
-      .disclaimer p{
+    }
+
+    .disclaimer p {
         font-size: 1.3em;
-      }
-      .diff_form.weekDays{
+    }
+
+    .diff_form.weekDays {
         gap: 1px;
         align-items: center;
         padding-bottom: 20px;
-      }
-      .diff_form.weekDays .column2{
+    }
+
+    .diff_form.weekDays .column2 {
         padding-left: 21px;
-      }
-      .card form .generate_btn{
+    }
+
+    .card form .generate_btn {
         font-size: 1em;
         width: 200px;
         padding: 0px 0px;
-      }
-      .load{
+    }
+
+    .load {
         top: 32%;
         left: 45%;
-      }
-      .confirm_card{
+    }
+
+    .confirm_card {
         max-width: 280px;
-      }
-      .video_container .muscle-img-container{
+    }
+
+    .video_container .muscle-img-container {
         display: none;
-      }
-      .exercise-container .vid-info-contianer{
+    }
+
+    .exercise-container .vid-info-contianer {
         display: flex;
         flex-direction: column;
-      }
-      .exercise-container{
+    }
+
+    .exercise-container {
         width: 320px;
-        height:330px;
+        height: 330px;
         padding-top: 120px;
         padding-left: 20px;
-      }
-      .exercise-info{
+    }
+
+    .exercise-info {
         text-align: center;
-      }
-      .grid-container{
+    }
+
+    .grid-container {
         width: 100vw;
         overflow-x: hidden;
-      }
-      .grid-container h1,
-      .grid-container .wk-time {
+    }
+
+    .grid-container h1,
+    .grid-container .wk-time {
         margin-right: 200px;
-      }
-      .grid-container .exercise-grid{
+    }
+
+    .grid-container .exercise-grid {
         align-items: flex-start;
-      }
-      /* body{
+    }
+
+    /* body{
         overflow-x: hidden;
       }
       html{
         overflow-x: hidden;
       } */
- }
- @media (max-width:700px) {
+}
+
+@media (max-width:700px) {
     .sidebar {
         width: 100vw;
         height: 80px;
@@ -2943,14 +2962,14 @@ input::-webkit-inner-spin-button {
 
     }
 
-    .popup-box{
+    .popup-box {
         position: fixed;
         top: 0;
         left: 0;
         z-index: 100;
         height: 100%;
         width: 100%;
-        background: rgba(0,0,0,0.4);
+        background: rgba(0, 0, 0, 0.4);
     }
 
     .nav-list {
@@ -3027,6 +3046,7 @@ input::-webkit-inner-spin-button {
         justify-content: space-between;
     }
 }
+
 @media(max-width:700px) {
     .plan_btns {
         width: 100vw;
