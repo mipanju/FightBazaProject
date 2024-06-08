@@ -884,7 +884,28 @@ button:hover {
 
 
 
-
+@media(max-width:415px){
+    .exercises_display {
+        position: absolute;
+        top: 50%;
+        /* margin-top: -40vh; */
+        left: 50%;
+        margin-left: -45vw;
+        /* transform: translate(-50%, -50%); */
+        border: solid 2px #fcf006;
+        /* border-top-right-radius: 10px;
+        border-top-left-radius: 10px; */
+        height: 80vh;
+        width: 70vw;
+        background-color: #12171e;
+        color: #eee;
+        overflow: auto;
+        display: none;
+        font-weight: 100;
+        text-wrap: wrap;
+        z-index: 1;
+    }
+}
 @media(max-width:800px) {
     .video_container {
         display: flex;
