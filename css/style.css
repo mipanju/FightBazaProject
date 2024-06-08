@@ -2668,8 +2668,7 @@ body {
         overflow-x: hidden;
     }
 }
-@media(max-width:575px){
-
+ @media(max-width:575px){
     .popup-box .popup{
         position: absolute;
         top: 50%;
@@ -2682,9 +2681,40 @@ body {
         transform: translate(-50%, -50%) scale(0.95);
         transition: 0.8s;
       }
- 
+      .popup-box .popup .progress-bar{
+        top: -310px;
+      }
+      .diff_form{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 55px;
+        padding-top: 10px;
+      }
+      .diff_form.weekDays{
+        gap: 1px;
+        align-items: center;
+        padding-bottom: 20px;
+      }
+      .diff_form.weekDays .column2{
+        padding-left: 21px;
+      }
+      .card form .generate_btn{
+        font-size: 1em;
+        width: 200px;
+        padding: 0px 0px;
+      }
+      .load{
+        top: 38%;
+        left: 45%;
+      }
+      .confirm_card{
+        max-width: 280px;
+      }
+      .exercise-grid .exercise-container .muscle-img-container{
+        display: none;
+      }
  }
- @media(max-width:575px){
+ @media(max-width:375px){
 
     .popup-box .popup{
         position: absolute;
