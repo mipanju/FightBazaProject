@@ -1030,6 +1030,17 @@ footer {
     .main-content {
         width: 100vw;
         left: 0;
+        margin-left: 0;
+    }
+
+
+    .result_container {
+        margin-left: 33px;
+    }
+
+    .human_character {
+        padding-left: 0;
+        /* padding-right: 0; */
     }
 
     .top {
