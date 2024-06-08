@@ -482,6 +482,24 @@ footer {
     z-index: 1;
 }
 
+.svg-container div.click {
+    padding: 10px 20px;
+    background-color: #fcf006;
+    font-size: 25px;
+    border-radius: 15px;
+    font-weight: 700;
+}
+
+#chest {
+    color: #fcf006;
+}
+
+#chest-f {
+    color: #fcf006;
+}
+
+
+
 .exercises_display h1 {
     border: solid 3px #fcf006;
 }
@@ -884,7 +902,7 @@ button:hover {
 
 
 
-@media(max-width:415px){
+@media(max-width:415px) {
     .exercises_display {
         position: absolute;
         top: 50%;
@@ -906,6 +924,7 @@ button:hover {
         z-index: 1;
     }
 }
+
 @media(max-width:800px) {
     .video_container {
         display: flex;
@@ -1127,6 +1146,8 @@ body {
 
 
 
+
+
 @media(max-width:430px) {
     .author p {
         font-size: 0.9rem;
@@ -1209,6 +1230,13 @@ body {
 
     .sidebar.active ul li a span {
         display: block;
+    }
+}
+
+@media(max-width: 500px) {
+    .svg-container div.click {
+        font-size: 10px;
+        background-color: #12171e;
     }
 }
 
