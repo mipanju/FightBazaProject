@@ -678,53 +678,53 @@ function algorithm() {
         if (container.id === weekDay[currentDay]) {
             container.classList.add('current');
             container.querySelector('.check-logo').innerHTML =
-                `<img src="/Images/LogoFRCpng.png">`;
+                `<img src="Images/LogoFRCpng.png">`;
             if (container.querySelector('h2').innerHTML === 'Push Workout') {
                 if (maleCheck.checked) {
-                    workoutWindow.style.backgroundImage = 'url(/Images/Push_Workout.png)';
-                } else { workoutWindow.style.backgroundImage = 'url(/Images/Push_WorkoutF.png)'; }
+                    workoutWindow.style.backgroundImage = 'url(Images/Push_Workout.png)';
+                } else { workoutWindow.style.backgroundImage = 'url(Images/Push_WorkoutF.png)'; }
                 workoutWindow.querySelector('.wk-name').innerHTML = 'Push Workout';
             } else if (container.querySelector('h2').innerHTML === 'Rest Day') {
                 if (maleCheck.checked) {
-                    workoutWindow.style.backgroundImage = 'url(/Images/Rest_DayM.png)';
-                } else { workoutWindow.style.backgroundImage = 'url(/Images/Rest_DayF.png)'; }
+                    workoutWindow.style.backgroundImage = 'url(Images/Rest_DayM.png)';
+                } else { workoutWindow.style.backgroundImage = 'url(Images/Rest_DayF.png)'; }
                 workoutWindow.querySelector('.wk-name').innerHTML = 'Rest Day';
                 workoutWindow.querySelector('.wk-time').style.display = 'none';
                 workoutWindow.querySelector('.bx-play-circle').style.display = 'none';
             } else if (container.querySelector('h2').innerHTML === 'Pull Workout') {
                 if (maleCheck.checked) {
-                    workoutWindow.style.backgroundImage = 'url(/Images/Pull_Workout.png)';
-                } else { workoutWindow.style.backgroundImage = 'url(/Images/Pull_WorkoutF.png)'; }
+                    workoutWindow.style.backgroundImage = 'url(Images/Pull_Workout.png)';
+                } else { workoutWindow.style.backgroundImage = 'url(Images/Pull_WorkoutF.png)'; }
                 workoutWindow.querySelector('.wk-name').innerHTML = 'Pull Workout';
             } else if (container.querySelector('h2').innerHTML === 'Leg Workout') {
                 if (maleCheck.checked) {
-                    workoutWindow.style.backgroundImage = 'url(/Images/Leg_Workout.png)';
-                } else { workoutWindow.style.backgroundImage = 'url(/Images/Leg_WorkoutF.png)'; }
+                    workoutWindow.style.backgroundImage = 'url(Images/Leg_Workout.png)';
+                } else { workoutWindow.style.backgroundImage = 'url(Images/Leg_WorkoutF.png)'; }
                 workoutWindow.querySelector('.wk-name').innerHTML = 'Leg Workout';
             } else if (container.querySelector('h2').innerHTML === 'Full Body') {
                 if (maleCheck.checked) {
-                    workoutWindow.style.backgroundImage = 'url(/Images/FullBody_Workout.png)';
-                } else { workoutWindow.style.backgroundImage = 'url(/Images/FullBodyF.png)'; };
+                    workoutWindow.style.backgroundImage = 'url(Images/FullBody_Workout.png)';
+                } else { workoutWindow.style.backgroundImage = 'url(Images/FullBodyF.png)'; };
                 workoutWindow.querySelector('.wk-name').innerHTML = 'Full Body';
             } else if (container.querySelector('h2').innerHTML === 'Bodyweight Push Workout') {
                 if (maleCheck.checked) {
-                    workoutWindow.style.backgroundImage = 'url(/Images/Bodyweght_Push.png)';
-                } else { workoutWindow.style.backgroundImage = 'url(/Images/Bodyweght_PushF.png)'; };
+                    workoutWindow.style.backgroundImage = 'url(Images/Bodyweght_Push.png)';
+                } else { workoutWindow.style.backgroundImage = 'url(Images/Bodyweght_PushF.png)'; };
                 workoutWindow.querySelector('.wk-name').innerHTML = 'BodyweightPush';
             } else if (container.querySelector('h2').innerHTML === 'Bodyweight Pull Workout') {
                 if (maleCheck.checked) {
-                    workoutWindow.style.backgroundImage = 'url(/Images/Bodyweght_Pull.png)';
-                } else { workoutWindow.style.backgroundImage = 'url(/Images/Bodyweght_PullF.png)'; };
+                    workoutWindow.style.backgroundImage = 'url(Images/Bodyweght_Pull.png)';
+                } else { workoutWindow.style.backgroundImage = 'url(Images/Bodyweght_PullF.png)'; };
                 workoutWindow.querySelector('.wk-name').innerHTML = 'Bodyweight Pull';
             } else if (container.querySelector('h2').innerHTML === 'Full Bodyweight Workout') {
                 if (maleCheck.checked) {
-                    workoutWindow.style.backgroundImage = 'url(/Images/FullBody_Workout.png)';
-                } else { workoutWindow.style.backgroundImage = 'url(/Images/FullBodyF.png)'; };
+                    workoutWindow.style.backgroundImage = 'url(Images/FullBody_Workout.png)';
+                } else { workoutWindow.style.backgroundImage = 'url(Images/FullBodyF.png)'; };
                 workoutWindow.querySelector('.wk-name').innerHTML = 'Full Bodyweight';
             } else if (container.querySelector('h2').innerHTML === 'Bodyweight Legs Workout') {
                 if (maleCheck.checked) {
-                    workoutWindow.style.backgroundImage = 'url(/Images/Leg_Workout.png)';
-                } else { workoutWindow.style.backgroundImage = 'url(/Images/Bodyweight_LegF.png)'; };
+                    workoutWindow.style.backgroundImage = 'url(Images/Leg_Workout.png)';
+                } else { workoutWindow.style.backgroundImage = 'url(Images/Bodyweight_LegF.png)'; };
                 workoutWindow.querySelector('.wk-name').innerHTML = 'Bodyweight Legs';
             }
         }
@@ -814,7 +814,7 @@ const Workouts = [
                                 </div>
                             </div>
                             <div class="muscle-img-container">
-                                <img src="/Images/Male-back1.png">
+                                <img src="Images/Male-back1.png">
                             </div>
                         </div>
                         <div class="exercise-container">
@@ -825,11 +825,11 @@ const Workouts = [
                                     <p> 4x8-12 reps </p>
                                     <p> 10-11 min </p>
                                     <p> Novice </p>
-                                    <p><img src="/Images/Dumbell.png" alt=""> &nbsp Dumbbells</p>
+                                    <p><img src="Images/Dumbell.png" alt=""> &nbsp Dumbbells</p>
                                 </div>
                             </div>
                             <div class="muscle-img-container">
-                                <img src="/Images/Male-front1.png">
+                                <img src="Images/Male-front1.png">
                             </div>
                         </div>
                         <div class="exercise-container">
@@ -840,11 +840,11 @@ const Workouts = [
                                     <p> 5x15-20 reps </p>
                                     <p> 15-20 min </p>
                                     <p> Novice </p>
-                                    <p><img src="/Images/Cable.png" alt=""> &nbsp Cable</p>
+                                    <p><img src="Images/Cable.png" alt=""> &nbsp Cable</p>
                                 </div>
                             </div>
                             <div class="muscle-img-container">
-                                <img src="/Images/Male-back2.png">
+                                <img src="Images/Male-back2.png">
                             </div>
                         </div>
                         <div class="exercise-container">
@@ -855,11 +855,11 @@ const Workouts = [
                                     <p> 4x10-12 reps </p>
                                     <p> 12-14 min </p>
                                     <p> Novice </p>
-                                    <p><img src="/Images/Dumbell.png" alt=""> &nbsp Dumbbells</p>
+                                    <p><img src="Images/Dumbell.png" alt=""> &nbsp Dumbbells</p>
                                 </div>
                             </div>
                             <div class="muscle-img-container">
-                                <img src="/Images/Male-front1.png">
+                                <img src="Images/Male-front1.png">
                             </div>
                         </div>
                         `,
@@ -871,11 +871,11 @@ const Workouts = [
                                     <p> 4x5-7 reps </p>
                                     <p> 10-13 min </p>
                                     <p> Intermediate </p>
-                                    <p><img src="/Images/Barbell.png" alt=""> &nbsp Barbell</p>
+                                    <p><img src="Images/Barbell.png" alt=""> &nbsp Barbell</p>
                                 </div>
                             </div>
                             <div class="muscle-img-container">
-                                <img src="/Images/Male-front2.png">
+                                <img src="Images/Male-front2.png">
                             </div>
                         </div>
                         <div class="exercise-container">
@@ -886,11 +886,11 @@ const Workouts = [
                                     <p> 3x8-10 reps </p>
                                     <p> 10-12 min </p>
                                     <p> Intermediate </p>
-                                    <p><img src="/Images/Barbell.png" alt=""> &nbsp Barbell</p>
+                                    <p><img src="Images/Barbell.png" alt=""> &nbsp Barbell</p>
                                 </div>
                             </div>
                             <div class="muscle-img-container">
-                                <img src="/Images/Male-front3.png">
+                                <img src="Images/Male-front3.png">
                             </div>
                         </div>
                         <div class="exercise-container">
@@ -901,11 +901,11 @@ const Workouts = [
                                     <p> 3x8-12 reps </p>
                                     <p> 10-11 min </p>
                                     <p> Novice </p>
-                                    <p><img src="/Images/Dumbell.png" alt=""> &nbsp Dumbbells</p>
+                                    <p><img src="Images/Dumbell.png" alt=""> &nbsp Dumbbells</p>
                                 </div>
                             </div>
                             <div class="muscle-img-container">
-                                <img src="/Images/Male-front2.png">
+                                <img src="Images/Male-front2.png">
                             </div>
                         </div>
                         <div class="exercise-container">
@@ -916,11 +916,11 @@ const Workouts = [
                                     <p> 3x8-10 reps </p>
                                     <p> 10-12 min </p>
                                     <p> Novice </p>
-                                    <p><img src="/Images/Cable.png" alt=""> &nbsp Cable</p>
+                                    <p><img src="Images/Cable.png" alt=""> &nbsp Cable</p>
                                 </div>
                             </div>
                             <div class="muscle-img-container">
-                                <img src="/Images/Male-back4.png">
+                                <img src="Images/Male-back4.png">
                             </div>
                         </div>
                         <div class="exercise-container">
@@ -931,11 +931,11 @@ const Workouts = [
                                     <p> 3x15-16 reps </p>
                                     <p> 12-14 min </p>
                                     <p> Novice </p>
-                                    <p><img src="/Images/Dumbell.png" alt=""> &nbsp Dumbbells</p>
+                                    <p><img src="Images/Dumbell.png" alt=""> &nbsp Dumbbells</p>
                                 </div>
                             </div>
                             <div class="muscle-img-container">
-                                <img src="/Images/Male-back5.png">
+                                <img src="Images/Male-back5.png">
                             </div>
                         </div>`,
     ` <div class="exercise-container">
@@ -946,11 +946,11 @@ const Workouts = [
                         <p> 2x5-7 reps </p>
                         <p> 9-10 min </p>
                         <p> Intermediate </p>
-                        <p><img src="/Images/Barbell.png" alt=""> &nbsp Barbell</p>
+                        <p><img src="Images/Barbell.png" alt=""> &nbsp Barbell</p>
                     </div>
                 </div>
                 <div class="muscle-img-container">
-                    <img src="/Images/Male-front4.png">
+                    <img src="Images/Male-front4.png">
                 </div>
             </div>
             <div class="exercise-container">
@@ -961,11 +961,11 @@ const Workouts = [
                         <p> 3x8-12 reps </p>
                         <p> 10-12 min </p>
                         <p> Intermediate </p>
-                        <p><img src="/Images/Barbell.png" alt=""> &nbsp Barbell</p>
+                        <p><img src="Images/Barbell.png" alt=""> &nbsp Barbell</p>
                     </div>
                 </div>
                 <div class="muscle-img-container">
-                    <img src="/Images/Male-back6.png">
+                    <img src="Images/Male-back6.png">
                 </div>
             </div>
             <div class="exercise-container">
@@ -976,11 +976,11 @@ const Workouts = [
                         <p> 3x8-12 reps </p>
                         <p> 10-11 min </p>
                         <p> Novice </p>
-                        <p><img src="/Images/Barbell.png" alt=""> &nbsp Machine</p>
+                        <p><img src="Images/Barbell.png" alt=""> &nbsp Machine</p>
                     </div>
                 </div>
                 <div class="muscle-img-container">
-                    <img src="/Images/Male-front4.png">
+                    <img src="Images/Male-front4.png">
                 </div>
             </div>
             <div class="exercise-container">
@@ -991,11 +991,11 @@ const Workouts = [
                         <p> 3x8-10 reps </p>
                         <p> 10-12 min </p>
                         <p> Novice </p>
-                        <p><img src="/Images/Barbell.png" alt=""> &nbsp Machine</p>
+                        <p><img src="Images/Barbell.png" alt=""> &nbsp Machine</p>
                     </div>
                 </div>
                 <div class="muscle-img-container">
-                    <img src="/Images/Male-back7.png">
+                    <img src="Images/Male-back7.png">
                 </div>
             </div>
             <div class="exercise-container">
@@ -1006,11 +1006,11 @@ const Workouts = [
                         <p> 3x8-12 reps </p>
                         <p> 12-14 min </p>
                         <p> Novice </p>
-                        <p><img src="/Images/Dumbell.png" alt=""> &nbsp Dumbbells</p>
+                        <p><img src="Images/Dumbell.png" alt=""> &nbsp Dumbbells</p>
                     </div>
                 </div>
                 <div class="muscle-img-container">
-                    <img src="/Images/Male-back8.png">
+                    <img src="Images/Male-back8.png">
                 </div>
                  </div>`,
     `<div class="exercise-container">
@@ -1021,11 +1021,11 @@ const Workouts = [
                          <p> 2x5-7 reps </p>
                          <p> 9-10 min </p>
                          <p> Intermediate </p>
-                         <p><img src="/Images/Barbell.png" alt=""> &nbsp Barbell</p>
+                         <p><img src="Images/Barbell.png" alt=""> &nbsp Barbell</p>
                      </div>
                  </div>
                  <div class="muscle-img-container">
-                     <img src="/Images/Male-front4.png">
+                     <img src="Images/Male-front4.png">
                  </div>
              </div>
              <div class="exercise-container">
@@ -1036,11 +1036,11 @@ const Workouts = [
                          <p> 4x5-7 reps </p>
                          <p> 10-13 min </p>
                          <p> Intermediate </p>
-                         <p><img src="/Images/Barbell.png" alt=""> &nbsp Barbell</p>
+                         <p><img src="Images/Barbell.png" alt=""> &nbsp Barbell</p>
                      </div>
                  </div>
                  <div class="muscle-img-container">
-                     <img src="/Images/Male-front2.png">
+                     <img src="Images/Male-front2.png">
                  </div>
              </div>
              <div class="exercise-container">
@@ -1051,11 +1051,11 @@ const Workouts = [
                          <p> 4x10-12 reps </p>
                          <p> 12-14 min </p>
                          <p> Novice </p>
-                         <p><img src="/Images/Barbell.png" alt=""> &nbsp Dumbbells</p>
+                         <p><img src="Images/Barbell.png" alt=""> &nbsp Dumbbells</p>
                      </div>
                  </div>
                  <div class="muscle-img-container">
-                     <img src="/Images/Male-back1.png">
+                     <img src="Images/Male-back1.png">
                  </div>
              </div>
              <div class="exercise-container">
@@ -1066,11 +1066,11 @@ const Workouts = [
                          <p> 3x12-14 reps </p>
                          <p> 10-12 min </p>
                          <p> Novice </p>
-                         <p><img src="/Images/Barbell.png" alt=""> &nbsp Barbell</p>
+                         <p><img src="Images/Barbell.png" alt=""> &nbsp Barbell</p>
                      </div>
                  </div>
                  <div class="muscle-img-container">
-                     <img src="/Images/Male-front1.png">
+                     <img src="Images/Male-front1.png">
                  </div>
              </div>
              <div class="exercise-container">
@@ -1081,11 +1081,11 @@ const Workouts = [
                          <p> 3x12-13 reps </p>
                          <p> 12-14 min </p>
                          <p> Novice </p>
-                         <p><img src="/Images/Dumbell.png" alt=""> &nbsp Dumbbells</p>
+                         <p><img src="Images/Dumbell.png" alt=""> &nbsp Dumbbells</p>
                      </div>
                  </div>
                  <div class="muscle-img-container">
-                     <img src="/Images/Male-back4.png">
+                     <img src="Images/Male-back4.png">
                  </div>
                     </div>`,
     `<div class="exercise-container">
@@ -1096,11 +1096,11 @@ const Workouts = [
                                 <p> 5x6-12 reps </p>
                                 <p> 9-10 min </p>
                                 <p> Beginner </p>
-                                <p><img class="bd_img" src="/Images/Bodyweight.png" alt=""> &nbsp Bodyweight</p>
+                                <p><img class="bd_img" src="Images/Bodyweight.png" alt=""> &nbsp Bodyweight</p>
                             </div>
                         </div>
                         <div class="muscle-img-container">
-                            <img src="/Images/Male-front2.png">
+                            <img src="Images/Male-front2.png">
                         </div>
                     </div>
                     <div class="exercise-container">
@@ -1111,11 +1111,11 @@ const Workouts = [
                                 <p> 5x6-12 reps </p>
                                 <p> 10-13 min </p>
                                 <p> Intermediate </p>
-                                <p><img class="bd_img" src="/Images/Bodyweight.png" alt=""> &nbsp Bodyweight</p>
+                                <p><img class="bd_img" src="Images/Bodyweight.png" alt=""> &nbsp Bodyweight</p>
                             </div>
                         </div>
                         <div class="muscle-img-container">
-                            <img src="/Images/Male-front3.png">
+                            <img src="Images/Male-front3.png">
                         </div>
                     </div>
                     <div class="exercise-container">
@@ -1126,11 +1126,11 @@ const Workouts = [
                                 <p> 4x10-12 reps </p>
                                 <p> 12-14 min </p>
                                 <p> Intermediate </p>
-                                <p><img class="bd_img" src="/Images/Bodyweight.png" alt=""> &nbsp Bodyweight</p>
+                                <p><img class="bd_img" src="Images/Bodyweight.png" alt=""> &nbsp Bodyweight</p>
                             </div>
                         </div>
                         <div class="muscle-img-container">
-                            <img src="/Images/Male-back4.png">
+                            <img src="Images/Male-back4.png">
                         </div>
                     </div>
                     <div class="exercise-container">
@@ -1141,11 +1141,11 @@ const Workouts = [
                                 <p> 5x6-12 reps </p>
                                 <p> 9-10 min </p>
                                 <p> Beginner </p>
-                                <p><img class="bd_img" src="/Images/Bodyweight.png" alt=""> &nbsp Bodyweight</p>
+                                <p><img class="bd_img" src="Images/Bodyweight.png" alt=""> &nbsp Bodyweight</p>
                             </div>
                         </div>
                         <div class="muscle-img-container">
-                            <img src="/Images/Male-front2.png">
+                            <img src="Images/Male-front2.png">
                         </div>
                     </div>
                     <div class="exercise-container">
@@ -1156,11 +1156,11 @@ const Workouts = [
                                 <p> 5x6-12 reps </p>
                                 <p> 10-13 min </p>
                                 <p> Intermediate </p>
-                                <p><img  class="bd_img" src="/Images/Bodyweight.png" alt=""> &nbsp Bodyweight</p>
+                                <p><img  class="bd_img" src="Images/Bodyweight.png" alt=""> &nbsp Bodyweight</p>
                             </div>
                         </div>
                         <div class="muscle-img-container">
-                            <img src="/Images/Male-front3.png">
+                            <img src="Images/Male-front3.png">
                         </div>
                     </div>
                     `,
@@ -1172,11 +1172,11 @@ const Workouts = [
                             <p> 5x6-12 reps </p>
                             <p> 9-10 min </p>
                             <p> Intermediate </p>
-                            <p><img class="bd_img" src="/Images/Bodyweight.png" alt=""> &nbsp Bodyweight</p>
+                            <p><img class="bd_img" src="Images/Bodyweight.png" alt=""> &nbsp Bodyweight</p>
                         </div>
                     </div>
                     <div class="muscle-img-container">
-                        <img src="/Images/Male-back1.png">
+                        <img src="Images/Male-back1.png">
                     </div>
                 </div>
                 <div class="exercise-container">
@@ -1187,11 +1187,11 @@ const Workouts = [
                             <p> 5x6-12 reps </p>
                             <p> 10-13 min </p>
                             <p> Beginner   </p>
-                            <p><img class="bd_img" src="/Images/Bodyweight.png" alt="">&nbsp Bodyweight</p>
+                            <p><img class="bd_img" src="Images/Bodyweight.png" alt="">&nbsp Bodyweight</p>
                         </div>
                     </div>
                     <div class="muscle-img-container">
-                        <img src="/Images/Male-back3.png">
+                        <img src="Images/Male-back3.png">
                     </div>
                 </div>
                 <div class="exercise-container">
@@ -1202,11 +1202,11 @@ const Workouts = [
                             <p> 4x10-20 reps </p>
                             <p> 12-14 min </p>
                             <p> Beginner </p>
-                            <p><img class="bd_img" src="/Images/Bodyweight.png" alt=""> &nbsp &nbsp Bodyweight</p>
+                            <p><img class="bd_img" src="Images/Bodyweight.png" alt=""> &nbsp &nbsp Bodyweight</p>
                         </div>
                     </div>
                     <div class="muscle-img-container">
-                        <img src="/Images/Male-back2.png">
+                        <img src="Images/Male-back2.png">
                     </div>
                     </div>
                     <div class="exercise-container">
@@ -1217,11 +1217,11 @@ const Workouts = [
                             <p> 5x6-12 reps </p>
                             <p> 9-10 min </p>
                             <p> Intermediate </p>
-                            <p><img class="bd_img" src="/Images/Bodyweight.png" alt=""> &nbsp Bodyweight</p>
+                            <p><img class="bd_img" src="Images/Bodyweight.png" alt=""> &nbsp Bodyweight</p>
                         </div>
                     </div>
                     <div class="muscle-img-container">
-                        <img src="/Images/Male-back1.png">
+                        <img src="Images/Male-back1.png">
                     </div>
                 </div>
                 <div class="exercise-container">
@@ -1232,11 +1232,11 @@ const Workouts = [
                             <p> 5x6-12 reps </p>
                             <p> 10-13 min </p>
                             <p> Beginner   </p>
-                            <p><img class="bd_img" src="/Images/Bodyweight.png" alt=""> &nbsp Bodyweight</p>
+                            <p><img class="bd_img" src="Images/Bodyweight.png" alt=""> &nbsp Bodyweight</p>
                         </div>
                     </div>
                     <div class="muscle-img-container">
-                        <img src="/Images/Male-back3.png">
+                        <img src="Images/Male-back3.png">
                     </div>
                 </div>
                     `,
@@ -1248,11 +1248,11 @@ const Workouts = [
                             <p> 5x10 reps </p>
                             <p> 9-10 min </p>
                             <p> Intermediate </p>
-                            <p><img class="bd_img" src="/Images/Bodyweight.png" alt=""> &nbsp Bodyweight</p>
+                            <p><img class="bd_img" src="Images/Bodyweight.png" alt=""> &nbsp Bodyweight</p>
                         </div>
                     </div>
                     <div class="muscle-img-container">
-                        <img src="/Images/Male-front4.png">
+                        <img src="Images/Male-front4.png">
                     </div>
                 </div>
                 <div class="exercise-container">
@@ -1263,11 +1263,11 @@ const Workouts = [
                             <p> 5x6-12 reps </p>
                             <p> 9-10 min </p>
                             <p> Intermediate </p>
-                            <p><img class="bd_img" src="/Images/Bodyweight.png" alt=""> &nbsp Bodyweight</p>
+                            <p><img class="bd_img" src="Images/Bodyweight.png" alt=""> &nbsp Bodyweight</p>
                         </div>
                     </div>
                     <div class="muscle-img-container">
-                        <img src="/Images/Male-back1.png">
+                        <img src="Images/Male-back1.png">
                     </div>
                 </div>
                 <div class="exercise-container">
@@ -1278,11 +1278,11 @@ const Workouts = [
                             <p> 5x6-12 reps </p>
                             <p> 9-10 min </p>
                             <p> Beginner </p>
-                            <p><img class="bd_img" src="/Images/Bodyweight.png" alt=""> &nbsp Bodyweight</p>
+                            <p><img class="bd_img" src="Images/Bodyweight.png" alt=""> &nbsp Bodyweight</p>
                         </div>
                     </div>
                     <div class="muscle-img-container">
-                        <img src="/Images/Male-front2.png">
+                        <img src="Images/Male-front2.png">
                     </div>
                 </div>
                 <div class="exercise-container">
@@ -1293,11 +1293,11 @@ const Workouts = [
                             <p> 5x10 reps </p>
                             <p> 9-10 min </p>
                             <p> Intermediate </p>
-                            <p><img class="bd_img" src="/Images/Bodyweight.png" alt=""> &nbsp Bodyweight</p>
+                            <p><img class="bd_img" src="Images/Bodyweight.png" alt=""> &nbsp Bodyweight</p>
                         </div>
                     </div>
                     <div class="muscle-img-container">
-                        <img src="/Images/Male-front4.png">
+                        <img src="Images/Male-front4.png">
                     </div>
                 </div>
                 <div class="exercise-container">
@@ -1308,11 +1308,11 @@ const Workouts = [
                             <p> 5x6-12 reps </p>
                             <p> 9-10 min </p>
                             <p> Intermediate </p>
-                            <p><img class="bd_img" src="/Images/Bodyweight.png" alt=""> &nbsp Bodyweight</p>
+                            <p><img class="bd_img" src="Images/Bodyweight.png" alt=""> &nbsp Bodyweight</p>
                         </div>
                     </div>
                     <div class="muscle-img-container">
-                        <img src="/Images/Male-back1.png">
+                        <img src="Images/Male-back1.png">
                     </div>
                 </div>
                 `,
@@ -1324,11 +1324,11 @@ const Workouts = [
                         <p> 5x10 reps </p>
                         <p> 9-10 min </p>
                         <p> Intermediate </p>
-                        <p><img class="bd_img" src="/Images/Bodyweight.png" alt=""> &nbsp Bodyweight</p>
+                        <p><img class="bd_img" src="Images/Bodyweight.png" alt=""> &nbsp Bodyweight</p>
                     </div>
                 </div>
                 <div class="muscle-img-container">
-                    <img src="/Images/Male-front4.png">
+                    <img src="Images/Male-front4.png">
                 </div>
             </div>
             <div class="exercise-container">
@@ -1339,11 +1339,11 @@ const Workouts = [
                         <p> 3x12 reps </p>
                         <p> 9-10 min </p>
                         <p> Intermediate </p>
-                        <p><img class="bd_img" src="/Images/Bodyweight.png" alt=""> &nbsp Bodyweight</p>
+                        <p><img class="bd_img" src="Images/Bodyweight.png" alt=""> &nbsp Bodyweight</p>
                     </div>
                 </div>
                 <div class="muscle-img-container">
-                    <img src="/Images/Male-back6.png">
+                    <img src="Images/Male-back6.png">
                 </div>
             </div>
             <div class="exercise-container">
@@ -1354,11 +1354,11 @@ const Workouts = [
                         <p> 3x10 reps </p>
                         <p> 9-10 min </p>
                         <p> Beginner </p>
-                        <p><img class="bd_img" src="/Images/Bodyweight.png" alt=""> &nbsp Bodyweight</p>
+                        <p><img class="bd_img" src="Images/Bodyweight.png" alt=""> &nbsp Bodyweight</p>
                     </div>
                 </div>
                 <div class="muscle-img-container">
-                    <img src="/Images/Male-back8.png">
+                    <img src="Images/Male-back8.png">
                 </div>
             </div>
             <div class="exercise-container">
@@ -1369,11 +1369,11 @@ const Workouts = [
                         <p> 5x10 reps </p>
                         <p> 9-10 min </p>
                         <p> Intermediate </p>
-                        <p><img class="bd_img" src="/Images/Bodyweight.png" alt=""> &nbsp Bodyweight</p>
+                        <p><img class="bd_img" src="Images/Bodyweight.png" alt=""> &nbsp Bodyweight</p>
                     </div>
                 </div>
                 <div class="muscle-img-container">
-                    <img src="/Images/Male-front4.png">
+                    <img src="Images/Male-front4.png">
                 </div>
             </div>
             <div class="exercise-container">
@@ -1384,11 +1384,11 @@ const Workouts = [
                         <p> 3x12 reps </p>
                         <p> 9-10 min </p>
                         <p> Intermediate </p>
-                        <p><img class="bd_img" src="/Images/Bodyweight.png" alt=""> &nbsp Bodyweight</p>
+                        <p><img class="bd_img" src="Images/Bodyweight.png" alt=""> &nbsp Bodyweight</p>
                     </div>
                 </div>
                 <div class="muscle-img-container">
-                    <img src="/Images/Male-back6.png">
+                    <img src="Images/Male-back6.png">
                 </div>
             </div>
             `,
