@@ -5,6 +5,7 @@ let SVG_female_backElement = document.querySelector('.Female-Back');
 let buttonElement = document.querySelector('.js-swap_btn');
 let btn = document.querySelector('#btn');
 let sidebar = document.querySelector('.sidebar');
+let nav = document.querySelector('.nav-list');
 let cal_container = document.querySelector('.cal_container');
 function swap() {
   if (buttonElement.innerHTML === '<i class="bx bx-male-sign"></i>') {
@@ -49,10 +50,7 @@ let indicator;
 function Show_exercise(muscle) {
   if (muscle === 'chest') {
     ex_name1.innerHTML = 'Barbell Bench Press';
-    video_frames1.innerHTML = `<iframe  src="https://www.youtube.com/embed/pnvvm-DlIE4?si=TtmWUkiCZ_PzK22K&showinfo=0"
-    title="YouTube video player" frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    video_frames1.innerHTML = `<video autoplay playsinline loop  muted src="../Videos/BenchPress1.MOV"></video>
                                  <video autoplay playsinline loop  muted src="../Videos/BenchPress1.MOV"></video>`;
     advice1.innerHTML = `<h2> <span>1</span>Lay flat on the bench with your feet on the ground. With straight arms unrack the bar.</h2>
                            <h2> <span>2</span>Lower the bar to your mid chest.</h2>
@@ -669,18 +667,16 @@ document.addEventListener('keydown', function (event) {
 
 function sidebar_toggle() {
   sidebar.classList.toggle('active');
-  cal_container.classList.toggle('active');
+
 }
 
-function sidebar_active() {
-  sidebar.classList.add('active');
-  cal_container.classList.add('active');
-}
+// function sidebar_active() {
+//   sidebar.classList.add('active');
+// }
 
-function sidebar_pasive() {
-  sidebar.classList.remove('active');
-  cal_container.classList.remove('active')
-}
+// function sidebar_pasive() {
+//   sidebar.classList.remove('active');
+// }
 btn.onclick = sidebar_toggle;
 
 

@@ -286,6 +286,10 @@ body {
     opacity: 0;
 }
 
+.apple {
+    color: #fcf006;
+}
+
 
 
 /* .about-images:hover img{
@@ -728,6 +732,80 @@ body {
 }
 
 
+@media (max-width:700px) {
+    .sidebar {
+        width: 100vw;
+        height: 80px;
+        background-color: #2e2e2e;
+        padding: 6px 12px;
+        /* transition: all 0.5s ease; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        top: calc(100% - 80px);
+        z-index: 1000;
+        position: fixed;
+
+    }
+
+
+
+    .sidebar ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .sidebar ul li a span {
+        display: none;
+    }
+
+    footer {
+        margin-left: 0;
+        width: 100vw;
+        padding-bottom: 100px;
+    }
+
+    .main-content {
+        width: 100vw;
+        left: 0;
+    }
+
+    .top {
+        position: relative;
+    }
+
+
+
+    .sidebar #btn {
+        position: relative;
+        font-size: 22px;
+    }
+
+
+    .sidebar.active {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        top: 0;
+    }
+
+    .sidebar.active ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidebar.active ul li a span {
+        display: block;
+    }
+}
+
+
 
 @media(max-width:570px) {
     .sidebar.active {
@@ -744,6 +822,14 @@ body {
     }
 }
 
+
+@media(max-width: 477px) {
+    .sidebar ul li a i {
+        font-size: 22px;
+    }
+}
+
+
 @media(max-width:430px) {
     .author p {
         font-size: 0.9rem;
@@ -752,6 +838,21 @@ body {
     }
 
 
+}
+
+
+@media(max-width: 417px) {
+    .logo_container {
+        display: none;
+    }
+
+    .sidebar.active .logo_container {
+        display: block;
+    }
+
+    .sidebar {
+        justify-content: space-between;
+    }
 }
 
 @media(max-width:400px) {
