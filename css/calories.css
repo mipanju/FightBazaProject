@@ -480,11 +480,12 @@ workout .main-content {
 }
 
 
-@media(max-width:825px){
-    ::-webkit-scrollbar{
+@media(max-width:825px) {
+    ::-webkit-scrollbar {
         display: none;
     }
 }
+
 /* pagina de calculare a caloriilor */
 
 
@@ -760,6 +761,15 @@ button:hover {
     justify-content: space-between;
 }
 
+.workout {
+    background-color: #fcf006;
+    color: #12171e;
+    border-radius: 15px;
+}
+
+.sidebar ul li a.workout i {
+    color: #12171e;
+}
 
 /* Footer */
 
@@ -859,26 +869,30 @@ footer {
 
 @media(max-width:590px) {
     footer {
-       flex-wrap: wrap;
-       height: auto;
-       padding: 10px 50px ;
-      }
-  .socials{
-    margin-left: 240px;
-    margin-right: 0;
-  }
-  .author{
-    flex-grow: 1;
-    margin-top: 30px;
-  }
-  .main-content-calories{
-    display: flex;
-    flex-direction: column;
-    /* flex-wrap: wrap; */
-  }
-  }
-  @media(max-width:590px){
-    footer{
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px 50px;
+    }
+
+    .socials {
+        margin-left: 240px;
+        margin-right: 0;
+    }
+
+    .author {
+        flex-grow: 1;
+        margin-top: 30px;
+    }
+
+    .main-content-calories {
+        display: flex;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+    }
+}
+
+@media(max-width:590px) {
+    footer {
         padding: 40px 2px;
     }
 }
@@ -908,8 +922,8 @@ footer {
     }
 }
 
-@media(max-width:1199px){
-    .main-content-calories{
+@media(max-width:1199px) {
+    .main-content-calories {
         height: auto;
     }
 }
@@ -970,6 +984,84 @@ footer {
 
     .video_container video {
         border-radius: 20px;
+    }
+}
+
+@media (max-width:700px) {
+
+    body {
+        margin-left: 0;
+    }
+
+    .sidebar {
+        width: 100vw;
+        height: 80px;
+        background-color: #2e2e2e;
+        padding: 6px 12px;
+        /* transition: all 0.5s ease; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        top: calc(100% - 80px);
+        z-index: 1000;
+        position: fixed;
+
+    }
+
+
+
+    .nav-list {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nav-list a span {
+        display: none;
+    }
+
+    footer {
+        margin-left: 0;
+        width: 100vw;
+        padding-bottom: 100px;
+    }
+
+    .main-content {
+        width: 100vw;
+        left: 0;
+    }
+
+    .top {
+        position: relative;
+    }
+
+
+
+    .sidebar #btn {
+        position: relative;
+        font-size: 22px;
+    }
+
+
+    .sidebar.active {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        top: 0;
+    }
+
+    .sidebar.active ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidebar.active ul li a span {
+        display: block;
     }
 }
 
@@ -1202,6 +1294,12 @@ body {
     }
 }
 
+@media(max-width: 477px) {
+    .sidebar ul li a i {
+        font-size: 22px;
+    }
+}
+
 @media(max-width:462px) {
     .square_container ul {
         width: 300px;
@@ -1227,5 +1325,19 @@ body {
         font-size: 0.9rem;
         text-align: center;
 
+    }
+}
+
+@media(max-width: 417px) {
+    .logo_container {
+        display: none;
+    }
+
+    .sidebar.active .logo_container {
+        display: block;
+    }
+
+    .sidebar {
+        justify-content: space-between;
     }
 }

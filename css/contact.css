@@ -850,6 +850,92 @@ footer {
 }
 
 
+@media (max-width:700px) {
+  body {
+    margin-right: 0;
+  }
+
+  .main-content {
+    margin-right: 0;
+  }
+
+  .sidebar {
+    width: 100vw;
+    height: 80px;
+    background-color: #2e2e2e;
+    padding: 6px 12px;
+    /* transition: all 0.5s ease; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: calc(100% - 80px);
+    z-index: 1000;
+    position: fixed;
+
+  }
+
+
+
+  .sidebar ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .sidebar ul li a span {
+    display: none;
+  }
+
+  footer {
+    margin-left: 0;
+    width: 100vw;
+    padding-bottom: 100px;
+  }
+
+  .main-content {
+    width: 100vw;
+    left: 0;
+  }
+
+  .top {
+    position: relative;
+  }
+
+
+
+  .sidebar #btn {
+    position: relative;
+    font-size: 22px;
+  }
+
+
+  .sidebar.active {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 0;
+  }
+
+  .sidebar.active ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebar.active ul li a span {
+    display: block;
+  }
+
+  .sidebar.active ul li a i {
+    margin-right: 10px;
+  }
+}
+
+
 
 @media(max-width:670px) {
   .sidebar.active~.main-content {
@@ -1036,25 +1122,9 @@ body {
   }
 }
 
-@media(max-width:400px) {
 
-  html,
-  body {
-    height: 100svh;
-    overflow-x: hidden;
-  }
 
-  .sidebar .logo img {
-    position: fixed;
-    bottom: 0px;
-    left: 40px;
-  }
 
-  .sidebar.active .logo img {
-    bottom: 55px;
-    left: 120px;
-  }
-}
 
 @media(max-width:570px) {
   .sidebar.active {
@@ -1084,4 +1154,54 @@ body {
   .contacts {
     padding: 40px;
   }
+}
+
+@media(max-width: 477px) {
+  .sidebar ul li a i {
+    font-size: 22px;
+  }
+}
+
+
+
+@media(max-width: 417px) {
+  .logo_container {
+    display: none;
+  }
+
+  .sidebar.active .logo_container {
+    display: block;
+  }
+
+  .sidebar {
+    justify-content: space-between;
+  }
+
+
+}
+
+/* 
+@media(max-width:400px) {
+
+  html,
+  body {
+    height: 100svh;
+    overflow-x: hidden;
+  }
+
+  .sidebar .logo img {
+    position: fixed;
+    bottom: 0px;
+    left: 40px;
+  }
+
+  .sidebar.active .logo img {
+    bottom: 55px;
+    left: 120px;
+  }
+} */
+
+.sidebar.active {
+  position: fixed;
+  height: 100vh;
 }

@@ -26,6 +26,10 @@ body {
     overflow: visible;
 }
 
+.main-container {
+    position: relative;
+}
+
 .Body_map {
     color: #3f3f3f;
     fill: currentColor;
@@ -113,6 +117,7 @@ body {
     background-color: #12171e;
     color: #fcf006;
 }
+
 .js-swap_btn2 {
     display: none;
     position: absolute;
@@ -120,7 +125,7 @@ body {
     left: 0;
 }
 
-.js-swap_btn2:has(.bx-arrow-back){
+.js-swap_btn2:has(.bx-arrow-back) {
     color: #24262b;
     background-color: #fcf006;
     padding: 0;
@@ -300,48 +305,6 @@ body {
     opacity: 1;
 }
 
-/* .nav-list{
-    height: 1000px;
-} */
-
-
-
-
-
-/* .calories {
-    padding: 0;
-    margin-left: 60px;
-}
-
-.calories a {
-    height: 25px;
-    margin-left: 60px;
-
-} */
-
-/* .sidebar ul li .tooltip {
-    position: absolute;
-    left: 125px;
-    top: 22px;
-    background-color: #fcf006;
-    transform: translate(-50%, -50%);
-    box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.2);
-    border-radius: .6rem;
-    padding: .4rem 1.2rem;
-    line-height: 1.8rem;
-    z-index: 100;
-    opacity: 0;
-    transition: all 0.5s ease;
-}
-
-.sidebar ul li:hover .tooltip {
-    opacity: 100;
-    z-index: 20;
-}
-
-.sidebar.active ul li .tooltip {
-    display: none;
-} */
 
 .main-content {
     position: relative;
@@ -541,7 +504,7 @@ footer {
 }
 
 .video_container video {
-    width: 700px;
+    width: 100%;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
 }
@@ -1053,11 +1016,11 @@ body {
     }
 }
 
-@media(min-width:680px) {
+/* @media(min-width:680px) {
     .logo_svg {
         width: 80%;
     }
-}
+} */
 
 @media(min-width:900px) {
     .logo_svg {
@@ -1065,20 +1028,6 @@ body {
     }
 }
 
-@media(min-width:388px) {
-
-    /* .Male-Front,
-        .Male-Back {
-            width: 320px;
-
-        } */
-
-    /* .Female-Front,
-        .Female-Back {
-            display: none;
-            width: 285px;
-        } */
-}
 
 @media(max-width:400px) {
 
@@ -1150,50 +1099,113 @@ body {
         justify-content: center;
     }
 
-    /* .Female-Front,
-    .Female-Back {
-        display: none;
-        width: 280px;
-        z-index: 1;
-    } */
 }
 
-/* .workout a {
-    height: 25px;
-} */
 
-.workout a {
-    height: 50px;
-}
-
-.cal_container {
-    display: none;
-}
-
-.cal_container.active {
-    display: block;
-    transition: all 0.5s ease;
-
-}
-
-.sidebar ul li a.cal {
-    margin-left: 80px;
-    margin-bottom: 10px;
-    border-radius: 0px;
-    transition: none;
-}
-
-.sidebar ul li a.cal:hover {
-    background-color: #12171e;
-    color: #fcf006;
-    animation: none;
-    border-bottom: 1px solid #fcf006;
-}
 
 @media(max-width:430px) {
     .author p {
         font-size: 0.9rem;
         text-align: center;
 
+    }
+}
+
+
+
+/* today */
+
+@media (max-width:700px) {
+    .sidebar {
+        width: 100vw;
+        height: 80px;
+        background-color: #2e2e2e;
+        padding: 6px 12px;
+        /* transition: all 0.5s ease; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        top: calc(100% - 80px);
+        z-index: 1000;
+        position: fixed;
+
+    }
+
+
+
+    .nav-list {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nav-list a span {
+        display: none;
+    }
+
+    footer {
+        margin-left: 0;
+        width: 100vw;
+        padding-bottom: 100px;
+    }
+
+    .main-content {
+        width: 100vw;
+        left: 0;
+    }
+
+    .top {
+        position: relative;
+    }
+
+
+
+    .sidebar #btn {
+        position: relative;
+        font-size: 22px;
+    }
+
+
+    .sidebar.active {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        top: 0;
+    }
+
+    .sidebar.active ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidebar.active ul li a span {
+        display: block;
+    }
+}
+
+@media(max-width: 477px) {
+    .sidebar ul li a i {
+        font-size: 22px;
+    }
+}
+
+
+
+@media(max-width: 417px) {
+    .logo_container {
+        display: none;
+    }
+
+    .sidebar.active .logo_container {
+        display: block;
+    }
+
+    .sidebar {
+        justify-content: space-between;
     }
 }

@@ -10,16 +10,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/67352d591b.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" type="image/png" href="../Images/Logo2.png">
 </head>
 
 <body>
-    <div onmouseenter="sidebar_active()" onmouseleave="sidebar_pasive()" class="sidebar">
-        <div class="top-container">
-            <div class="top">
-                <i class="bx bx-menu" id="btn"></i>
-            </div>
+    <div class="sidebar">
+        <!-- <div class="top-container"> -->
+        <div class="top">
+            <i onclick="sidebar_toggle()" class="bx bx-menu" id="btn"></i>
         </div>
+        <!-- </div> -->
         <div class="mid-container">
             <ul class="nav-list">
                 <li>
@@ -34,20 +35,12 @@
                         <i class='bx bx-dumbbell'></i>
                         <span class="nav-item">Workout</span>
                     </a>
-                    <!-- <span class="tooltip">Antrenamente</span> -->
-
-                    <div class="cal_container">
-                        <a href="../pages/calories.html" class="cal">
-                            <span class="nav-item">-Calories</span>
-                        </a>
-                        <!-- <a href="../pages/nutrients.html" class="cal">
-                            <span class="nav-item">-Nutrients</span>
-                        </a>
-                        <a href="../pages/bmi.html" class="cal">
-                            <span class="nav-item">-BMI</span>
-                        </a> -->
-                    </div>
-
+                </li>
+                <li>
+                    <a href="../pages/calories.html" class="cal">
+                        <i class="fas fa-apple-alt"></i>
+                        <span class="nav-item">Calories</span>
+                    </a>
                 </li>
                 <li>
 
@@ -78,11 +71,10 @@
                 <button onclick="get_back()" class="js-swap_btn2"><i class="bx bx-arrow-back"></i></button>
                 <h1 class="exercise_name" id="exercise_name1">Barbell Bench Press</h1>
                 <div class="video_container" id="video_container1">
-                    <iframe src="https://www.youtube.com/embed/pnvvm-DlIE4?si=TtmWUkiCZ_PzK22K&showinfo=0"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <video autoplay playsinline loop muted src="/Videos/IMG_9933.MOV"></video>
+                    <video autoplay playsinline loop
+                        src="https://media.musclewiki.com/media/uploads/videos/branded/male-barbell-bench-press-front.mp4#t=0.1"></video>
+                    <video autoplay playsinline loop
+                        src="https://media.musclewiki.com/media/uploads/videos/branded/male-barbell-bench-press-side_KciuhbB.mp4#t=0.1"></video>
                 </div>
                 <div class="instructions" id="instructions1">
                     <h2> <span>1</span>Lay flat on the bench with your feet on the ground. With straight arms unrack the
